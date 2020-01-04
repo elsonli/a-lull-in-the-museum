@@ -1,0 +1,281 @@
+  [1m[35m (186.3ms)[0m  [1m[35mCREATE DATABASE "a-lull-in-the-museum_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (67.7ms)[0m  [1m[35mCREATE DATABASE "a-lull-in-the-museum_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6576400143631220910)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateActiveStorageTables (20200104063509)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200104063509_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  ↳ db/migrate/20200104063509_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  ↳ db/migrate/20200104063509_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  ↳ db/migrate/20200104063509_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  ↳ db/migrate/20200104063509_create_active_storage_tables.active_storage.rb:16
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200104063509"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-01-04 06:37:32.920359"], ["updated_at", "2020-01-04 06:37:32.920359"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6576400143631220910)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6576400143631220910)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20200104064218)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200104064218_create_users.rb:3
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  ↳ db/migrate/20200104064218_create_users.rb:9
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users"  ("session_token")[0m
+  ↳ db/migrate/20200104064218_create_users.rb:10
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200104064218"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6576400143631220910)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6576400143631220910)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateArtworks (20200104064450)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "artworks" ("id" bigserial primary key, "title" character varying NOT NULL, "description" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200104064450_create_artworks.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_artworks_on_title" ON "artworks"  ("title")[0m
+  ↳ db/migrate/20200104064450_create_artworks.rb:8
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200104064450"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(6576400143631220910)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6576400143631220910)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateComments (20200104064559)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "user_id" integer NOT NULL, "artwork_id" integer NOT NULL, "body" text NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200104064559_create_comments.rb:3
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE  INDEX  "index_comments_on_user_id" ON "comments"  ("user_id")[0m
+  ↳ db/migrate/20200104064559_create_comments.rb:9
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_comments_on_artwork_id" ON "comments"  ("artwork_id")[0m
+  ↳ db/migrate/20200104064559_create_comments.rb:10
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200104064559"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6576400143631220910)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6576400143631220910)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateLikes (20200104064725)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (12.6ms)[0m  [1m[35mCREATE TABLE "likes" ("id" bigserial primary key, "user_id" integer NOT NULL, "artwork_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200104064725_create_likes.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_likes_on_user_id" ON "likes"  ("user_id")[0m
+  ↳ db/migrate/20200104064725_create_likes.rb:8
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_likes_on_artwork_id" ON "likes"  ("artwork_id")[0m
+  ↳ db/migrate/20200104064725_create_likes.rb:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200104064725"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6576400143631220910)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (39.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "a-lull-in-the-museum_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (36.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "a-lull-in-the-museum_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (214.1ms)[0m  [1m[35mCREATE DATABASE "a-lull-in-the-museum_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (103.1ms)[0m  [1m[35mCREATE DATABASE "a-lull-in-the-museum_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6576400143631220910)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateActiveStorageTables (20200104063509)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200104063509_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  ↳ db/migrate/20200104063509_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  ↳ db/migrate/20200104063509_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  ↳ db/migrate/20200104063509_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  ↳ db/migrate/20200104063509_create_active_storage_tables.active_storage.rb:16
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200104063509"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20200104064218)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200104064218_create_users.rb:3
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  ↳ db/migrate/20200104064218_create_users.rb:9
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users"  ("session_token")[0m
+  ↳ db/migrate/20200104064218_create_users.rb:10
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200104064218"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateArtworks (20200104064450)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "artworks" ("id" bigserial primary key, "title" character varying NOT NULL, "description" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200104064450_create_artworks.rb:3
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_artworks_on_title" ON "artworks"  ("title")[0m
+  ↳ db/migrate/20200104064450_create_artworks.rb:8
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200104064450"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateComments (20200104064559)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "user_id" integer NOT NULL, "artwork_id" integer NOT NULL, "body" text NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200104064559_create_comments.rb:3
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE  INDEX  "index_comments_on_user_id" ON "comments"  ("user_id")[0m
+  ↳ db/migrate/20200104064559_create_comments.rb:9
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE  INDEX  "index_comments_on_artwork_id" ON "comments"  ("artwork_id")[0m
+  ↳ db/migrate/20200104064559_create_comments.rb:10
+  [1m[36mActiveRecord::SchemaMigration Create (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200104064559"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateLikes (20200104064725)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "likes" ("id" bigserial primary key, "user_id" integer NOT NULL, "artwork_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200104064725_create_likes.rb:3
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_likes_on_user_id_and_artwork_id" ON "likes"  ("user_id", "artwork_id")[0m
+  ↳ db/migrate/20200104064725_create_likes.rb:8
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200104064725"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-01-04 06:51:39.940839"], ["updated_at", "2020-01-04 06:51:39.940839"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6576400143631220910)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtwork Create (1.8ms)[0m  [1m[32mINSERT INTO "artworks" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Testing"], ["created_at", "2020-01-04 06:58:09.722095"], ["updated_at", "2020-01-04 06:58:09.722095"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveStorage::Attachment Exists (2.3ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Artwork"], ["name", "photos"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Artwork"], ["name", "video"], ["LIMIT", 1]]
+  [1m[36mArtwork Load (0.7ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" ORDER BY "artworks"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Artwork"], ["name", "video"], ["LIMIT", 1]]
+Started GET "/" for ::1 at 2020-01-04 00:06:25 -0800
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/elsonli/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (7.7ms)
+Started GET "/" for ::1 at 2020-01-04 00:06:28 -0800
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3425ms (Views: 3420.1ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 487ms (Views: 483.8ms | ActiveRecord: 0.0ms)
+
+
