@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     store = configureStore();
   }
+  
+  // delete window.currentUser;
 
   // Window Testing Start
   window.userSignup = SessionActions.userSignup;
