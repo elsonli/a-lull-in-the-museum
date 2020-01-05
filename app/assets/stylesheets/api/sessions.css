@@ -1,0 +1,43 @@
+body {
+  background-color: #d31919;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.header-title {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.header-group {
+  display: flex;
+  justify-content: center;
+}
+
+/* Login and Signup Form */
+.session-form-container {
+  color: rgb(25, 211, 118);
+  background-color: blue;
+}
+
+/* Login, Signup, Signout, Dashboard Buttons */
+.session-button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0px 10px;
+}
+
+.session-button:hover {
+  cursor: pointer;
+  filter: brightness(85%);
+}
