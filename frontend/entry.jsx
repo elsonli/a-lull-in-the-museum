@@ -1,15 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import * as SessionAPIUtil from "./util/session_api_util"
+import Root from "./components/root";
+import configureStore from "./store/store";
+import * as SessionActions from "./actions/session_actions";
 
 document.addEventListener("DOMContentLoaded", () => {
+  const root = document.getElementById("root");
+  const store = configureStore();
 
   // Window Testing Start
-  window.userLogin = SessionAPIUtil.userLogin;
-  window.userLogout = SessionAPIUtil.userLogout;
-  window.userSignup = SessionAPIUtil.userSignup;
+  window.userSignup = SessionActions.userSignup;
+  window.userLogin = SessionActions.userLogin;
+  window.userLogout = SessionActions.userLogout;
+  window.getState = store.getState;
+  window.dispatch = store.dispatch;
   // Window Testing End
 
-  const root = document.getElementById("root");
-  ReactDOM.render(<h1>React Works</h1>, root);
+  ReactDOM.render(<Root store={ store } />, root);
 });
