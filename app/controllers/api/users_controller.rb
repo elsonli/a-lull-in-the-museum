@@ -9,7 +9,8 @@ class Api::UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       login!(@user)
-      render "api/users/show" # Probably change to render artwork gallery
+      render json: @user # Probably change to render artwork gallery below
+      # render "api/artworks/index"
     else
       render json: @user.errors.full_messages, status: 422
     end

@@ -8,7 +8,8 @@ class Api::SessionsController < ApplicationController
     )
     if @user
       login!(@user)
-      render json: @user # Probably change to render artwork gallery
+      render json: @user # Probably change to render artwork gallery below
+      # render "api/artworks/index"
     else
       render json: ["Invalid username/password combination"], status: 401
     end
