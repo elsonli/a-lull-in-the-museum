@@ -6,6 +6,10 @@ import * as SessionActions from "../../actions/session_actions";
 
 const mapStateToProps = state => {
   return {
+    userState: {
+      username: "",
+      password: ""
+    },
     errors: state.errors.session,
     formType: "Log In",
     navLink: <Link to="/signup">Sign Up Instead</Link>
