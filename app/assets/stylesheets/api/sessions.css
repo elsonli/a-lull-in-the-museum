@@ -1,5 +1,6 @@
 body {
   background-color: #000;
+  min-width: 600px;
 }
 
 /* Header */
@@ -62,7 +63,16 @@ header {
 }
 
 .session-form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 25px;
+  width: 75%;
+}
+
+.session-form-field > input {
+  margin-top: 5%;
+  width: 75%;
 }
 
 .session-form > input:last-child {
@@ -79,11 +89,13 @@ header {
   flex-direction: column;
   align-items: center;
   color: #f00;
-  /* opacity: 75%; */
 }
 
 .session-errors > li {
   margin-top: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: center;
 }
 
 .session-errors > li:last-child {

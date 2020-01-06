@@ -7,6 +7,10 @@ class SessionForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   };
 
+  // componentDidMount() {
+    // if (this.state.username === "TestUser") { this.props.processForm(); };
+  // };
+
   update(field) {
     return event => {
       this.setState({
@@ -39,20 +43,22 @@ class SessionForm extends React.Component {
         <form className="session-form" onSubmit={ this.handleSubmit }>
           <h1 className="session-form-header">{ this.props.formType }</h1>
           <div className="session-form-field">
-            <label htmlFor="session-form-label">Username:&nbsp;</label>
+            <label htmlFor="session-form-label">Username</label>
             <input
               type="text"
               id="session-form-username"
               value={ this.state.username }
-              onChange={ this.update("username") }/>
+              onChange={ this.update("username") }
+              disabled={ this.props.formType === "Demo Log In" } />
           </div>
           <div className="session-form-field">
-            <label htmlFor="session-form-label">Password:&nbsp;</label>
+            <label htmlFor="session-form-label">Password</label>
             <input
               type="password"
               id="session-form-input"
               value={ this.state.password }
-              onChange={ this.update("password") }/>
+              onChange={ this.update("password") }
+              disabled={this.props.formType === "Demo Log In"} />
           </div>
           <input className="session-button" type="submit" value={ this.props.formType } />
         </form>
