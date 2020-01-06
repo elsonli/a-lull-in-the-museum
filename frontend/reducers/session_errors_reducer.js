@@ -8,6 +8,8 @@ const sessionErrorsReducer = (oldState = _defaultErrors, action) => {
       return action.errors;
     case SessionActions.RECEIVE_CURRENT_USER:
       return _defaultErrors;
+    case SessionActions.CLEAR_SESSION_ERRORS:
+      return _defaultErrors;
     default:
       return oldState;
   };

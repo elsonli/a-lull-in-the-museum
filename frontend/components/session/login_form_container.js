@@ -5,6 +5,7 @@ import SessionForm from "./session_form";
 import * as SessionActions from "../../actions/session_actions";
 
 const mapStateToProps = state => {
+  dispatch(SessionActions.clearSessionErrors());
   return {
     userState: {
       username: "",
