@@ -2,6 +2,7 @@ body {
   background-color: #000;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -21,24 +22,49 @@ header {
   cursor: pointer;
 }
 
+/* Login, Signup, Signout, Dashboard Buttons */
 .header-group {
   display: flex;
   justify-content: center;
 }
 
-/* Login and Signup Form */
-.session-form-container {
-  color: rgb(25, 211, 118);
-  background-color: blue;
-}
-
-/* Login, Signup, Signout, Dashboard Buttons */
 .session-button {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   border-radius: 5px;
   padding: 5px 10px;
   margin: 0px 10px;
+}
+
+/* Login and Signup Form */
+.session-form-container {
+  height: auto;
+  width: 40%;
+  margin: 25px auto;
+  color: #fff;
+  background-color: rgb(50, 50, 50);
+  border-radius: 5px;
+}
+
+.session-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.session-form-header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 25px;
+}
+
+.session-form-field {
+  margin-top: 25px;
+}
+
+.session-form > input:last-child {
+  margin: 25px 0px;
 }
 
 .session-button:hover {

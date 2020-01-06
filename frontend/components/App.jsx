@@ -19,7 +19,7 @@ const App = () => {
               </a>
             );
           }} />
-        <Route exact path="/" component={ GreetingContainer } />
+        <Route path="/" component={ GreetingContainer } />
       </header>
       <AuthRoute exact path="/demologin" component={ DemoLoginFormContainer } />
       <AuthRoute exact path="/login" component={ LoginFormContainer } />

@@ -6,14 +6,14 @@ const Greeting = props => {
   const sessionLinks = () => {
     return (
       <nav className="login-signup">
-        <Link to="/demologin">
-          <button className="session-button">Demo Login</button>
+        <Link to="/signup">
+          <button className="session-button">Sign Up</button>
         </Link>
         <Link to="/login">
           <button className="session-button">Log In</button>
         </Link>
-        <Link to="/signup">
-          <button className="session-button">Sign Up</button>
+        <Link to="/demologin">
+          <button className="session-button">Demo Login</button>
         </Link>
       </nav>
     );
