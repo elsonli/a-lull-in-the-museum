@@ -1,15 +1,16 @@
 .artworks-div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(16, 20vw);
+  grid-template-rows: repeat(16, 25vw);
+  background: linear-gradient(to bottom, transparent, black, 90%);
 }
 
 .contain-zoom {
   overflow: hidden;
 }
 
-.contain-zoom > img {
-  transition: transform .25s ease;
+.contain-zoom img {
+  transition: transform 0.5s ease;
 }
 
 .artworks-img {
