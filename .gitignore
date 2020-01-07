@@ -1,5 +1,4 @@
 # https://github.com/github/gitignore/blob/master/Rails.gitignore
-
 bundle.js*
 
 *.rbc

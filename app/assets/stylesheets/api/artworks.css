@@ -1,0 +1,449 @@
+.artworks-div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(16, 20vw);
+}
+
+.contain-zoom {
+  overflow: hidden;
+}
+
+.contain-zoom > img {
+  transition: transform .25s ease;
+}
+
+.artworks-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artworks-img:hover {
+  cursor: pointer;
+  filter: brightness(75%);
+  transform: scale(1.05);
+  filter: blur(1px);
+}
+
+/* Row 1 */
+.artworks-fig-1 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.artworks-fig-2 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.artworks-fig-3 {
+  margin-bottom: 2px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+/* Row 2 */
+.artworks-fig-4 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.artworks-fig-5 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.artworks-fig-6 {
+  margin-bottom: 2px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+/* Row 3 */
+.artworks-fig-7 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.artworks-fig-8 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.artworks-fig-9 {
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+/* Row 4 */
+.artworks-fig-10 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.artworks-fig-11 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.artworks-fig-12 {
+  margin-bottom: 2px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+/* Row 5 */
+.artworks-fig-13 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.artworks-fig-14 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.artworks-fig-15 {
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+/* Row 6 */
+.artworks-fig-16 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.artworks-fig-17 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.artworks-fig-18 {
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+/* Row 7 */
+.artworks-fig-19 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+
+.artworks-fig-20 {
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+
+/* Row 8 */
+.artworks-fig-21 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+.artworks-fig-22 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+.artworks-fig-23 {
+  margin-bottom: 2px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+/* Row 9 */
+.artworks-fig-24 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 10;
+}
+
+.artworks-fig-25 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 9;
+  grid-row-end: 10;
+}
+
+.artworks-fig-26 {
+  margin-bottom: 2px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 9;
+  grid-row-end: 10;
+}
+
+/* Row 10 */
+.artworks-fig-27 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 10;
+  grid-row-end: 11;
+}
+
+.artworks-fig-28 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 10;
+  grid-row-end: 11;
+}
+
+.artworks-fig-29 {
+  margin-bottom: 2px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 10;
+  grid-row-end: 11;
+}
+
+/* Row 11 */
+.artworks-fig-30 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 11;
+  grid-row-end: 12;
+}
+
+.artworks-fig-31 {
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 11;
+  grid-row-end: 12;
+}
+
+/* Row 12 */
+.artworks-fig-32 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 12;
+  grid-row-end: 13;
+}
+
+.artworks-fig-33 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 12;
+  grid-row-end: 13;
+}
+
+.artworks-fig-34 {
+  margin-bottom: 2px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 12;
+  grid-row-end: 13;
+}
+
+/* Row 13 */
+.artworks-fig-35 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 13;
+  grid-row-end: 14;
+}
+
+.artworks-fig-36 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 13;
+  grid-row-end: 14;
+}
+
+.artworks-fig-37 {
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 13;
+  grid-row-end: 14;
+}
+
+/* Row 14 */
+.artworks-fig-38 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 14;
+  grid-row-end: 15;
+}
+
+.artworks-fig-39 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 14;
+  grid-row-end: 15;
+}
+
+.artworks-fig-40 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 14;
+  grid-row-end: 15;
+}
+
+.artworks-fig-41 {
+  margin-bottom: 2px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 14;
+  grid-row-end: 15;
+}
+
+/* Row 15 */
+.artworks-fig-42 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 15;
+  grid-row-end: 16;
+}
+
+.artworks-fig-43 {
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 15;
+  grid-row-end: 16;
+}
+
+/* Row 16 */
+.artworks-fig-44 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 16;
+  grid-row-end: 17;
+}
+
+.artworks-fig-45 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 16;
+  grid-row-end: 17;
+}
+
+.artworks-fig-46 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 16;
+  grid-row-end: 17;
+}
+
+.artworks-fig-47 {
+  margin-bottom: 2px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 16;
+  grid-row-end: 17;
+}
