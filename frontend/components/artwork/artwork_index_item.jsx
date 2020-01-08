@@ -6,10 +6,10 @@ const ArtworkIndexItem = ({ artwork }) => {
     artwork.urls.map(url => {
       return (
         <li className={`artworks-fig-${ artwork.id } contain-zoom`} key={ artwork.id } >
-          <Link to={ `/artworks/${artwork.id }` }>
+          <Link to={`/artworks/${ artwork.id }`} target="_blank">
             <h6 className="artworks-title">{ artwork.title }</h6>
           </Link>
-          <Link className="artworks-link" to={ `/artworks/${ artwork.id }` }>
+          <Link className="artworks-link" to={ `/artworks/${ artwork.id }` } target="_blank">
             <img className="artworks-img" src={ url } />
           </Link>
         </li>
