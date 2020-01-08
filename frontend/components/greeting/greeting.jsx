@@ -4,21 +4,30 @@ import { Link } from "react-router-dom";
 const Greeting = props => {
 
   const sessionLinks = () => {
-    const renderButton = props.location.pathname === "/signup" ? (
-      <Link to="/login">
-        <button className="session-button">Log In</button>
-      </Link>
-    ) : (
+
+    const signupButton = props.location.pathname !== "/signup" ? (
       <Link to="/signup">
         <button className="session-button">Sign Up</button>
       </Link>
-    );
+    ) : null;
+
+    const loginButton = props.location.pathname !== "/login" ? (
+      <Link to="/login">
+        <button className="session-button">Log In</button>
+      </Link>
+    ) : null;
+
+    const demoButton = props.location.pathname === "/" ? (
+      <Link to="/demologin">
+        <button className="session-button">Demo Log In</button>
+      </Link>
+    ) : null;
+
     return (
       <nav className="login-signup">
-        { renderButton }
-        <Link to="/demologin">
-          <button className="session-button">Demo Log In</button>
-        </Link>
+        { signupButton }
+        { loginButton }
+        { demoButton }
       </nav>
     );
   };

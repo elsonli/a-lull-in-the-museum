@@ -23,10 +23,10 @@
   transform: translate(-50%, -50%);
   filter: invert(0.25);
   z-index: 2;
+  cursor: pointer;
 }
 
 .play:hover {
-  /* transform: scale(1.5); */
   height: 50px;
   width: 50px;
   transition: height 0.5s ease, width 0.5s ease;
