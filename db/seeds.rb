@@ -120,35 +120,35 @@ artwork_15.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/
 
 artwork_16 = Artwork.create!(
   title: "Spirits of the Flowers",
-  description: ""
+  description: "Throughout the year, with the passing of time, flowers bloom and change. They bud, grow, and blossom before their petals to wither and eventually fade away. The cycle of growth and decay repeats itself in perpetuity. When people touch them, the flowers sway and scatter.\n\nThe flowers affect and are affected by other artworks. The influence of other works can cause the petals to scatter. When the figures from Walk, Walk, Walk pass by, the flowers bloom more frequently, and these blooming flowers obscure other artwork worlds.\n\nThe work is rendered in real time by a computer program, it is neither prerecorded nor imagery on loop. Previous states will never be repeated and can never be seen again."
 )
 
 artwork_16.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/16/Image_01.jpeg")), filename: "Image_01.jpeg")
 
 artwork_17 = Artwork.create!(
   title: "Flutter of Butterflies Beyond Borders in the Crystal World",
-  description: ""
+  description: "A flutter of butterflies created from an accumulation of light points.\n\nThis work starts when the Flutter of Butterflies Beyond Borders enter the Crystal World. The work ends when the butterflies leave the space and disappear.\n\nThe group of butterflies that come into this space are those from the Flutter of Butterflies Beyond Borders (a group of butterflies born from other artworks, such as the butterflies born from people's bodies in the Butterfly House). These butterflies release art from the concept of the frame, removing boundaries from the artwork space, the butterflies seamlessly fly inside other artworks.\n\nPointillism uses an accumulation of distinct dots of color to create a picture, here light points are used to create three-dimensional objects. The butterflies that are drawn by light points fly freely around the space. A visual illusion due to continuous dynamic behavior, causes the body of people in the space to be immersed in the flock of butterflies. The boundary between the body and the artwork world dissolve. As the shared world of the artwork changes, due to your existence and that of others in the work, people dissolve into the artwork and perhaps feel a sense of unity with others.\n\nNeither prerecorded nor on loop, the work is rendered in real time by a computer program. The interaction between the viewer and the installation causes continuous change in the artwork; previous visual states can never be replicated, and will never reoccur. This moment can never be seen again."
 )
 
 artwork_17.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/17/Image_01.jpeg")), filename: "Image_01.jpeg")
 
 artwork_18 = Artwork.create!(
   title: "The Way of the Sea in the Crystal World",
-  description: ""
+  description: "This work starts when the shoal of fish from The Way of the Sea enters the Crystal World. The work ends when the shoal of fish leave the space and disappear.\n\nThe fish sense people and try to avoid them. People in the space are assigned a color, when the fish pass close to a person they are dyed by the color of that person.\n\nPointillism uses an accumulation of distinct dots of color to create a picture, here light points are used to create three-dimensional objects. The fish that are drawn by light points swim freely around the space. A visual illusion due to continuous dynamic behavior, causes the body of people in the space to be immersed in the shoal of fish. The boundary between the body and the artwork world dissolve. As the shared world of the artwork changes, due to your existence and that of others in the work, people dissolve into the artwork and perhaps feel a sense of unity with others.\n\nThe movement of thousands of fish and birds is beautiful and mysterious, like a single giant life form. The flock has neither a leader nor mutual consensus, but moves on the simple basis of: if my neighbor moves, then I move too. The biological mechanism that causes flocks of hundreds of fish and birds to move at the same time is enigmatic. It seems there is a universal principle that humans do not understand. Likewise, the coloring of the flock is not predetermined. Influenced by the presence of people, the space becomes a complex and beautiful coloration. This coloration is created by the movement of each fihs and bird obeying some kind of primitive rule.\n\nThe work is rendered in real time by a computer program, it is neither a prerecorded animation nor imagery on loop. The work as a whole is in constant change; previous states will never be repeated and can never be seen again."
 )
 
 artwork_18.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/18/Image_01.jpeg")), filename: "Image_01.jpeg")
 
 artwork_19 = Artwork.create!(
   title: "Peace can be Realized Even without Order",
-  description: ""
+  description: "An interactive digital installation consisting of numerous transparent figures.\n\nThis work starts when the figures from Walk, Walk, Walk: Search, Deviate, Reunite enter the numerous transparent image space. The work ends when the figures leave the space.\n\nThe figures in the space are all autonomous. They play instruments and dance, and each individual is influenced by the sounds from the figures close to them. There is no lead figure that oversees of influences all the other dancers, and there is no center or order enforced on the crowd. External events can cause disorder, but in time, peace will gradually be restored.\n\nWhen a person enters the installation and a figure senses the viewer, that figure sometimes responds to the person and stops playing music. After a short period of time, the figure will start playing music and dance again, but this disturbance will have disrupted the harmony. If, however, the viewer stays still or goes away, the dancers will begin to form back into one harmonious group and the feeling of peace will return.\n\nThe figures in the space will sometimes leave and walk outside. When they return they will start playing their instruments and dancing once again.\n\nIn Japan, there is an ancient dance festival called Awa Odori. Groups of individual dancers play music and proceed around the town arbitrarily. Groups play their own music as they like and dance as they like. Interestingly, for some reason, the music forms into a peaceful order across the whole town. Dancers who randomly meet other groups of dancers gradually and subconsciously match the tempo of their music with that of the other group. This is not due to any set of rules; it just feels right and happens without conscious choice. It seems that when people are set free from their inhibitions, an extraordinary peaceful feeling prevails despite the lack of any order to the dancers. Perhaps this is how people of ancient times maintained a feeling of peacefulness.\n\nThrough the Internet, people are arbitrarily connected with people they like. As a result, people throughout the world have become increasingly connected, and these connections have become more important. What we experience in these unordered connections is similar to the dance festival, perhaps it will provide a new methodology, to find peace.\n\nThe anonymous figures in the work represent no one but express someone.\n\nThe work is rendered in real time by a computer program, it is neither a prerecorded animation nor imagery on loop. The work as a whole is in constant change; previous states will never be repeated and can never be seen again."
 )
 
 artwork_19.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/19/Image_01.jpeg")), filename: "Image_01.jpeg")
 
 artwork_20 = Artwork.create!(
   title: "Flutter of Butterflies Beyond Borders, Ephemeral Life Born from People",
-  description: ""
+  description: "The butterflies in Flutter of Butterflies are born from people, they dance in the space, but if people touch them they die.\n\nIf there are no people in the Butterfly House it is a dark space with nothing existing in it. When people enter the space and stand still a butterfly chrysalis appears on their body, and the butterfly emerges and flies from their feet.\n\nThe artwork is born from a person, but they themselves may not realize, instead they will notice the butterflies being born on other people before realizing that they too are creating the artwork.\n\nThe butterflies transcend the boundary of the display and leave the space, transcending the boundaries of artworks, enter and fly around in other works. By seamlessly flying into other works they break the concept of the artwork frame, and make the boundaries ambiguous. The butterflies are affected by the conditions in other artworks.\n\nOutside this space the butterflies gather with those drawn by people in Graffiti Nature, and released from characters in Born From the Darkness a Loving, and Beautiful World, to make a Flutter of Butterflies.\n\nIn the Borderless World there are only the butterflies that are born in the Butterfly House, Graffiti Nature, and Born From the Darkness a Loving, and Beautiful World. If people touch and kill too many butterflies then the work will cease to exist.\n\nNeither prerecorded nor on loop, the work is rendered in real time by a computer program. The interaction between the viewer and the installation causes continuous change in the artwork; previous visual states can never be replicated, and will never reoccur."
 )
 
 artwork_20.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/20/Image_01.jpeg")), filename: "Image_01.jpeg")
@@ -162,63 +162,63 @@ artwork_21.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/
 
 artwork_22 = Artwork.create!(
   title: "Crows are Chased and the Chasing Crows are Destined to be Chased as well, Layered Ultrasubjective Space",
-  description: ""
+  description: "This is an installation consisting of countless translucent figures.\n\nThe work starts when the crows of Crows are Chased and the Chasing Crows are Destined to be Chased as well enters the Infinite Transparency Space. When the crows leave the space, the work ends.\n\nCrows are rendered in light as they fly around the space, leaving trails of light in their paths and creating spatial calligraphy. The crows chase one another and in turn become chased themselves. When the chased crows crash into one another, they scatter, turning into flowers."
 )
 
 artwork_22.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/22/Image_01.jpeg")), filename: "Image_01.jpeg")
 
 artwork_23 = Artwork.create!(
   title: "Flutter of Butterflies Beyond Borders in Layered Ultrasubjective Space",
-  description: ""
+  description: "A Flutter of Butterflies expressed as countless semi-transparent images.\n\nThe work starts when Flutter of Butterflies Beyond Borders enters Infinite Transparency. The butterflies propagate in Infinite Transparency, and dance in the space, but when a viewer approaches they die.\n\nA large number of screens are positioned in the exhibition space. The position of the screens is reproduced on a computer in a virtual three dimensional space, and then the space is 'flattened' from multiple viewpoints into ultrasubjective space. The flattened multiple viewpoints are then positioned onto the screens. Ultrasubjective space allows for the area around the viewpoints to be cut out and the artwork to be exhibited layed within the exhibition space.\n\nWhen a visitor passes a screen and becomes immersed in the flutter of butterflies, from another person's viewpoint that person appears to be in the same relative position as the flutter of butterflies, both in the artwork and exhibition space. For the viewer that person has become a part of the artwork. In other words, when visitors are seen through the screen by others, they become a part of the artwork not only in the exhibition space but also in the artwork world.\n\nThe artwork is rendered in real time by a computer program. It is neither prerecorded nor on loop, and it is continuously changing. Previous visual states can never be replicated, and will never reoccur."
 )
 
 artwork_23.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/23/Image_01.jpeg")), filename: "Image_01.jpeg")
 
 artwork_24 = Artwork.create!(
   title: "Crows are Chased and the Chasing Crows are Destined to be Chased as well, Floating Nest",
-  description: ""
+  description: "A large nest floats in the center of the space. The work is viewed by lying down or sitting in the Floating Nest.\n\nThis work begins when the crows of Crows are Chased and the Chasing Crows are Destined to be Chased as well, cross the Flower Forest and enter the Floating Nest. The work ends when the crows leave the space and disappear.\n\nLie down in the Floating Nest and the lines drawn by the traces of crows appears to be drawn in three dimensions in the space. The body becomes immersed in the work, and the boundary between people and the work dissolves.\n\nCrows are rendered in light as they fly around the space, leaving trails of light in their paths and creating spatial calligraphy. The crows chase one another and in turn are chased themselves. When the chased crows crash into one another, they scatter, turning into flowers. The crows attempt to fly around people in the space, but when they crash into a viewer, they scatter, turning into flowers in the same way.\n\nThe installation is rendered in real time by a computer program, it is neither a prerecorded animation nor on loop. The installation as a whole is in constant change, previous states will never be repeated and can never be seen again."
 )
 
 artwork_24.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/24/Image_01.jpeg")), filename: "Image_01.jpeg")
 
 artwork_25 = Artwork.create!(
   title: "Animals of Flowers, Symbiotic Lives - Layered Ultrasubjective Space",
-  description: ""
+  description: "This is an interactive installation consisting of countless translucent figures.\n\nThe work starts when the animals of Animals of Flowers Born in the Flower Forest, Symbiotic Lives enter Infinite Transparency. When they leave the space the work ends.\n\nFlowers grow from the bodies of animals. The flowers bud, bloom, scatter, and fade away. When people touch the animals the flowers scatter. Once all of the flowers have scattered, the animals disappear.\n\nThe work is rendered in real time by a computer program. It is neither a prerecorded animation nor on loop. The interaction between the viewer and the installation causes continuous change in the artwork; previous visual states can never be replicated, and will never reoccur."
 )
 
 artwork_25.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/25/Image_01.jpeg")), filename: "Image_01.jpeg")
 
 artwork_26 = Artwork.create!(
   title: "Flowers - Layered Ultrasubjective Space",
-  description: ""
+  description: "Countless semi-transparent images of flowers.\n\nA seasonal year of flowers blooms and changes in time. However when lotus flowers in the passageway, they also flower here. The flowers are born, they grow, bud, blossom, and in time the petals scatter and they die and fade away. The flowers repeat the process of birth and death endlessly.\n\nA large number of screens are positioned in the exhibition space. The position of the screens are reproduced on a computer in a virtual three dimensional space, and then the space is 'flattened' from multiple viewpoints into ultrasubjective space. The flattened multiple viewpoints are then positioned onto the screens. Ultrasubjective space allows for the area around the viewpoints ot be cut out and the artwork to be exhibited layered within the exhibition space.\n\nWhen a visitor passes between screens they become layered in flowers, and from another person's perspective they exist in the artwork world. In other words, when visitors are seen through the screen by others, they become a part of the work not only in the exhibition space but also in the artwork world.\n\nThe work is rendered in real time by a computer program, it is neither a prerecorded animation nor imagery on loop. The work as a whole is in constant change; previous states will never be repeated and can never be seen again."
 )
 
 artwork_26.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/26/Image_01.jpeg")), filename: "Image_01.jpeg")
 
 artwork_27 = Artwork.create!(
   title: "Flowers Bombing",
-  description: ""
+  description: "The flowers drawn on paper in Graffiti Nature appear on the wall and grow in clusters.\n\nThe flowers created by people are born, they bloom, scatter and die. As the flowers scatter, the trajectory of the petals draw new lines. If people place their hands on the wall and hold them still, more flowers bloom. If they move their hands, all the flowers scatter in an instant.\n\nThis work is based on the Red List and depicts local endangered wildlife."
 )
 
 artwork_27.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/27/Image_01.jpeg")), filename: "Image_01.jpeg")
 
 artwork_28 = Artwork.create!(
   title: "Walk, Walk Walk: Search, Deviate, Reunite",
-  description: ""
+  description: "This artwork is based on a 2004 artwork Flowers are Crimson.\n\nThe artwork starts when Peace can be Realized Even without Order leaves its exhibition space, transcends the boundaries between artworks, sometimes influences other works, and continues walking.\n\nThis space is made of a group of anonymous and diverse figures. The figures keep walking and as they do the artwork moves. When visitors touch the figures, they react, sometimes stop, sometimes change the direction and choose a different path.\n\nAs visitors keep walking they make decisions and choices, sometimes abandoning things along the way.\n\nThe Zen expression 'Hoho kore dojo' says every step is the place to learn. The figures of the work continue walking endlessly while confronting new situations. Walking after the figures or confronting new figures one another another the visitors also make choices along their own path.\n\nThe work is rendered in real time by a computer program, it is neither a prerecorded animation nor imagery on loop. The work as a whole is in constant change; previous states will never be repeated and can never be seen again."
 )
 
 artwork_28.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/28/Image_01.jpeg")), filename: "Image_01.jpeg")
 
 artwork_29 = Artwork.create!(
   title: "Black Waves - Continuous",
-  description: ""
+  description: "The movement of waves in water is simulated in a computer-generated three-dimensional space. The water is expressed as a continuous body after calculating the interactions of hundreds of thousands of particles. To visualize the waves, the behavior of the particles of the water was then extracted and lines were drawn in relation to the movement of the particles. The wave created in a 3-D space is then turned into an artwork in accordance with what A Lull in the Museum refers to as ultrasubjective space.\n\nIn premodern Japanese painting, oceans, rivers, and other bodies of water were expressed as a series of lines. These lines give the impression of life, as though water was a living entity. This form of expression leads us to question why premodern people sensed life in rivers and oceans. Also, why did they behave as if they themselves were a part of nature? Perhaps something can be discovered by fusing the fixed objective world of today's common knowledge with the subjective world of premodern people.\n\nWhen viewing this artwork, as opposed to watching waves shot with a video camera, people may feel that the barrier between themselves and the waves disappears. They feel immersed in the work, perhaps even feeling life in the collection of lines, as if the waves are luring them in. Perhaps we can find a connection to the way premodern Japanese people perceived the world and consequently behaved towards the world.\n\nIf we regard ourselves as a part of nature, and consider nature not just as something to be observed, we might join premodern people in perceiving rivers and oceans as living entities. This is a way of seeing the world that lures us in and allows us to feel that there is no boundary between ourselves and nature."
 )
 
 artwork_29.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/29/Image_01.jpeg")), filename: "Image_01.jpeg")
 
 artwork_30 = Artwork.create!(
   title: "Red People in the Blue",
-  description: ""
+  description: "There are red people in the blue space.\n\nLight Sculpture Fog series. Reconstruction of ambiguous space with smoke and light, construction of ambiguous solid objects.\n\nAmbiguous space and three-dimensional objects move, wrapping around the body of people in the space, and immersing the body."
 )
 
 artwork_30.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/30/Image_01.jpeg")), filename: "Image_01.jpeg")
