@@ -11,6 +11,9 @@ header {
   color: #fff;
   background-color: transparent;
   padding: 10px;
+  /* z-index: 99; */
+  /* position: fixed;
+  top: 0; */
 }
 
 .header-title {
