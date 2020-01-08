@@ -6,6 +6,7 @@ import LoginFormContainer from "./session/login_form_container";
 import SignupFormContainer from "./session/signup_form_container";
 import DemoLoginFormContainer from "./session/demo_login_form_container";
 import ArtworkIndexContainer from "./artwork/artwork_index_container";
+import ArtworkContainer from "./artwork/artwork_container";
 
 const App = () => {
   return (
@@ -24,11 +25,11 @@ const App = () => {
       </header>
 
       <main>
-        {/* <Route path="/artworks/:id" component={ ArtworkContainer } /> */}
         <Switch>
           <AuthRoute exact path="/demologin" component={ DemoLoginFormContainer } />
           <AuthRoute exact path="/login" component={ LoginFormContainer } />
           <AuthRoute exact path="/signup" component={ SignupFormContainer } />
+          <Route path="/artworks/:id" component={ ArtworkContainer } />
           <Route exact path="/" component={ ArtworkIndexContainer } />
           <Route path="*" render={ () => <Redirect to="/" /> } />
         </Switch>

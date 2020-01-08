@@ -7,7 +7,11 @@ class Api::ArtworksController < ApplicationController
   def show
     @artwork = Artwork.find_by(id: params[:id])
     # @photos = @artwork.photos.map { |photo| url_for(photo) }
-    render :show
+    if @artwork
+      render :show
+    else
+      render json: ["Artwork Not Found"], status: 404
+    end
   end
 
   private
