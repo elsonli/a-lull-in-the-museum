@@ -12,6 +12,7 @@ const ArtworkIndexItem = ({ artwork }) => {
           <Link className="artworks-link" to={ `/artworks/${ artwork.id }` } target="_blank">
             <img className="artworks-img" src={ url } />
           </Link>
+          <img className="play" src="https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png" />
         </li>
       );
     })
