@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import { AuthRoute } from "../util/route_util";
 import GreetingContainer from "./greeting/greeting_container";
 import LoginFormContainer from "./session/login_form_container";
@@ -22,13 +22,16 @@ const App = () => {
           }} />
         <Route path="/" component={ GreetingContainer } />
       </header>
-      <AuthRoute exact path="/demologin" component={ DemoLoginFormContainer } />
-      <AuthRoute exact path="/login" component={ LoginFormContainer } />
-      <AuthRoute exact path="/signup" component={ SignupFormContainer } />
 
       <main>
         {/* <Route path="/artworks/:id" component={ ArtworkContainer } /> */}
-        <Route exact path="/" component={ ArtworkIndexContainer } />
+        <Switch>
+          <AuthRoute exact path="/demologin" component={ DemoLoginFormContainer } />
+          <AuthRoute exact path="/login" component={ LoginFormContainer } />
+          <AuthRoute exact path="/signup" component={ SignupFormContainer } />
+          <Route exact path="/" component={ ArtworkIndexContainer } />
+          <Route path="*" render={ () => <Redirect to="/" /> } />
+        </Switch>
       </main>
 
     </div>

@@ -2,7 +2,6 @@ class Api::ArtworksController < ApplicationController
   def index
     @artworks = Artwork.all
     render :index
-    # render json: @artworks.map { |artwork| artwork.title }
   end
 
   def show
