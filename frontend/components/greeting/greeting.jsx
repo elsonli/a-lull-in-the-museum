@@ -13,7 +13,7 @@ const Greeting = props => {
           <button className="session-button">Log In</button>
         </Link>
         <Link to="/demologin">
-          <button className="session-button">Demo Login</button>
+          <button className="session-button">Demo Log In</button>
         </Link>
       </nav>
     );

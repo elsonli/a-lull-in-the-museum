@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 class SessionForm extends React.Component {  
   constructor(props) {
@@ -7,9 +8,9 @@ class SessionForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   };
 
-  // componentDidMount() {
-    // if (this.state.username === "TestUser") { this.props.processForm(); };
-  // };
+  componentDidMount() {
+    if (this.props.formType === "Demo Log In") { this.props.processForm(); };
+  };
 
   update(field) {
     return event => {
@@ -60,7 +61,13 @@ class SessionForm extends React.Component {
               onChange={ this.update("password") }
               disabled={this.props.formType === "Demo Log In"} />
           </div>
-          <input className="session-button" type="submit" value={ this.props.formType } />
+
+          <div className="session-buttons">
+            <input className="session-button" type="submit" value={ this.props.formType } />
+            <Link to="/demologin">
+              <button className="session-button">Demo Log In</button>
+            </Link>
+          </div>
         </form>
         { this.renderErrors() }
       </div>

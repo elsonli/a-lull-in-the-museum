@@ -15,7 +15,7 @@ const App = () => {
           path="/"
           render={ props => {
             return (
-              <a className="header-title" onClick={ () => props.history.push("/artworks") }>
+              <a className="header-title" onClick={ () => props.history.push("/") }>
                 A Lull in the Museum
               </a>
             );

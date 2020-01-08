@@ -2,10 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ArtworkIndexItem = ({ artwork }) => {
-  // const style = {
-  //   background: `linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,1))`,
-  //   url: `${url}`
-  // }
   return (
     artwork.urls.map(url => {
       return (
