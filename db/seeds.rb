@@ -34,7 +34,6 @@ artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/0
 artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_11.jpeg")), filename: "Image_11.jpeg")
 artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_12.jpeg")), filename: "Image_12.jpeg")
 
-
 artwork_2 = Artwork.create!(
   title: "Walk, Walk, Walk: Free Infinity",
   description: "Anonymous and diverse figures walk freely in space. They sing, and when they walk near visitors, they sing more. Just as the figures in the artwork move freely singing and dancing in any direction, people in real life are free to dance anywhere and walk in any direction.\n\nThis work is to be viewed from a position close to the entrance.\n\nThe work begins when the figures of Walk, Walk, Walk enter into the Cave Universe in the middle of the aisle. When the work ends, when the figures leave the space and disappear.\n\nIf you stand at position close to the entrance the boundary between the wall and the floor disappears, the real space dissolves and the body becomes immersed in the artwork.\n\nThe work is rendered in real time by a computer program, it is neither a prerecorded animation nor imagery on loop. Previous states will never be repeated and can never be seen again."
@@ -48,6 +47,8 @@ artwork_3 = Artwork.create!(
 )
 
 artwork_3.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/03/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_3.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/03/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_3.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/03/Image_03.jpeg")), filename: "Image_03.jpeg")
 
 artwork_4 = Artwork.create!(
   title: "Wander through the Crystal World",
@@ -55,6 +56,25 @@ artwork_4 = Artwork.create!(
 )
 
 artwork_4.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/04/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_4.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/04/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_4.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/04/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_4.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/04/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_4.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/04/Image_05.jpeg")), filename: "Image_05.jpeg")
+# artwork_4.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/04/Image_06.jpeg")), filename: "Image_06.jpeg")
+# artwork_4.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/04/Image_07.jpeg")), filename: "Image_07.jpeg")
+# artwork_4.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/04/Image_08.jpeg")), filename: "Image_08.jpeg")
+# artwork_4.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/04/Image_09.jpeg")), filename: "Image_09.jpeg")
+# artwork_4.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/04/Image_10.jpeg")), filename: "Image_10.jpeg")
+# artwork_4.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/04/Image_11.jpeg")), filename: "Image_11.jpeg")
+# artwork_4.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/04/Image_12.jpeg")), filename: "Image_12.jpeg")
+# artwork_4.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/04/Image_13.jpeg")), filename: "Image_13.jpeg")
+# artwork_4.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/04/Image_14.jpeg")), filename: "Image_14.jpeg")
+# artwork_4.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/04/Image_15.jpeg")), filename: "Image_15.jpeg")
+# artwork_4.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/04/Image_16.jpeg")), filename: "Image_16.jpeg")
+# artwork_4.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/04/Image_17.jpeg")), filename: "Image_17.jpeg")
+# artwork_4.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/04/Image_18.jpeg")), filename: "Image_18.jpeg")
+# artwork_4.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/04/Image_19.jpeg")), filename: "Image_19.jpeg")
+# artwork_4.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/04/Image_20.jpeg")), filename: "Image_20.jpeg")
 
 artwork_5 = Artwork.create!(
   title: "Memory of Topography",
@@ -62,6 +82,80 @@ artwork_5 = Artwork.create!(
 )
 
 artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_05.jpeg")), filename: "Image_05.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_06.jpeg")), filename: "Image_06.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_07.jpeg")), filename: "Image_07.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_08.jpeg")), filename: "Image_08.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_09.jpeg")), filename: "Image_09.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_10.jpeg")), filename: "Image_10.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_11.jpeg")), filename: "Image_11.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_12.jpeg")), filename: "Image_12.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_13.jpeg")), filename: "Image_13.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_14.jpeg")), filename: "Image_14.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_15.jpeg")), filename: "Image_15.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_16.jpeg")), filename: "Image_16.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_17.jpeg")), filename: "Image_17.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_18.jpeg")), filename: "Image_18.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_19.jpeg")), filename: "Image_19.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_20.jpeg")), filename: "Image_20.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_21.jpeg")), filename: "Image_21.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_22.jpeg")), filename: "Image_22.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_23.jpeg")), filename: "Image_23.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_24.jpeg")), filename: "Image_24.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_25.jpeg")), filename: "Image_25.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_26.jpeg")), filename: "Image_26.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_27.jpeg")), filename: "Image_27.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_28.jpeg")), filename: "Image_28.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_29.jpeg")), filename: "Image_29.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_30.jpeg")), filename: "Image_30.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_31.jpeg")), filename: "Image_31.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_32.jpeg")), filename: "Image_32.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_33.jpeg")), filename: "Image_33.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_34.jpeg")), filename: "Image_34.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_35.jpeg")), filename: "Image_35.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_36.jpeg")), filename: "Image_36.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_37.jpeg")), filename: "Image_37.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_38.jpeg")), filename: "Image_38.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_39.jpeg")), filename: "Image_39.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_40.jpeg")), filename: "Image_40.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_41.jpeg")), filename: "Image_41.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_42.jpeg")), filename: "Image_42.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_43.jpeg")), filename: "Image_43.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_44.jpeg")), filename: "Image_44.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_45.jpeg")), filename: "Image_45.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_46.jpeg")), filename: "Image_46.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_47.jpeg")), filename: "Image_47.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_48.jpeg")), filename: "Image_48.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_49.jpeg")), filename: "Image_49.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_50.jpeg")), filename: "Image_50.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_51.jpeg")), filename: "Image_51.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_52.jpeg")), filename: "Image_52.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_53.jpeg")), filename: "Image_53.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_54.jpeg")), filename: "Image_54.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_55.jpeg")), filename: "Image_55.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_56.jpeg")), filename: "Image_56.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_57.jpeg")), filename: "Image_57.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_58.jpeg")), filename: "Image_58.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_59.jpeg")), filename: "Image_59.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_60.jpeg")), filename: "Image_60.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_61.jpeg")), filename: "Image_61.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_62.jpeg")), filename: "Image_62.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_63.jpeg")), filename: "Image_63.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_64.jpeg")), filename: "Image_64.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_65.jpeg")), filename: "Image_65.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_66.jpeg")), filename: "Image_66.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_67.jpeg")), filename: "Image_67.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_68.jpeg")), filename: "Image_68.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_69.jpeg")), filename: "Image_69.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_70.jpeg")), filename: "Image_70.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_71.jpeg")), filename: "Image_71.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_72.jpeg")), filename: "Image_72.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_73.jpeg")), filename: "Image_73.jpeg")
+# artwork_5.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/05/Image_74.jpeg")), filename: "Image_74.jpeg")
 
 artwork_6 = Artwork.create!(
   title: "Animals of Flowers Born in the Flower Forest, Symbiotic Lives",
@@ -69,6 +163,18 @@ artwork_6 = Artwork.create!(
 )
 
 artwork_6.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/06/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_6.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/06/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_6.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/06/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_6.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/06/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_6.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/06/Image_05.jpeg")), filename: "Image_05.jpeg")
+# artwork_6.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/06/Image_06.jpeg")), filename: "Image_06.jpeg")
+# artwork_6.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/06/Image_07.jpeg")), filename: "Image_07.jpeg")
+# artwork_6.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/06/Image_08.jpeg")), filename: "Image_08.jpeg")
+# artwork_6.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/06/Image_09.jpeg")), filename: "Image_09.jpeg")
+# artwork_6.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/06/Image_10.jpeg")), filename: "Image_10.jpeg")
+# artwork_6.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/06/Image_11.jpeg")), filename: "Image_11.jpeg")
+# artwork_6.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/06/Image_12.jpeg")), filename: "Image_12.jpeg")
+# artwork_6.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/06/Image_13.jpeg")), filename: "Image_13.jpeg")
 
 artwork_7 = Artwork.create!(
   title: "Born From the Darkness a Loving, and Beautiful World",
@@ -90,6 +196,7 @@ artwork_9 = Artwork.create!(
 )
 
 artwork_9.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/09/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_9.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/09/Image_02.jpeg")), filename: "Image_02.jpeg")
 
 artwork_10 = Artwork.create!(
   title: "Flutter of Butterflies Beyond Borders, Floating Nest",
@@ -97,6 +204,12 @@ artwork_10 = Artwork.create!(
 )
 
 artwork_10.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/10/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_10.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/10/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_10.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/10/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_10.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/10/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_10.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/10/Image_05.jpeg")), filename: "Image_05.jpeg")
+# artwork_10.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/10/Image_06.jpeg")), filename: "Image_06.jpeg")
+# artwork_10.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/10/Image_07.jpeg")), filename: "Image_07.jpeg")
 
 artwork_11 = Artwork.create!(
   title: "Sharing Stone, Transcending Space",
@@ -104,6 +217,10 @@ artwork_11 = Artwork.create!(
 )
 
 artwork_11.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/11/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_11.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/11/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_11.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/11/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_11.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/11/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_11.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/11/Image_05.jpeg")), filename: "Image_05.jpeg")
 
 artwork_12 = Artwork.create!(
   title: "The Way of the Sea in the Memory of Topography - Colors of Life",
@@ -111,6 +228,18 @@ artwork_12 = Artwork.create!(
 )
 
 artwork_12.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/12/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_12.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/12/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_12.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/12/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_12.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/12/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_12.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/12/Image_05.jpeg")), filename: "Image_05.jpeg")
+# artwork_12.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/12/Image_06.jpeg")), filename: "Image_06.jpeg")
+# artwork_12.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/12/Image_07.jpeg")), filename: "Image_07.jpeg")
+# artwork_12.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/12/Image_08.jpeg")), filename: "Image_08.jpeg")
+# artwork_12.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/12/Image_09.jpeg")), filename: "Image_09.jpeg")
+# artwork_12.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/12/Image_10.jpeg")), filename: "Image_10.jpeg")
+# artwork_12.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/12/Image_11.jpeg")), filename: "Image_11.jpeg")
+# artwork_12.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/12/Image_12.jpeg")), filename: "Image_12.jpeg")
+# artwork_12.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/12/Image_13.jpeg")), filename: "Image_13.jpeg")
 
 artwork_13 = Artwork.create!(
   title: "Crows are Chased and the Chasing Crows are Destined to be Chased as well, Flying Beyond Borders",
@@ -118,6 +247,16 @@ artwork_13 = Artwork.create!(
 )
 
 artwork_13.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/13/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_13.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/13/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_13.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/13/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_13.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/13/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_13.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/13/Image_05.jpeg")), filename: "Image_05.jpeg")
+# artwork_13.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/13/Image_06.jpeg")), filename: "Image_06.jpeg")
+# artwork_13.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/13/Image_07.jpeg")), filename: "Image_07.jpeg")
+# artwork_13.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/13/Image_08.jpeg")), filename: "Image_08.jpeg")
+# artwork_13.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/13/Image_09.jpeg")), filename: "Image_09.jpeg")
+# artwork_13.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/13/Image_10.jpeg")), filename: "Image_10.jpeg")
+# artwork_13.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/13/Image_11.jpeg")), filename: "Image_11.jpeg")
 
 artwork_14 = Artwork.create!(
   title: "The Way of the Sea, Flying Beyond Borders - Colors of Life",
@@ -125,6 +264,13 @@ artwork_14 = Artwork.create!(
 )
 
 artwork_14.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/14/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_14.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/14/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_14.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/14/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_14.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/14/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_14.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/14/Image_05.jpeg")), filename: "Image_05.jpeg")
+# artwork_14.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/14/Image_06.jpeg")), filename: "Image_06.jpeg")
+# artwork_14.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/14/Image_07.jpeg")), filename: "Image_07.jpeg")
+# artwork_14.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/14/Image_08.jpeg")), filename: "Image_08.jpeg")
 
 artwork_15 = Artwork.create!(
   title: "Crows are Chased and the Chasing Crows are Destined to be Chased as well, Transcending Space",
@@ -139,6 +285,18 @@ artwork_16 = Artwork.create!(
 )
 
 artwork_16.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/16/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_16.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/16/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_16.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/16/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_16.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/16/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_16.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/16/Image_05.jpeg")), filename: "Image_05.jpeg")
+# artwork_16.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/16/Image_06.jpeg")), filename: "Image_06.jpeg")
+# artwork_16.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/16/Image_07.jpeg")), filename: "Image_07.jpeg")
+# artwork_16.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/16/Image_08.jpeg")), filename: "Image_08.jpeg")
+# artwork_16.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/16/Image_09.jpeg")), filename: "Image_09.jpeg")
+# artwork_16.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/16/Image_10.jpeg")), filename: "Image_10.jpeg")
+# artwork_16.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/16/Image_11.jpeg")), filename: "Image_11.jpeg")
+# artwork_16.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/16/Image_12.jpeg")), filename: "Image_12.jpeg")
+# artwork_16.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/16/Image_13.jpeg")), filename: "Image_13.jpeg")
 
 artwork_17 = Artwork.create!(
   title: "Flutter of Butterflies Beyond Borders in the Crystal World",
@@ -153,6 +311,7 @@ artwork_18 = Artwork.create!(
 )
 
 artwork_18.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/18/Image_01.jpeg")), filename: "Image_01.jpeg")
+# # artwork_18.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/18/Image_02.jpeg")), filename: "Image_02.jpeg")
 
 artwork_19 = Artwork.create!(
   title: "Peace can be Realized Even without Order",
@@ -167,6 +326,10 @@ artwork_20 = Artwork.create!(
 )
 
 artwork_20.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/20/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_20.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/20/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_20.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/20/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_20.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/20/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_20.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/20/Image_05.jpeg")), filename: "Image_05.jpeg")
 
 artwork_21 = Artwork.create!(
   title: "The Void",
@@ -174,6 +337,7 @@ artwork_21 = Artwork.create!(
 )
 
 artwork_21.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/21/Image_01.jpeg")), filename: "Image_01.jpeg")
+# # artwork_21.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/21/Image_02.jpeg")), filename: "Image_02.jpeg")
 
 artwork_22 = Artwork.create!(
   title: "Crows are Chased and the Chasing Crows are Destined to be Chased as well, Layered Ultrasubjective Space",
@@ -181,6 +345,7 @@ artwork_22 = Artwork.create!(
 )
 
 artwork_22.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/22/Image_01.jpeg")), filename: "Image_01.jpeg")
+# # artwork_22.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/22/Image_02.jpeg")), filename: "Image_02.jpeg")
 
 artwork_23 = Artwork.create!(
   title: "Flutter of Butterflies Beyond Borders in Layered Ultrasubjective Space",
@@ -188,6 +353,7 @@ artwork_23 = Artwork.create!(
 )
 
 artwork_23.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/23/Image_01.jpeg")), filename: "Image_01.jpeg")
+# # artwork_23.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/23/Image_02.jpeg")), filename: "Image_02.jpeg")
 
 artwork_24 = Artwork.create!(
   title: "Crows are Chased and the Chasing Crows are Destined to be Chased as well, Floating Nest",
@@ -195,6 +361,9 @@ artwork_24 = Artwork.create!(
 )
 
 artwork_24.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/24/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_24.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/24/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_24.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/24/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_24.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/24/Image_04.jpeg")), filename: "Image_04.jpeg")
 
 artwork_25 = Artwork.create!(
   title: "Animals of Flowers, Symbiotic Lives - Layered Ultrasubjective Space",
@@ -209,6 +378,12 @@ artwork_26 = Artwork.create!(
 )
 
 artwork_26.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/26/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_26.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/26/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_26.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/26/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_26.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/26/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_26.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/26/Image_05.jpeg")), filename: "Image_05.jpeg")
+# artwork_26.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/26/Image_06.jpeg")), filename: "Image_06.jpeg")
+# artwork_26.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/26/Image_07.jpeg")), filename: "Image_07.jpeg")
 
 artwork_27 = Artwork.create!(
   title: "Flowers Bombing",
@@ -223,6 +398,20 @@ artwork_28 = Artwork.create!(
 )
 
 artwork_28.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/28/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_28.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/28/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_28.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/28/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_28.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/28/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_28.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/28/Image_05.jpeg")), filename: "Image_05.jpeg")
+# artwork_28.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/28/Image_06.jpeg")), filename: "Image_06.jpeg")
+# artwork_28.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/28/Image_07.jpeg")), filename: "Image_07.jpeg")
+# artwork_28.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/28/Image_08.jpeg")), filename: "Image_08.jpeg")
+# artwork_28.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/28/Image_09.jpeg")), filename: "Image_09.jpeg")
+# artwork_28.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/28/Image_10.jpeg")), filename: "Image_10.jpeg")
+# artwork_28.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/28/Image_11.jpeg")), filename: "Image_11.jpeg")
+# artwork_28.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/28/Image_12.jpeg")), filename: "Image_12.jpeg")
+# artwork_28.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/28/Image_13.jpeg")), filename: "Image_13.jpeg")
+# artwork_28.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/28/Image_14.jpeg")), filename: "Image_14.jpeg")
+# artwork_28.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/28/Image_15.jpeg")), filename: "Image_15.jpeg")
 
 artwork_29 = Artwork.create!(
   title: "Black Waves - Continuous",
@@ -230,6 +419,12 @@ artwork_29 = Artwork.create!(
 )
 
 artwork_29.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/29/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_29.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/29/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_29.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/29/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_29.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/29/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_29.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/29/Image_05.jpeg")), filename: "Image_05.jpeg")
+# artwork_29.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/29/Image_06.jpeg")), filename: "Image_06.jpeg")
+# artwork_29.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/29/Image_07.jpeg")), filename: "Image_07.jpeg")
 
 artwork_30 = Artwork.create!(
   title: "Red People in the Blue",
@@ -237,122 +432,181 @@ artwork_30 = Artwork.create!(
 )
 
 artwork_30.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/30/Image_01.jpeg")), filename: "Image_01.jpeg")
+# # artwork_30.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/30/Image_02.jpeg")), filename: "Image_02.jpeg")
 
 artwork_31 = Artwork.create!(
   title: "Aurora Lights II",
-  description: ""
+  description: "At the center of the space a mass of light in which light color mixes is born.\n\nLight Sculpture Fog series. Reconstruction of ambiguous space with fog and light, construction of ambiguous solid objects.\n\nAmbiguous space and three-dimensional objects move, wrapping around the body of people in the space, and immersing the body."
 )
 
 artwork_31.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/31/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_31.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/31/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_31.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/31/Image_03.jpeg")), filename: "Image_03.jpeg")
 
 artwork_32 = Artwork.create!(
   title: "The Haze",
-  description: ""
+  description: "In the centre of the space due to a haze being created a three-dimensional object is born.\n\nLight Sculpture Fog series. Reconstruction of ambiguous space with smoke and light, construction of ambiguous solid objects.\n\nAmbiguous space and three-dimensional objects move, wrapping around the body of people in the space, and immersing the body."
 )
 
 artwork_32.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/32/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_32.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/32/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_32.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/32/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_32.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/32/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_32.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/32/Image_05.jpeg")), filename: "Image_05.jpeg")
 
 artwork_33 = Artwork.create!(
   title: "Grid Spaces",
-  description: ""
+  description: "Light Sculpture Line series. Reconstruction of space and three-dimensional objects with light lines. The space and three-dimensional objects move, wrapping around the body of people in the space, and immersing the body."
 )
 
 artwork_33.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/33/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_33.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/33/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_33.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/33/Image_03.jpeg")), filename: "Image_03.jpeg")
 
 artwork_34 = Artwork.create!(
   title: "Descent of the Gods",
-  description: ""
+  description: "Light Sculpture Line series. Reconstruction of space and three-dimensional objects with light lines. The space and three-dimensional objects move, wrapping around the body of people in the space, and immersing the body."
 )
 
 artwork_34.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/34/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_34.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/34/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_34.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/34/Image_03.jpeg")), filename: "Image_03.jpeg")
 
 artwork_35 = Artwork.create!(
   title: "Light Cave",
-  description: ""
+  description: "Light Sculpture Line series. Reconstruction of space and three-dimensional objects with light lines. The space and three-dimensional objects move, wrapping around the body of people in the space, and immersing the body."
 )
 
 artwork_35.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/35/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_35.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/35/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_35.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/35/Image_03.jpeg")), filename: "Image_03.jpeg")
 
 artwork_36 = Artwork.create!(
   title: "Light Shell II",
-  description: ""
+  description: "Light Sculpture Line series. Reconstruction of space and three-dimensional objects with light lines. The space and three-dimensional objects move, wrapping around the body of people in the space, and immersing the body."
 )
 
 artwork_36.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/36/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_36.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/36/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_36.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/36/Image_03.jpeg")), filename: "Image_03.jpeg")
 
 artwork_37 = Artwork.create!(
   title: "Light Vortex II",
-  description: ""
+  description: "Light Sculpture Line series. Reconstruction of space and three-dimensional objects with light lines. The space and three-dimensional objects move, wrapping around the body of people in the space, and immersing the body."
 )
 
 artwork_37.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/37/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_37.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/37/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_37.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/37/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_37.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/37/Image_04.jpeg")), filename: "Image_04.jpeg")
 
 artwork_38 = Artwork.create!(
   title: "Light Evaporating with People",
-  description: ""
+  description: "When people touch the focal point where floating lines meet, the points evaporate and disappear.\n\nLight Sculpture Line series. Reconstruction of space and three-dimensional objects with light lines. The space and three-dimensional objects move, wrapping around the body of people in the space, and immersing the body."
 )
 
 artwork_38.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/38/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_38.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/38/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_38.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/38/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_38.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/38/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_38.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/38/Image_05.jpeg")), filename: "Image_05.jpeg")
+# artwork_38.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/38/Image_06.jpeg")), filename: "Image_06.jpeg")
 
 artwork_39 = Artwork.create!(
   title: "Flutter of Butterflies Beyond Borders, Intersections Create Life - 1 Butterfly where 64 Light Rays Cross",
-  description: ""
+  description: "This artwork starts when the butterflies from Flutter of Butterflies Beyond Borders enter the Light Sculpture Space of the Flower Forest.\n\nThe group of butterflies that come into this space are those from the Flutter of Butterflies Beyond Borders (a group of butterflies born from other artworks, such as the butterflies born from people's bodies in the Butterfly House). These butterflies release art from the concept of the frame, removing boundaries from the artwork space, the butterflies seamlessly fly inside other artworks.\n\nButterflies are expressed at the convergence of light lines and fly around the space in three-dimensions. If people touch the butterflies, they disappear.\n\nThe artwork ends when the butterflies leave the space and fly again in the space outside. The artwork ends when all the butterflies leave the space and disappear."
 )
 
 artwork_39.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/39/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_39.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/39/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_39.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/39/Image_03.jpeg")), filename: "Image_03.jpeg")
 
 artwork_40 = Artwork.create!(
   title: "Crows are Chased and the Chasing Crows are Destined to be Chased as well, Intersections Create Life - 1 Crow where 16 Light Rays Cross",
-  description: ""
+  description: "This work starts when the crows of Crows are Chased and the Chasing Crows are Destined to be Chased as well enter the Light Sculpture Space that is located in the Flower Forest.\n\nCrows are drawn at the intersection of 16 rays of light and fly around the space in three-dimensions. Crows chase after each other, and the chasing crows eventually are chased themselves.\n\nThe Light Sculpture Line series uses light to construct sculptural space in three-dimensions. The space and three-dimensional light sculptures move around people immersing their bodies in the artwork."
 )
 
 artwork_40.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/40/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_40.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/40/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_40.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/40/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_40.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/40/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_40.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/40/Image_05.jpeg")), filename: "Image_05.jpeg")
+# artwork_40.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/40/Image_06.jpeg")), filename: "Image_06.jpeg")
+# artwork_40.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/40/Image_07.jpeg")), filename: "Image_07.jpeg")
 
 artwork_41 = Artwork.create!(
   title: "Barrier",
-  description: ""
+  description: "Light Sculpture Line series. Reconstruction of space and three-dimensional objects with light lines. The space and three-dimensional objects move, wrapping around the body of people in the space, and immersing the body."
 )
 
 artwork_41.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/41/Image_01.jpeg")), filename: "Image_01.jpeg")
+# # artwork_41.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/41/Image_02.jpeg")), filename: "Image_02.jpeg")
 
 artwork_42 = Artwork.create!(
   title: "Reversible Rotation - Continuous, Black in White",
-  description: ""
+  description: "The Spatial Calligraphy rotates in the artwork space, every aspect rotating in the same direction, but depending on a viewer's perception, it can appear to be rotating clockwise or counterclockwise. Within the artwork, both ends are connected creating a space that is continuous in a single direction.\n\nSpatial Calligraphy offers a contemporary interpretation of traditional Japanese sho (calligraphy) in an abstract space. The artwork reconstructs Japanese sho in three dimensional space and expresses the depth, speed and power of the brush stroke."
 )
 
 artwork_42.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/42/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_42.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/42/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_42.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/42/Image_03.jpeg")), filename: "Image_03.jpeg")
 
 artwork_43 = Artwork.create!(
   title: "Impermanent Life, at the Confluence of Spacetime New Space and Time is Born",
-  description: ""
+  description: "In the background, cherry blossoms bloom and scatter, the cycle of life and death repeats itself.\n\nFrom the countless background points, at a certain rhythm and interval, a circle is born that grows and spreads out radially. The circle born transforms only the light and darkness of the background world."
 )
 
 artwork_43.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/43/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_43.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/43/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_43.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/43/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_43.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/43/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_43.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/43/Image_05.jpeg")), filename: "Image_05.jpeg")
+# artwork_43.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/43/Image_06.jpeg")), filename: "Image_06.jpeg")
+# artwork_43.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/43/Image_07.jpeg")), filename: "Image_07.jpeg")
+# artwork_43.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/43/Image_08.jpeg")), filename: "Image_08.jpeg")
+# artwork_43.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/43/Image_09.jpeg")), filename: "Image_09.jpeg")
+# artwork_43.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/43/Image_10.jpeg")), filename: "Image_10.jpeg")
 
 artwork_44 = Artwork.create!(
   title: "Peony Peacock",
-  description: ""
+  description: "Fleeting Flower Series.\n\nEverything exists on a fragile continuity of life that knows no boundaries and has continued for a long, long time. The image of a peacock appears in peony flowers that are born and blossom. In time the flowers scatter. At the moment each flower scatters that part of the peacock scatters."
 )
 
 artwork_44.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/44/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_44.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/44/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_44.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/44/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_44.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/44/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_44.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/44/Image_05.jpeg")), filename: "Image_05.jpeg")
 
 artwork_45 = Artwork.create!(
   title: "Chrysanthemum Tiger",
-  description: ""
+  description: "Fleeting Flower Series.\n\nEverything exists on a fragile continuity of life that knows no boundaries and has continued for a long, long time. The image of a tiger appears in chrysanthemum flowers that are born and blosom. In time the flowers scatter. At the moment each flower scatters that part of the tiger scatters."
 )
 
 artwork_45.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/45/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_45.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/45/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_45.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/45/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_45.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/45/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_45.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/45/Image_05.jpeg")), filename: "Image_05.jpeg")
 
 artwork_46 = Artwork.create!(
   title: "Sunflower Phoenix",
-  description: ""
+  description: "Fleeting Flower Series.\n\nEverything exists on a fragile continuity of life that knows no boundaries and has contuined for a long, long time. The image of a phoenix appears in sunflowers that are born and blossom. In time the flowers scatter. At the moment each flower scatters that part of the phoenix scatters."
 )
 
 artwork_46.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/46/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_46.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/46/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_46.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/46/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_46.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/46/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_46.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/46/Image_05.jpeg")), filename: "Image_05.jpeg")
 
 artwork_47 = Artwork.create!(
   title: "Lotus Elephant",
-  description: ""
+  description: "Fleeting Flower Series.\n\nEverything exists on a fragile continuity of life that knows no boundaries and has continued for a long, long time. The image of an elephant appears in lotus flowers that are born and blossom. In time the flowers scatter. At the moment each flower scatters that part of the elephant scatters."
 )
 
 artwork_47.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/47/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_47.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/47/Image_02.jpeg")), filename: "Image_02.jpeg")
+# artwork_47.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/47/Image_03.jpeg")), filename: "Image_03.jpeg")
+# artwork_47.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/47/Image_04.jpeg")), filename: "Image_04.jpeg")
+# artwork_47.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/47/Image_05.jpeg")), filename: "Image_05.jpeg")
