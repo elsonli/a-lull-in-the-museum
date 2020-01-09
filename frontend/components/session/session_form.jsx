@@ -5,6 +5,8 @@ class SessionForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = this.props.userState;
+    // this.totalTimer = 0;
+    // this.demoUser = this.demoUser.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   };
 
@@ -20,11 +22,39 @@ class SessionForm extends React.Component {
     };
   };
 
+  // demoUser() {
+  //   const { username, password } = this.props.userState;
+  //   const interval = 75;
+  //   const timer = username.length * interval;
+  //   this.totalTimer = timer + (password.length * interval);
+  //   this.typeInfo("username", username, interval);
+  //   setTimeout(this.typeInfo("password", password, interval), timer);
+  // };
+
+  // typeInfo(field, value, interval) {
+  //   let i = 1;
+  //   setInterval(() => {
+  //     if (i < value.length) {
+  //       this.setState({
+  //         [field]: value.slice(0, i)
+  //       })
+  //     } else {
+  //       clearInterval();
+  //     };
+  //   }, interval);
+  // };
+
   handleSubmit(event) {
     event.preventDefault();
     const user = Object.assign({}, this.state);
     this.props.processForm(user);
   };
+
+  // handleSubmit(event) {
+  //   event.preventDefault();
+  //   const user = Object.assign({}, this.state);
+  //   setTimeout(this.props.processForm(user), this.totalTimer);
+  // };
 
   renderErrors() {
     return (
@@ -39,6 +69,11 @@ class SessionForm extends React.Component {
   };
 
   render() {
+    const demoButton = this.props.formType !== "Demo Log In" ? (
+      <Link to="/demologin">
+        <button className="session-button">Demo Log In</button>
+      </Link>
+    ) : null;
     return (
       <div className="session-form-container">
         <form className="session-form" onSubmit={ this.handleSubmit }>
@@ -64,10 +99,9 @@ class SessionForm extends React.Component {
 
           <div className="session-buttons">
             <input className="session-button" type="submit" value={ this.props.formType } />
-            <Link to="/demologin">
-              <button className="session-button">Demo Log In</button>
-            </Link>
+            { demoButton }
           </div>
+
         </form>
         { this.renderErrors() }
       </div>
