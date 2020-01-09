@@ -4,25 +4,19 @@ import { Redirect } from "react-router-dom";
 class Artwork extends React.Component {
   constructor(props) {
     super(props);
+    this.state = { id: null }
   };
 
   componentDidMount() {
-    // const paramId = this.props.match.params.id;
-    this.props.fetchArtwork(this.props.match.params.id)
-      // () => {
-        // const regex = /^[0-9]*$/g
-        // const match = regex.exec(paramId);
-        // console.log("here")
-        // if (!match || match < 1 || match > 47) return <Redirect to="/" />
-        // console.log("there")
-      // }
-    // );
+    this.props.fetchArtwork(this.props.match.params.id);
   };
-
+  
   componentDidUpdate() {
-    this.props.fetchArtwork(this.props.match.params.id)
-
-  }
+    if (this.state.id !== this.props.match.params.id) {
+      this.props.fetchArtwork(this.props.match.params.id);
+      this.setState({ id: this.props.match.params.id });
+    };
+  };
 
   render() {
     const { artwork } = this.props;
