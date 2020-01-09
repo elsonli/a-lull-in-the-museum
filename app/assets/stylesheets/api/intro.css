@@ -13,9 +13,9 @@
 .intro > h1 {
   position: absolute;
   display: inline;
-  top: 30px;
+  top: 100px;
   margin: 0px 20%;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 50px;
   letter-spacing: 0;
@@ -24,9 +24,9 @@
 
 .intro > article {
   position: absolute;
-  font-size: 14px;
+  font-size: 12px;
   margin: 0px 20%;
-  top: 100px;
-  line-height: 30px;
+  top: 225px;
+  line-height: 25px;
   white-space: pre-line;
 }
