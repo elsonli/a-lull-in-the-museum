@@ -7,6 +7,7 @@ import SignupFormContainer from "./session/signup_form_container";
 import DemoLoginFormContainer from "./session/demo_login_form_container";
 import ArtworkIndexContainer from "./artwork/artwork_index_container";
 import ArtworkContainer from "./artwork/artwork_container";
+import IntroContainer from "./intro/intro_container";
 
 const App = () => {
   return (
@@ -23,6 +24,8 @@ const App = () => {
           }} />
         <Route path="/" component={ GreetingContainer } />
       </header>
+
+      <Route exact path="/" component={ IntroContainer } />
 
       <main>
         <Switch>

@@ -56,6 +56,10 @@
   z-index: 1;
   bottom: 16px;
   left: 16px;
+  width: 90%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .artworks-title:hover {

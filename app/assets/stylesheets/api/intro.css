@@ -1,0 +1,32 @@
+.intro {
+  position: relative;
+  height: 700px;
+  width: 100%;
+  color: #fff;
+  background-image: linear-gradient(to bottom, transparent -100%, black), url("http://borderless.teamlab.art/images/pc-l/14781");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro > h1 {
+  position: absolute;
+  display: inline;
+  top: 30px;
+  margin: 0px 20%;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0;
+  background: transparent;
+}
+
+.intro > article {
+  position: absolute;
+  font-size: 14px;
+  margin: 0px 20%;
+  top: 100px;
+  line-height: 30px;
+  white-space: pre-line;
+}
