@@ -4,8 +4,6 @@ import Artwork from "./artwork";
 import * as ArtworkActions from "../../actions/artwork_actions";
 
 const mapStateToProps = (state, ownProps) => {
-  // console.log(state);
-  // console.log(ownProps);
   return {
     artwork: state.entities.artworks[ownProps.match.params.id]
   };

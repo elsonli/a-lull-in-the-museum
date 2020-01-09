@@ -4,7 +4,7 @@ class Artwork < ApplicationRecord
 
   # has_many :likes
   # has_many :comments
-  # has_one_attached :video, service: :s3
+  # has_one_attached :video
   has_many_attached :photos # Change to this when ready to use AWS
 
   

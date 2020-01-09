@@ -18,6 +18,6 @@ class Api::ArtworksController < ApplicationController
 
   def artwork_params
     params.require(:artwork).permit(:title, :description, photos: [])
-    # params.require(:artwork).permit(:title, :description, :video, :photos: [])
+    # params.require(:artwork).permit(:title, :description, :video, photos: [])
   end
 end

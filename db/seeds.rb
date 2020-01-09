@@ -22,6 +22,18 @@ artwork_1 = Artwork.create!(
 )
 
 artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_01.jpeg")), filename: "Image_01.jpeg")
+artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_02.jpeg")), filename: "Image_02.jpeg")
+artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_03.jpeg")), filename: "Image_03.jpeg")
+artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_04.jpeg")), filename: "Image_04.jpeg")
+artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_05.jpeg")), filename: "Image_05.jpeg")
+artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_06.jpeg")), filename: "Image_06.jpeg")
+artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_07.jpeg")), filename: "Image_07.jpeg")
+artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_08.jpeg")), filename: "Image_08.jpeg")
+artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_09.jpeg")), filename: "Image_09.jpeg")
+artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_10.jpeg")), filename: "Image_10.jpeg")
+artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_11.jpeg")), filename: "Image_11.jpeg")
+artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_12.jpeg")), filename: "Image_12.jpeg")
+
 
 artwork_2 = Artwork.create!(
   title: "Walk, Walk, Walk: Free Infinity",
