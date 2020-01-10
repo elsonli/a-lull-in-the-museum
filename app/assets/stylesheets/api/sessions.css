@@ -81,6 +81,16 @@ header {
   transform: translate(-50%, -50%);
 }
 
+.artwork-modal-background {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: rgba(1, 1, 1, 0.95);
+  z-index: 10;
+}
+
 .artwork-modal-child {
   position: absolute;
   height: 90%;
