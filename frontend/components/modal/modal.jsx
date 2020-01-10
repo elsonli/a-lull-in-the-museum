@@ -20,8 +20,8 @@ const Modal = ({ modal, closeModal }) => {
       return null;
   };
   return (
-    <div className="modal-background" onClick={ closeModal }>
-      <div className="modal-child" onClick={ event => event.stopPropagation() }>
+    <div className="session-modal-background" onClick={ closeModal }>
+      <div className="session-modal-child" onClick={ event => event.stopPropagation() }>
         { modalComponent }
       </div>
     </div>

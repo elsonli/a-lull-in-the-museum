@@ -62,7 +62,7 @@ header {
 }
 
 /* Modal */
-.modal-background {
+.session-modal-background {
   position: fixed;
   top: 0px;
   bottom: 0px;
@@ -72,7 +72,7 @@ header {
   z-index: 10;
 }
 
-.modal-child {
+.session-modal-child {
   position: absolute;
   height: auto;
   width: 700px;
