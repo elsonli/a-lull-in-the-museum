@@ -2,7 +2,7 @@ import * as ModalActions from "../actions/modal_actions";
 
 const _defaultModal = {
   type: null,
-  photoId: null
+  url: null
 };
 
 const modalReducer = (oldState = _defaultModal, action) => {

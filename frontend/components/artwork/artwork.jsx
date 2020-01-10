@@ -56,7 +56,7 @@ class Artwork extends React.Component {
             {
               artwork.photoUrls.map((url, idx) => {
                 return (
-                  <li key={ idx } onClick={ () => openModal({ type: "zoomImage", photoId: url }) }>
+                  <li key={ idx } onClick={ () => openModal({ type: "zoomImage", url: url }) }>
                     <img className="artwork-img" src={ url } />
                   </li>
                 );
