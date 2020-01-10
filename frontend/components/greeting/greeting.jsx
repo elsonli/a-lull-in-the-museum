@@ -5,9 +5,7 @@ const Greeting = props => {
 
   const sessionLinks = () => {
     const demoButton = props.location.pathname === "/" ? (
-      <Link to="/demologin">
-        <button className="session-button">DEMO LOG IN</button>
-      </Link>
+      <button className="session-button" onClick={ () => props.openModal("demologin") }>DEMO LOG IN</button>
     ) : null;
 
     return (

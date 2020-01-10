@@ -14,7 +14,8 @@ header {
   z-index: 3;
   position: absolute;
   width: 100%;
-  top: 0;
+  min-width: 600px;
+  top: 0px;
 }
 
 .header-title {
@@ -63,10 +64,10 @@ header {
 /* Modal */
 .modal-background {
   position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   background: rgba(1, 1, 1, 0.7);
   z-index: 10;
 }
@@ -80,6 +81,14 @@ header {
   transform: translate(-50%, -50%);
 }
 
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 /* Login and Signup Form */
 .session-form-container {
   height: auto;
@@ -91,6 +100,7 @@ header {
 }
 
 .session-form {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -127,6 +137,7 @@ header {
   margin-top: 15%;
   outline: 0;
   border: 0;
+  line-height: 1.5;
   color: #fff;
   font-size: 18px;
   background-color: transparent;

@@ -31,7 +31,7 @@ const App = () => {
 
       <main>
         <Switch>
-          <AuthRoute exact path="/demologin" component={ DemoLoginFormContainer } />
+          {/* <AuthRoute exact path="/demologin" component={ DemoLoginFormContainer } /> */}
           {/* <AuthRoute exact path="/login" component={ LoginFormContainer } /> */}
           {/* <AuthRoute exact path="/signup" component={ SignupFormContainer } /> */}
           <Route path="/artworks/:id" component={ ArtworkContainer } />

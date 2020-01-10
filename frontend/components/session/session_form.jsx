@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import * as ModalActions from "../../actions/modal_actions";
 
 class SessionForm extends React.Component {  
   constructor(props) {
@@ -35,14 +35,13 @@ class SessionForm extends React.Component {
   };
 
   render() {
-    const demoButton = this.props.formType !== "Demo Log In" ? (
-      <Link to="/demologin">
-        <button className="session-button">DEMO LOG IN</button>
-      </Link>
+    const demoButton = this.props.formType !== "DEMO LOG IN" ? (
+      <button className="session-button" onClick={ () => dispatch(ModalActions.openModal("demologin")) }>DEMO LOG IN</button>
     ) : null;
     return (
       <div className="session-form-container">
         <form className="session-form" onSubmit={ this.handleSubmit }>
+          <div onClick={ this.props.closeModal } className="close-modal">X</div>
           <h1>{ this.props.formType }</h1>
           <br />
           <p>Become a wanderer.<strong>{ this.props.otherForm }</strong></p>
@@ -54,18 +53,19 @@ class SessionForm extends React.Component {
               id="session-form-username"
               value={ this.state.username }
               onChange={ this.update("username") }
-              disabled={ this.props.formType === "Demo Log In" } />
+              disabled={ this.props.formType === "DEMO LOG IN" } />
             <input
               placeholder="Password"
               type="password"
               id="session-form-input"
               value={ this.state.password }
               onChange={ this.update("password") }
-              disabled={this.props.formType === "Demo Log In"} />
+              disabled={this.props.formType === "DEMO LOG IN"} />
           </div>
 
           <div className="session-buttons">
             <input className="session-button" type="submit" value={ this.props.formType } />
+
             { demoButton }
           </div>
 
