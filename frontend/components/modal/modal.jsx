@@ -1,4 +1,5 @@
 import React from "react";
+import ArtworkModalContainer from "../modal/artwork_modal_container";
 import LoginFormContainer from "../session/login_form_container";
 import SignupFormContainer from "../session/signup_form_container";
 import DemoLoginFormContainer from "../session/demo_login_form_container";

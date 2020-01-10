@@ -19,7 +19,7 @@ class Artwork extends React.Component {
   };
 
   render() {
-    const { artwork } = this.props;
+    const { artwork, openModal } = this.props;
 
     const paramId = this.props.match.params.id;
     const regexMatchId = /^[0-9]*$/g
