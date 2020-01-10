@@ -35,6 +35,7 @@ artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/0
 artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_10.jpeg")), filename: "Image_10.jpeg")
 artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_11.jpeg")), filename: "Image_11.jpeg")
 artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_12.jpeg")), filename: "Image_12.jpeg")
+artwork_1.videos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Video_01.mp4")), filename: "Video_01.mp4")
 
 artwork_2 = Artwork.create!(
   title: "Walk, Walk, Walk: Free Infinity",
