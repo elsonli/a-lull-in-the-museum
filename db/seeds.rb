@@ -52,7 +52,6 @@ artwork_3 = Artwork.create!(
 artwork_3.photos.attach(io: open("https://res.cloudinary.com/alullinthemuseum/image/upload/v1578616570/%5B03%5D%20The%20Way%20of%20the%20Sea%2C%20Floating%20Nest/Image_01_hchttj.jpg"), filename: "Image_01_hchttj.jpg")
 artwork_3.photos.attach(io: open("https://res.cloudinary.com/alullinthemuseum/image/upload/v1578616570/%5B03%5D%20The%20Way%20of%20the%20Sea%2C%20Floating%20Nest/Image_02_xl3xhj.jpg"), filename: "Image_02_xl3xhj.jpg")
 artwork_3.photos.attach(io: open("https://res.cloudinary.com/alullinthemuseum/image/upload/v1578616570/%5B03%5D%20The%20Way%20of%20the%20Sea%2C%20Floating%20Nest/Image_03_av8ies.jpg"), filename: "Image_03_av8ies.jpg")
-artwork_3.save!
 
 artwork_4 = Artwork.create!(
   title: "Wander through the Crystal World",
