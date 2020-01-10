@@ -83,3 +83,9 @@
   filter: invert(1);
   cursor: pointer;
 }
+
+.nav-arrows strong {
+  font-size: 12px;
+  vertical-align: center;
+  padding-right: 10px;
+}

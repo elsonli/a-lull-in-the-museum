@@ -33,7 +33,7 @@ class Artwork extends React.Component {
             <Link to={ `/artworks/${ parseInt(this.props.match.params.id) - 1 }` }>
               <img src="https://icons-for-free.com/iconfiles/png/512/arrow+left+chevron+chevronleft+left+left+icon+icon-1320185731545502691.png"/>
             </Link>
-            <h1>Artwork&nbsp;{ this.props.match.params.id }&nbsp;of&nbsp;47</h1>
+            <h1><strong>WORKS</strong>&nbsp;{ this.props.match.params.id }&nbsp;of&nbsp;47</h1>
             <Link to={ `/artworks/${ parseInt(this.props.match.params.id) + 1 }` }>
               <img src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
             </Link>

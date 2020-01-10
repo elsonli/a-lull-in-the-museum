@@ -6,6 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+require "open-uri"
+
 User.destroy_all
 Artwork.destroy_all
 
@@ -47,6 +49,7 @@ artwork_3 = Artwork.create!(
 )
 
 artwork_3.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/03/Image_01.jpeg")), filename: "Image_01.jpeg")
+artwork_3.photos.attach(io: open("https://res.cloudinary.com/alullinthemuseum/image/upload/v1578616570/%5B03%5D%20The%20Way%20of%20the%20Sea%2C%20Floating%20Nest/Image_02_xl3xhj.jpg"), filename: "Image_02_xl3xhj.jpg")
 # artwork_3.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/03/Image_02.jpeg")), filename: "Image_02.jpeg")
 # artwork_3.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/03/Image_03.jpeg")), filename: "Image_03.jpeg")
 
