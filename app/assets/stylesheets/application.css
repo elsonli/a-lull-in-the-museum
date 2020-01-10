@@ -19,3 +19,7 @@
  
  /* require_tree .
  require_self */
+
+*:focus {
+  outline: none;
+}

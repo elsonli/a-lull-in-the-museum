@@ -8,10 +8,12 @@ import DemoLoginFormContainer from "./session/demo_login_form_container";
 import ArtworkIndexContainer from "./artwork/artwork_index_container";
 import ArtworkContainer from "./artwork/artwork_container";
 import IntroContainer from "./intro/intro_container";
+import ModalContainer from "./modal/modal_container";
 
 const App = () => {
   return (
     <div>
+      <ModalContainer />
       <header className="header">
         <Route
           path="/"
@@ -30,8 +32,8 @@ const App = () => {
       <main>
         <Switch>
           <AuthRoute exact path="/demologin" component={ DemoLoginFormContainer } />
-          <AuthRoute exact path="/login" component={ LoginFormContainer } />
-          <AuthRoute exact path="/signup" component={ SignupFormContainer } />
+          {/* <AuthRoute exact path="/login" component={ LoginFormContainer } /> */}
+          {/* <AuthRoute exact path="/signup" component={ SignupFormContainer } /> */}
           <Route path="/artworks/:id" component={ ArtworkContainer } />
           <Route exact path="/" component={ ArtworkIndexContainer } />
           <Route path="*" render={ () => <Redirect to="/" /> } />

@@ -1,6 +1,7 @@
+import Greeting from "./greeting";
 import { connect } from "react-redux";
 import { withRouter } from 'react-router'
-import Greeting from "./greeting";
+import * as ModalActions from "../../actions/modal_actions";
 import * as SessionActions from "../../actions/session_actions";
 
 const mapStateToProps = state => {
@@ -11,7 +12,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    userLogout: () => dispatch(SessionActions.userLogout())
+    userLogout: () => dispatch(SessionActions.userLogout()),
+    openModal: modal => dispatch(ModalActions.openModal(modal))
   };
 };
 

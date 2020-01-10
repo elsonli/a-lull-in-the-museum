@@ -40,12 +40,14 @@ class Artwork extends React.Component {
           </div>
           <h1 className="artwork-header">{ artwork.title }</h1>
           <ul className="artwork-videos">
+            { console.log(url_for(artwork.photos)) }
             {
               artwork.videoUrls.map((url, idx) => {
                 return (
                   <li key={ idx }>
                     <video width="768" height="576" controls>
                       <source src={ url } type="video/mp4"></source>
+                      { console.log() }
                     </video>
                   </li>
                 )

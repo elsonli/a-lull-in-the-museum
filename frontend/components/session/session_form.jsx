@@ -5,13 +5,7 @@ class SessionForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = this.props.userState;
-    // this.totalTimer = 0;
-    // this.demoUser = this.demoUser.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-  };
-
-  componentDidMount() {
-    if (this.props.formType === "Demo Log In") { this.props.processForm(); };
   };
 
   update(field) {
@@ -22,39 +16,11 @@ class SessionForm extends React.Component {
     };
   };
 
-  // demoUser() {
-  //   const { username, password } = this.props.userState;
-  //   const interval = 75;
-  //   const timer = username.length * interval;
-  //   this.totalTimer = timer + (password.length * interval);
-  //   this.typeInfo("username", username, interval);
-  //   setTimeout(this.typeInfo("password", password, interval), timer);
-  // };
-
-  // typeInfo(field, value, interval) {
-  //   let i = 1;
-  //   setInterval(() => {
-  //     if (i < value.length) {
-  //       this.setState({
-  //         [field]: value.slice(0, i)
-  //       })
-  //     } else {
-  //       clearInterval();
-  //     };
-  //   }, interval);
-  // };
-
   handleSubmit(event) {
     event.preventDefault();
     const user = Object.assign({}, this.state);
-    this.props.processForm(user);
+    this.props.processForm(user).then(this.props.closeModal);
   };
-
-  // handleSubmit(event) {
-  //   event.preventDefault();
-  //   const user = Object.assign({}, this.state);
-  //   setTimeout(this.props.processForm(user), this.totalTimer);
-  // };
 
   renderErrors() {
     return (
@@ -71,25 +37,26 @@ class SessionForm extends React.Component {
   render() {
     const demoButton = this.props.formType !== "Demo Log In" ? (
       <Link to="/demologin">
-        <button className="session-button">Demo Log In</button>
+        <button className="session-button">DEMO LOG IN</button>
       </Link>
     ) : null;
     return (
       <div className="session-form-container">
         <form className="session-form" onSubmit={ this.handleSubmit }>
-          <h1 className="session-form-header">{ this.props.formType }</h1>
-          <div className="session-form-field">
-            <label htmlFor="session-form-label">Username</label>
+          <h1>{ this.props.formType }</h1>
+          <br />
+          <p>Become a wanderer.<strong>{ this.props.otherForm }</strong></p>
+          
+          <div className="session-form-fields">
             <input
+              placeholder="Username"
               type="text"
               id="session-form-username"
               value={ this.state.username }
               onChange={ this.update("username") }
               disabled={ this.props.formType === "Demo Log In" } />
-          </div>
-          <div className="session-form-field">
-            <label htmlFor="session-form-label">Password</label>
             <input
+              placeholder="Password"
               type="password"
               id="session-form-input"
               value={ this.state.password }

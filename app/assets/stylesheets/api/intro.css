@@ -3,7 +3,7 @@
   height: 700px;
   width: 100%;
   color: #fff;
-  background-image: linear-gradient(to bottom, transparent -100%, black), url("http://borderless.teamlab.art/images/pc-l/14781");
+  background-image: linear-gradient(to bottom, transparent -100%, black), url("https://borderless.teamlab.art/images/pc-l/14781");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -13,7 +13,7 @@
 .intro > h1 {
   position: absolute;
   display: inline;
-  top: 100px;
+  top: 140px;
   margin: 0px 20%;
   font-size: 40px;
   font-weight: 700;
@@ -26,7 +26,7 @@
   position: absolute;
   font-size: 12px;
   margin: 0px 20%;
-  top: 225px;
+  top: 265px;
   line-height: 25px;
   white-space: pre-line;
 }
