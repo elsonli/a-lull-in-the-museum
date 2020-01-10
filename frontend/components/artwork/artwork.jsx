@@ -41,10 +41,10 @@ class Artwork extends React.Component {
           <h1 className="artwork-header">{ artwork.title }</h1>
           <ul className="artwork-videos">
             {
-              artwork.vids.map((url, idx) => {
+              artwork.videoUrls.map((url, idx) => {
                 return (
                   <li key={ idx }>
-                    <video width="1280" height="720" controls>
+                    <video width="768" height="576" controls>
                       <source src={ url } type="video/mp4"></source>
                     </video>
                   </li>
@@ -54,7 +54,7 @@ class Artwork extends React.Component {
           </ul>
           <ul className="artwork-photos">
             {
-              artwork.urls.map((url, idx) => {
+              artwork.photoUrls.map((url, idx) => {
                 return (
                   <li key={ idx }>
                     <img className="artwork-img" src={ url } />
