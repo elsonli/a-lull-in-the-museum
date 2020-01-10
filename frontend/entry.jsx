@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       session: { currentUserId: window.currentUser.id }
     };
     store = configureStore(preloadedState);
+    delete window.currentUser;
   } else {
     store = configureStore();
   }
