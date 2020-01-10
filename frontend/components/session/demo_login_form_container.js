@@ -12,7 +12,8 @@ const mapStateToProps = state => {
       password: "DemoLogin"
     },
     errors: state.errors.session,
-    formType: "DEMO LOG IN"
+    formType: "DEMO LOG IN",
+    formText: null
   };
 };
 

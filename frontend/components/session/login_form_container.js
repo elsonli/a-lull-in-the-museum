@@ -13,6 +13,7 @@ const mapStateToProps = state => {
     },
     errors: state.errors.session,
     formType: "LOG IN",
+    formText: "Become a wanderer."
   };
 };
 

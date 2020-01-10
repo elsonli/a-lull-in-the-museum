@@ -44,7 +44,7 @@ class SessionForm extends React.Component {
           <div onClick={ this.props.closeModal } className="close-modal">X</div>
           <h1>{ this.props.formType }</h1>
           <br />
-          <p>Become a wanderer.<strong>{ this.props.otherForm }</strong></p>
+          <p>{ this.props.formText }<strong>{ this.props.otherForm }</strong></p>
           
           <div className="session-form-fields">
             <input
