@@ -36,7 +36,7 @@ class SessionForm extends React.Component {
 
   render() {
     const demoButton = this.props.formType !== "DEMO LOG IN" ? (
-      <button type="button" className="session-button" onClick={ () => dispatch(ModalActions.openModal("demologin")) }>DEMO LOG IN</button>
+      <button type="button" className="session-button" onClick={ () => dispatch(ModalActions.openModal({ type: "demologin" })) }>DEMO LOG IN</button>
     ) : null;
     return (
       <div className="session-form-container">

@@ -1,11 +1,16 @@
 import * as ModalActions from "../actions/modal_actions";
 
-const modalReducer = (oldState = null, action) => {
+const _defaultModal = {
+  type: null,
+  photoId: null
+};
+
+const modalReducer = (oldState = _defaultModal, action) => {
   switch (action.type) {
     case ModalActions.OPEN_MODAL:
       return action.modal;
     case ModalActions.CLOSE_MODAL:
-      return null;
+      return _defaultModal;
     default:
       return oldState;
   };

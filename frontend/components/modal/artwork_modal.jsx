@@ -11,10 +11,11 @@ class ArtworkModal extends React.Component {
   };
 
   render() {
+    console.log(this.props.modal.photoId);
     return (
       <div>
         <div onClick={ this.props.closeModal } className="close-modal">X</div>
-        <img src={ this.props.artwork.photos[this.props.modal.photoId] } />
+        <img src={ this.props.modal.photoId } />
       </div>
     );
   };

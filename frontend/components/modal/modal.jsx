@@ -7,7 +7,7 @@ import DemoLoginFormContainer from "../session/demo_login_form_container";
 const Modal = ({ modal, closeModal }) => {
   if (!modal) return null;
   let modalComponent;
-  switch (modal) {
+  switch (modal.type) {
     case "login":
       modalComponent = <LoginFormContainer />;
       break;
@@ -16,6 +16,9 @@ const Modal = ({ modal, closeModal }) => {
       break;
     case "demologin":
       modalComponent = <DemoLoginFormContainer />;
+      break;
+    case "zoomImage":
+      modalComponent = <ArtworkModalContainer />;
       break;
     default:
       return null;

@@ -4,13 +4,13 @@ const Greeting = props => {
 
   const sessionLinks = () => {
     const demoButton = props.location.pathname === "/" ? (
-      <button className="session-button" onClick={ () => props.openModal("demologin") }>DEMO LOG IN</button>
+      <button className="session-button" onClick={ () => props.openModal({ type: "demologin" }) }>DEMO LOG IN</button>
     ) : null;
 
     return (
       <nav className="login-signup">
-        <button className="session-button" onClick={ () => props.openModal("login") }>LOG IN</button>
-        <button className="session-button" onClick={ () => props.openModal("signup") }>SIGN UP</button>
+        <button className="session-button" onClick={ () => props.openModal({ type: "login" }) }>LOG IN</button>
+        <button className="session-button" onClick={ () => props.openModal({ type: "signup" }) }>SIGN UP</button>
         { demoButton }
       </nav>
     );

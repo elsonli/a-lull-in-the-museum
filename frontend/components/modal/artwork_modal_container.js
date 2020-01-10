@@ -4,9 +4,10 @@ import { withRouter } from "react-router-dom";
 import * as ModalActions from "../../actions/modal_actions";
 
 const mapStateToProps = (state, ownProps) => {
+  // debugger
   return {
     modal: state.ui.modal,
-    artwork: state.entities.artworks[ownProps.match.params.id]
+    // artwork: state.entities.artworks[ownProps.match.params.id]
   };
 };
 
