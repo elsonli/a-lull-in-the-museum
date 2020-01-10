@@ -10,7 +10,7 @@ const ArtworkIndexItem = ({ artwork }) => {
             <h6 className="artworks-title">{ artwork.title }</h6>
           </Link>
           <Link className="artworks-link" to={ `/artworks/${ artwork.id }` } target="_blank">
-            <img className="artworks-img" src={ artwork.urls[0] } />
+            <img className="artworks-img" src={ artwork.photoUrls[0] } />
           </Link>
           {/* <img className="play" src="https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png" /> */}
         </li>
