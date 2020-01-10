@@ -44,9 +44,8 @@ class Artwork extends React.Component {
               artwork.videoUrls.map((url, idx) => {
                 return (
                   <li key={ idx }>
-                    <video width="768" height="576" controls>
+                    <video width="896" height="504" controls>
                       <source src={ url } type="video/mp4"></source>
-                      { console.log() }
                     </video>
                   </li>
                 )
