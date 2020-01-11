@@ -12,23 +12,27 @@ class Artwork extends React.Component {
   };
   
   componentDidUpdate() {
-    if (this.state.id !== this.props.match.params.id) {
-      this.props.fetchArtwork(this.props.match.params.id);
-      this.setState({ id: this.props.match.params.id });
+    const artworkId = this.props.match.params.id;
+    if (this.state.id !== artworkId) {
+      this.props.fetchArtwork(artworkId);
+      this.setState({ id: artworkId });
     };
   };
 
   render() {
     const { artwork, openModal } = this.props;
 
-    const paramId = this.props.match.params.id;
+    // Ensure that the artworkId is valid, otherwise Redirect to home page
+    const artworkId = this.props.match.params.id;
     const regexMatchId = /^[0-9]*$/g
-    const matches = regexMatchId.exec(paramId);
+    const matches = regexMatchId.exec(artworkId);
     if (!matches || matches < 1 || matches > 47) return <Redirect to="/" />
 
     return (
       artwork ? (
         <div className="artwork-container">
+
+          {/* Arrows to navigate to previous or next artwork's show page */}
           <div className="nav-arrows">
             <Link to={ `/artworks/${ parseInt(this.props.match.params.id) - 1 }` }>
               <img src="https://icons-for-free.com/iconfiles/png/512/arrow+left+chevron+chevronleft+left+left+icon+icon-1320185731545502691.png"/>
@@ -38,7 +42,11 @@ class Artwork extends React.Component {
               <img src="https://icons-for-free.com/iconfiles/png/512/arrow+right+chevron+chevronright+right+right+icon+icon-1320185732203239715.png"/>
             </Link>
           </div>
+
+          {/* Large artwork header at the top of the artwork's show page */}
           <h1 className="artwork-header">{ artwork.title }</h1>
+
+          {/* Section of videos attached to the current artwork */}
           <ul className="artwork-videos">
             {
               artwork.videoUrls.map((url, idx) => {
@@ -52,6 +60,8 @@ class Artwork extends React.Component {
               })
             }
           </ul>
+
+          {/* Section of photos attached to the current artwork */}
           <ul className="artwork-photos">
             {
               artwork.photoUrls.map((url, idx) => {
@@ -63,10 +73,13 @@ class Artwork extends React.Component {
               })
             }
           </ul>
+
+          {/* Section of the artwork's title and description */}
           <section className="artwork-section">
             <h1>{ artwork.title }</h1>
             <p>{ artwork.description }</p>
           </section>
+          
         </div>
       ) : null
     );

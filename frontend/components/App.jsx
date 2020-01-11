@@ -10,7 +10,11 @@ import ModalContainer from "./modal/modal_container";
 const App = () => {
   return (
     <div>
+
+      {/* Contains the logic for the Session and Artwork Zoom modals */}
       <ModalContainer />
+
+      {/* Contains the Nav Bar for the home page of the site */}
       <header className="header">
         <Route
           path="/"
@@ -24,8 +28,10 @@ const App = () => {
         <Route path="/" component={ GreetingContainer } />
       </header>
 
+      {/* Contains the Splash right under the Nav Bar */}
       <Route exact path="/" component={ IntroContainer } />
 
+      {/* Contains logic for what will be rendered in the body */}
       <main>
         <Switch>
           <Route path="/artworks/:id" component={ ArtworkContainer } />

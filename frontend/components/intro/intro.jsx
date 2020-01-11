@@ -1,10 +1,10 @@
 import React from "react";
 
-const Intro = props => {
+const Intro = ({ header, description }) => {
   return (
     <div className="intro">
-      <h1>{ props.header }</h1>
-      <article>{ props.description }</article>     
+      <h1>{ header }</h1>
+      <article>{ description }</article>     
     </div>
   );
 };
