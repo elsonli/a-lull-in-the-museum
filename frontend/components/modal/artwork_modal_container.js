@@ -1,7 +1,6 @@
 import { connect } from "react-redux";
 import ArtworkModal from "./artwork_modal";
 import { withRouter } from "react-router-dom";
-import * as ModalActions from "../../actions/modal_actions";
 
 const mapStateToProps = state => {
   return {
@@ -9,10 +8,4 @@ const mapStateToProps = state => {
   };
 };
 
-const mapDispatchToProps = dispatch => {
-  return {
-    closeModal: () => dispatch(ModalActions.closeModal())
-  };
-};
-
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ArtworkModal));
+export default withRouter(connect(mapStateToProps)(ArtworkModal));

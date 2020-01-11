@@ -1,5 +1,6 @@
 import React from "react";
 import ArtworkIndexItem from "./artwork_index_item";
+import ModalContainer from "../modal/modal_container";
 
 class ArtworkIndex extends React.Component {
   constructor(props) {
@@ -17,10 +18,14 @@ class ArtworkIndex extends React.Component {
 
         // ArtworkIndexItems renders previews of artworks
         <ul className="artworks-div">
+          <ModalContainer />
           {
             this.props.artworks.map(artwork => {
               return (
-                <ArtworkIndexItem key={ artwork.id } artwork={ artwork } />
+                <ArtworkIndexItem
+                  key={ artwork.id }
+                  artwork={ artwork }
+                  openModal={ this.props.openModal }/>
               )
             })
           }
