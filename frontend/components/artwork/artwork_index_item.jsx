@@ -29,15 +29,17 @@ const ArtworkIndexItem = props => {
   const likeObj = selectedLikes.filter(like => like.artworkId === artwork.id)[0];
 
   // Shows a clickable icon based on whether the artwork has been liked already
-  const liked = selectedLikesSet.has(artwork.id) ? (
-    <div className="fa">
-      <i className="fas fa-star" onClick={ () => destroyLike(likeObj.id) }></i>
-    </div>
-  ) : (
-    <div className="fa">
-      <i className="far fa-star" onClick={ () => createLike(newLike) }></i>
-    </div>
-  );
+  const liked = currentUserId ? (
+    selectedLikesSet.has(artwork.id) ? (
+      <div className="fa">
+        <i className="fas fa-star" onClick={ () => destroyLike(likeObj.id) }></i>
+      </div>
+    ) : (
+      <div className="fa">
+        <i className="far fa-star" onClick={ () => createLike(newLike) }></i>
+      </div>
+    )
+  ) : null;
 
   return (
     // Previews contain a title and its first image that opens a new tab on click

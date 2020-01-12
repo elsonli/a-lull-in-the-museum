@@ -15,10 +15,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   // console.log(ownProps);
   return {
     fetchLikes: () => dispatch(LikeActions.fetchLikes(ownProps.match.params.id)),
-    // createLike: userId => dispatch(LikeActions.createLike({
-    //   user_id: userId,
-    //   artwork_id: ownProps.match.params.id
-    // })),
+    createLike: like => dispatch(LikeActions.createLike(like)),
     // destroyLike: userId => dispatch(LikeActions.destroyLike({
     //   user_id: userId,
     //   artwork_id: ownProps.match.params.id

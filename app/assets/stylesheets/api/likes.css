@@ -1,14 +1,14 @@
-.fas {
+.artworks-div .fas {
   position: absolute;
   height: 20px;
   width: 20px;
   top: 5px;
   right: 5px;
   z-index: 3;
-  color: yellow;
+  color: #ffd700;
 }
 
-.far {
+.artworks-div .far {
   position: absolute;
   height: 20px;
   width: 20px;
@@ -18,17 +18,58 @@
   color: white;
 }
 
-.far:hover {
-  color: #add8e6;
+.artworks-div .far:hover {
+  color: #ffd700;
   transition: color 0.1s ease;
   cursor: pointer;
 }
 
-.fas:hover {
+.artworks-div .fas:hover {
   cursor: pointer;
 }
 
-.fa-star {
+.artwork-div .fa-star {
   position: absolute;
   font-size: 20px;
+}
+
+.artworks-like {
+  display: flex;
+  width: 150px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.artworks-like strong {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.artworks-like .fa {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artworks-like .fa:hover i,
+.artworks-like .fa:hover strong {
+  cursor: pointer;
+  color: #ffd700;
+  transition: color 0.1s ease;
+}
+
+.artworks-like .far {
+  color: #fff;
+}
+
+.artworks-like .fas {
+  color: #ffd700;
 }

@@ -1,6 +1,7 @@
 import React from "react";
+import Like from "../like/like";
 import { Redirect, Link } from "react-router-dom";
-// import LikeContainer from "../like/like_container";
+import LikeContainer from "../like/like_container";
 
 class Artwork extends React.Component {
   constructor(props) {
@@ -9,6 +10,7 @@ class Artwork extends React.Component {
   };
 
   componentDidMount() {
+    // this.props.fetchLikes();
     this.props.fetchArtwork(this.props.match.params.id);
   };
   
@@ -21,14 +23,14 @@ class Artwork extends React.Component {
   };
 
   render() {
-    const { artwork, openModal } = this.props;
+    const { artwork, openModal, currentUserId, likes, fetchLikes } = this.props;
 
     // Ensure that the artworkId is valid, otherwise Redirect to home page
     const artworkId = this.props.match.params.id;
     const regexMatchId = /^[0-9]*$/g
     const matches = regexMatchId.exec(artworkId);
     if (!matches || matches < 1 || matches > 47) return <Redirect to="/" />
-
+    
     return (
       artwork ? (
         <div className="artwork-container">
@@ -46,6 +48,13 @@ class Artwork extends React.Component {
 
           {/* Large artwork header at the top of the artwork's show page */}
           <h1 className="artwork-header">{ artwork.title }</h1>
+
+          {/* Section for liking/unliking the artwork */}
+          <Like
+            likes={ likes }
+            artwork={ artwork }
+            fetchLikes={ fetchLikes }
+            currentUserId={ currentUserId } />
 
           {/* Section of videos attached to the current artwork */}
           <ul className="artwork-videos">
@@ -74,9 +83,6 @@ class Artwork extends React.Component {
               })
             }
           </ul>
-
-          {/* Section for liking/unliking the artwork */}
-          {/* <LikeContainer /> */}
 
           {/* Section of the artwork's title and description */}
           <section className="artwork-section">
