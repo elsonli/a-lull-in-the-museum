@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Root from "./components/root";
 import configureStore from "./store/store";
-import * as LikeActions from "./actions/like_actions";
 import * as SessionActions from "./actions/session_actions";
 import * as CommentActions from "./actions/comment_actions";
 
@@ -25,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
   window.userSignup = SessionActions.userSignup;
   window.userLogin = SessionActions.userLogin;
   window.userLogout = SessionActions.userLogout;
-  window.fetchLikes = LikeActions.fetchLikes;
   window.fetchComments = CommentActions.fetchComments;
   window.getState = store.getState;
   window.dispatch = store.dispatch;

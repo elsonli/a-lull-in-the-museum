@@ -9,7 +9,6 @@ class Artwork extends React.Component {
   };
 
   componentDidMount() {
-    // this.props.fetchLikes();
     this.props.fetchArtwork(this.props.match.params.id);
   };
   

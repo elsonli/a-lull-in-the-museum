@@ -30,7 +30,7 @@ class ArtworkIndex extends React.Component {
                   createLike={ this.props.createLike }
                   destroyLike={ this.props.destroyLike }
                   currentUserId={ this.props.currentUserId } />
-              )
+              );
             })
           }
         </ul>
