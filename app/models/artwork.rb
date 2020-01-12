@@ -5,8 +5,7 @@ class Artwork < ApplicationRecord
   has_many :likes
   # has_many :comments
   has_many_attached :videos
-  has_many_attached :photos # Change to this when ready to use AWS
-
+  has_many_attached :photos
   
   # https://blog.capsens.eu/how-to-use-activestorage-in-your-rails-5-2-application-cdf3a3ad8d7
 
