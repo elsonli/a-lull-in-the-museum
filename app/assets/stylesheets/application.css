@@ -15,6 +15,7 @@
  *= require "api/artwork.css"
  *= require "api/artworks.css"
  *= require "api/intro.css"
+ *= require "api/likes.css"
  */
  
  /* require_tree .

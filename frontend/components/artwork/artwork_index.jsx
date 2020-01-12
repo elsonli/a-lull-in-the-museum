@@ -8,26 +8,26 @@ class ArtworkIndex extends React.Component {
   };
 
   componentDidMount() {
-    this.props.fetchArtworks();
     this.props.fetchLikes();
+    this.props.fetchArtworks();
   };
 
   render() {
     const fetched = this.props.artworks.length !== 0;
     return (
       fetched ? (
-
         // ArtworkIndexItems renders previews of artworks
         <ul className="artworks-div">
           <ModalContainer />
-          {/* { console.log(this.props.likes) } */}
           {
             this.props.artworks.map(artwork => {
               return (
                 <ArtworkIndexItem
                   key={ artwork.id }
                   artwork={ artwork }
-                  openModal={ this.props.openModal }/>
+                  likes={ this.props.likes }
+                  openModal={ this.props.openModal }
+                  currentUserId={ this.props.currentUserId } />
               )
             })
           }

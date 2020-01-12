@@ -1,0 +1,34 @@
+.fas {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  color: yellow;
+}
+
+.far {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  color: white;
+}
+
+.far:hover {
+  color: #add8e6;
+  transition: color 0.1s ease;
+  cursor: pointer;
+}
+
+.fas:hover {
+  cursor: pointer;
+}
+
+.fa-star {
+  position: absolute;
+  font-size: 25px;
+}

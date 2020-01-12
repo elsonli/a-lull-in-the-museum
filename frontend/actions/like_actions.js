@@ -31,7 +31,7 @@ const receiveLikes = likes => {
 // };
 
 // Asynchronous Thunk Action Creators
-export const fetchLikes = () => {
+export const fetchLikes = () => dispatch => {
   return LikeUtil.fetchLikes()
     .then(likes => dispatch(receiveLikes(likes)));
 };

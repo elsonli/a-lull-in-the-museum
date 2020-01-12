@@ -3,10 +3,14 @@ import ArtworkIndex from "./artwork_index";
 import * as LikeActions from "../../actions/like_actions";
 import * as ModalActions from "../../actions/modal_actions";
 import * as ArtworkActions from "../../actions/artwork_actions";
+import * as Selectors from "../../reducers/selector";
 
 const mapStateToProps = state => {
   return {
-    // likes: Object.values(state.entities.likes),
+    likes: Selectors.likesByUser(
+      Object.values(state.entities.likes),
+      state.session.currentUserId
+    ),
     artworks: Object.values(state.entities.artworks)
   };
 };
