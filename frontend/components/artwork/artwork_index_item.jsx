@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 
 const ArtworkIndexItem = ({ artwork, openModal }) => {
   const firstVidUrl = artwork.videoUrls.length > 0 ? artwork.videoUrls[0] : null;
+
+  const firstVid = artwork.videoUrls.length > 0 ? (
+    <img className="play" src="https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png" onClick={() => openModal({ type: "zoomVideo", url: firstVidUrl })} />
+  ) : null;
   return (
 
     // Previews contain a title and its first image that opens a new tab on click
@@ -13,7 +17,7 @@ const ArtworkIndexItem = ({ artwork, openModal }) => {
       <Link className="artworks-link" to={ `/artworks/${ artwork.id }` } target="_blank">
         <img className="artworks-img" src={ artwork.photoUrls[0] } />
       </Link>
-      <img className="play" src="https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png" onClick={ () => openModal({ type: "zoomVideo", url: firstVidUrl }) }/>
+      { firstVid }
     </li>
   );
 };
