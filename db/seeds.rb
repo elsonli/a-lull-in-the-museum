@@ -627,3 +627,16 @@ like_1 = Like.create!(
   user_id: user_2.id,
   artwork_id: artwork_1.id
 )
+
+# Comment Seeds
+comment_1 = Comment.create!(
+  user_id: user_1.id,
+  artwork_id: artwork_1.id,
+  body: "same as always"
+)
+
+comment_2 = Comment.create!(
+  user_id: user_2.id,
+  artwork_id: artwork_1.id,
+  body: "boppin"
+)
