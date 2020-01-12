@@ -13,9 +13,9 @@ export const createLike = like => {
   });
 };
 
-// export const destroyLike = likeId => {
-//   return $.ajax({
-//     method: "DELETE",
-//     url: `/api/likes/${likeId}`
-//   });
-// };
+export const destroyLike = likeId => {
+  return $.ajax({
+    method: "DELETE",
+    url: `/api/likes/${likeId}`
+  });
+};

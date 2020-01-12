@@ -1,7 +1,7 @@
-export const likesByUser = (likesArray, userId) => {
-  const newLikes = new Set();
-  likesArray.forEach(like => {
-    if (like.userId === userId) newLikes.add(like.artworkId);
+export const likesByUser = (likes, userId) => {
+  const newLikes = [];
+  Object.keys(likes).forEach(key => {
+    if (likes[key].userId === userId) newLikes.push(likes[key]);
   });
   return newLikes;
 };

@@ -28,6 +28,7 @@ class ArtworkIndex extends React.Component {
                   likes={ this.props.likes }
                   openModal={ this.props.openModal }
                   createLike={ this.props.createLike }
+                  destroyLike={ this.props.destroyLike }
                   currentUserId={ this.props.currentUserId } />
               )
             })

@@ -20,12 +20,12 @@ const receiveLike = like => {
   };
 };
 
-// const removeLike = like => {
-//   return {
-//     type: REMOVE_LIKE,
-//     like
-//   };
-// };
+const removeLike = likeId => {
+  return {
+    type: REMOVE_LIKE,
+    likeId
+  };
+};
 
 // Asynchronous Thunk Action Creators
 export const fetchLikes = () => dispatch => {
@@ -38,7 +38,7 @@ export const createLike = like => dispatch => {
     .then(like => dispatch(receiveLike(like)));
 };
 
-// export const destroyLike = like => dispatch => {
-//   return LikeUtil.destroyLike(like)
-//     .then(like => dispatch(removeLike(like.id)));
-// };
+export const destroyLike = likeId => dispatch => {
+  return LikeUtil.destroyLike(likeId)
+    .then(() => dispatch(removeLike(likeId)));
+};
