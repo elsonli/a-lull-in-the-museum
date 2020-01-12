@@ -5,3 +5,11 @@ export const likesByUser = (likes, userId) => {
   });
   return newLikes;
 };
+
+export const commentsForArtwork = (comments, artworkId) => {
+  const newComments = [];
+  Object.keys(comments).forEach(key => {
+    if (comments[key].artworkId === artworkId) newComments.push(comments[key]);
+  });
+  return newComments;
+};

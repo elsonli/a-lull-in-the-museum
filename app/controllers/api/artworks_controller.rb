@@ -1,12 +1,11 @@
 class Api::ArtworksController < ApplicationController
   def index
-    @artworks = Artwork.all
+    @artworks = Artwork.with_attached_photos.with_attached_videos.all
     render :index
   end
 
   def show
-    @artwork = Artwork.find_by(id: params[:id])
-    # @photos = @artwork.photos.map { |photo| url_for(photo) }
+    @artwork = Artwork.with_attached_photos.includes(:comments).find_by(id: params[:id])
     if @artwork
       render :show
     else
@@ -17,7 +16,6 @@ class Api::ArtworksController < ApplicationController
   private
 
   def artwork_params
-    params.require(:artwork).permit(:title, :description, photos: [])
-    # params.require(:artwork).permit(:title, :description, videos: [], photos: [])
+    params.require(:artwork).permit(:title, :description, videos: [], photos: [])
   end
 end

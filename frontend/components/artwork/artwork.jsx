@@ -1,6 +1,7 @@
 import React from "react";
 import Like from "../like/like";
 import { Redirect, Link } from "react-router-dom";
+import CommentIndexContainer from "../comment/comment_index_container";
 
 class Artwork extends React.Component {
   constructor(props) {
@@ -89,6 +90,10 @@ class Artwork extends React.Component {
             <h1>{ artwork.title }</h1>
             <p>{ artwork.description }</p>
           </section>
+
+          {/* Section of the artwork's comments */}
+          <CommentIndexContainer
+            artwork={ artwork } />
           
         </div>
       ) : null
