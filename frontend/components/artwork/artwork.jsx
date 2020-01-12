@@ -1,7 +1,6 @@
 import React from "react";
 import Like from "../like/like";
 import { Redirect, Link } from "react-router-dom";
-import LikeContainer from "../like/like_container";
 
 class Artwork extends React.Component {
   constructor(props) {
@@ -23,7 +22,7 @@ class Artwork extends React.Component {
   };
 
   render() {
-    const { artwork, openModal, currentUserId, likes, fetchLikes } = this.props;
+    const { artwork, openModal, currentUserId, likes, fetchLikes, createLike, destroyLike } = this.props;
 
     // Ensure that the artworkId is valid, otherwise Redirect to home page
     const artworkId = this.props.match.params.id;
@@ -54,6 +53,8 @@ class Artwork extends React.Component {
             likes={ likes }
             artwork={ artwork }
             fetchLikes={ fetchLikes }
+            createLike={ createLike }
+            destroyLike={ destroyLike }
             currentUserId={ currentUserId } />
 
           {/* Section of videos attached to the current artwork */}

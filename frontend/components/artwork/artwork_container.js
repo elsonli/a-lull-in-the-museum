@@ -16,6 +16,8 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch => {
   return {
     fetchLikes: () => dispatch(LikeActions.fetchLikes()),
+    createLike: like => dispatch(LikeActions.createLike(like)),
+    destroyLike: likeId => dispatch(LikeActions.destroyLike(likeId)),
     fetchArtwork: artworkId => dispatch(ArtworkActions.fetchArtwork(artworkId)),
     openModal: modal => dispatch(ModalActions.openModal(modal))
   };
