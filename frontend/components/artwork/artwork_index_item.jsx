@@ -1,12 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ArtworkIndexItem = ({ artwork, openModal, likes }) => {
+const ArtworkIndexItem = ({ artwork, openModal, likes, createLike, currentUserId }) => {
   const firstVidUrl = artwork.videoUrls.length > 0 ? artwork.videoUrls[0] : null;
 
   const firstVid = artwork.videoUrls.length > 0 ? (
     <img className="play" src="https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png" onClick={() => openModal({ type: "zoomVideo", url: firstVidUrl })} />
   ) : null;
+
+  const newLike = {
+    user_id: currentUserId,
+    artwork_id: artwork.id
+  };
 
   const liked = likes.has(artwork.id) ? (
     <div className="fa">
@@ -14,7 +19,7 @@ const ArtworkIndexItem = ({ artwork, openModal, likes }) => {
     </div>
   ) : (
     <div className="fa">
-      <i className="far fa-star"></i>
+      <i className="far fa-star" onClick={ () => createLike(newLike) }></i>
     </div>
   );
 

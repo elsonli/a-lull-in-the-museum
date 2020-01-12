@@ -5,13 +5,13 @@ export const fetchLikes = () => {
   });
 };
 
-// export const createLike = like => {
-//   return $.ajax({
-//     method: "POST",
-//     url: `/api/artworks/${like.artwork_id}/likes`,
-//     data: { like }
-//   });
-// };
+export const createLike = like => {
+  return $.ajax({
+    method: "POST",
+    url: `/api/artworks/${like.artwork_id}/likes`,
+    data: { like }
+  });
+};
 
 // export const destroyLike = likeId => {
 //   return $.ajax({

@@ -11,13 +11,15 @@ const mapStateToProps = state => {
       Object.values(state.entities.likes),
       state.session.currentUserId
     ),
-    artworks: Object.values(state.entities.artworks)
+    artworks: Object.values(state.entities.artworks),
+    currentUserId: state.session.currentUserId
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
     fetchLikes: () => dispatch(LikeActions.fetchLikes()),
+    createLike: like => dispatch(LikeActions.createLike(like)),
     fetchArtworks: () => dispatch(ArtworkActions.fetchArtworks()),
     openModal: modal => dispatch(ModalActions.openModal(modal))
   };

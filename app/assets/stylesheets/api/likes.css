@@ -2,8 +2,8 @@
   position: absolute;
   height: 20px;
   width: 20px;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
   z-index: 3;
   color: yellow;
 }
@@ -12,8 +12,8 @@
   position: absolute;
   height: 20px;
   width: 20px;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
   z-index: 3;
   color: white;
 }
@@ -30,5 +30,5 @@
 
 .fa-star {
   position: absolute;
-  font-size: 25px;
+  font-size: 20px;
 }

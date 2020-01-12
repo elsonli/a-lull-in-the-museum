@@ -5,15 +5,15 @@ class Api::LikesController < ApplicationController
     render :index
   end
 
-  def show
-    @like = Like.find_by(id: params[:id])
-    render :show
-  end
+  # def show
+  #   @like = Like.find_by(id: params[:id])
+  #   render :show
+  # end
 
   def create
     @like = Like.new(like_params)
     if @like.save
-      render json: @like
+      render :show
     else
       render json: @like.errors.full_messages, status: 422
     end

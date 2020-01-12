@@ -13,15 +13,12 @@ const receiveLikes = likes => {
   };
 };
 
-// const receiveLike = like => {
-//   return {
-//     type: RECEIVE_LIKE,
-//     like: {
-//       userId: like.user_id,
-//       artworkId: like.artwork_id
-//     }
-//   };
-// };
+const receiveLike = like => {
+  return {
+    type: RECEIVE_LIKE,
+    like
+  };
+};
 
 // const removeLike = like => {
 //   return {
@@ -36,10 +33,10 @@ export const fetchLikes = () => dispatch => {
     .then(likes => dispatch(receiveLikes(likes)));
 };
 
-// export const createLike = like => dispatch => {
-//   return LikeUtil.createLike(like)
-//     .then(like => dispatch(receiveLike(like)));
-// };
+export const createLike = like => dispatch => {
+  return LikeUtil.createLike(like)
+    .then(like => dispatch(receiveLike(like)));
+};
 
 // export const destroyLike = like => dispatch => {
 //   return LikeUtil.destroyLike(like)
