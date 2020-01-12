@@ -1,4 +1,4 @@
-import * as LikeUtil from "../util/like_util";
+import * as LikeAPIUtil from "../util/like_api_util";
 
 // Action Constants
 export const RECEIVE_LIKES = "RECEIVE_LIKES";
@@ -29,16 +29,16 @@ const removeLike = likeId => {
 
 // Asynchronous Thunk Action Creators
 export const fetchLikes = () => dispatch => {
-  return LikeUtil.fetchLikes()
+  return LikeAPIUtil.fetchLikes()
     .then(likes => dispatch(receiveLikes(likes)));
 };
 
 export const createLike = like => dispatch => {
-  return LikeUtil.createLike(like)
+  return LikeAPIUtil.createLike(like)
     .then(like => dispatch(receiveLike(like)));
 };
 
 export const destroyLike = likeId => dispatch => {
-  return LikeUtil.destroyLike(likeId)
+  return LikeAPIUtil.destroyLike(likeId)
     .then(() => dispatch(removeLike(likeId)));
 };
