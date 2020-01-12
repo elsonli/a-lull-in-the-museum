@@ -6,7 +6,8 @@ import * as CommentActions from "../../actions/comment_actions";
 const mapStateToProps = (state, ownProps) => {
   return {
     comments: Object.values(state.entities.comments),
-    artwork: ownProps.artwork
+    artwork: ownProps.artwork,
+    currentUserId: state.session.currentUserId
   };
 };
 

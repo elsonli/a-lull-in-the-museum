@@ -1,6 +1,5 @@
 import React from "react";
 import * as ModalActions from "../../actions/modal_actions";
-import * as SessionActions from "../../actions/session_actions";
 
 class SessionForm extends React.Component {  
   constructor(props) {

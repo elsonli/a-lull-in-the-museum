@@ -12,7 +12,7 @@ class CommentIndex extends React.Component {
   };
 
   render() {
-    const { comments, artwork } = this.props;
+    const { comments, artwork, currentUserId } = this.props;
 
     const fetched = comments.length !== 0;
 
@@ -22,7 +22,7 @@ class CommentIndex extends React.Component {
       fetched ? (
         <div className="comments-container">
           <h1>Comments <strong>{ selectedComments.length }</strong> </h1>
-          {/* CommentForm here */}
+          {/* CommentFormComponent here, only logged in users can see */}
           <ul className="comments-ul">
             {
               selectedComments.map(comment => {
