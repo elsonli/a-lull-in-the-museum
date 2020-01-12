@@ -9,6 +9,7 @@ class ArtworkIndex extends React.Component {
 
   componentDidMount() {
     this.props.fetchArtworks();
+    this.props.fetchLikes();
   };
 
   render() {
@@ -19,6 +20,7 @@ class ArtworkIndex extends React.Component {
         // ArtworkIndexItems renders previews of artworks
         <ul className="artworks-div">
           <ModalContainer />
+          {/* { console.log(this.props.likes) } */}
           {
             this.props.artworks.map(artwork => {
               return (

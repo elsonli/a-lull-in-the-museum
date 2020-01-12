@@ -12,9 +12,14 @@ User.destroy_all
 Artwork.destroy_all
 
 # User Seeds
-User.create!(
+user_1 = User.create!(
   username: "TestUser",
   password: "DemoLogin"
+)
+
+user_2 = User.create!(
+  username: "Miuna",
+  password: "Shiodome"
 )
 
 # Artwork Seeds
@@ -616,3 +621,9 @@ artwork_47.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/
 # artwork_47.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/47/Image_03.jpeg")), filename: "Image_03.jpeg")
 # artwork_47.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/47/Image_04.jpeg")), filename: "Image_04.jpeg")
 # artwork_47.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/47/Image_05.jpeg")), filename: "Image_05.jpeg")
+
+# Like Seeds
+like_1 = Like.create!(
+  user_id: user_2.id,
+  artwork_id: artwork_1.id
+)

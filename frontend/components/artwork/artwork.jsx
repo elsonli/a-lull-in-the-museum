@@ -1,5 +1,6 @@
 import React from "react";
 import { Redirect, Link } from "react-router-dom";
+// import LikeContainer from "../like/like_container";
 
 class Artwork extends React.Component {
   constructor(props) {
@@ -73,6 +74,9 @@ class Artwork extends React.Component {
               })
             }
           </ul>
+
+          {/* Section for liking/unliking the artwork */}
+          {/* <LikeContainer /> */}
 
           {/* Section of the artwork's title and description */}
           <section className="artwork-section">
