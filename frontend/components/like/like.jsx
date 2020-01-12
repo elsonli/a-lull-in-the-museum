@@ -1,5 +1,4 @@
 import React from "react";
-import LikeActions from "../../actions/like_actions";
 import * as Selectors from "../../reducers/selector";
 
 class Like extends React.Component {
@@ -8,7 +7,6 @@ class Like extends React.Component {
   };
 
   componentDidMount() {
-    // console.log("mounting")
     this.props.fetchLikes();
   };
 
