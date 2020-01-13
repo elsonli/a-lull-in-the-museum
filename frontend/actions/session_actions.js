@@ -34,6 +34,10 @@ export const clearSessionErrors = () => {
 };
 
 // Asynchronous Thunk Action Creators
+// export const fetchUser = userId => dispatch => {
+//   return SessionAPIUtil.fetchUser
+// };
+
 export const userSignup = user => dispatch => {
   return SessionAPIUtil.userSignup(user).then(
     user => dispatch(receiveCurrentUser(user)),
