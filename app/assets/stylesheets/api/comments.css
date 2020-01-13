@@ -85,14 +85,30 @@
 }
 
 .delete-comment {
-  color: #f00;
+  color: #fff;
   font-size: 24px;
   font-weight: 700;
   position: absolute;
   top: 7px;
-  right: 7px;
+  right: 10px;
 }
 
 .delete-comment:hover {
   cursor: pointer;
+  color: #f00;
+  transition: color 0.1s ease;
+}
+
+.edit-comment {
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  top: 7px;
+  right: 30px;
+}
+
+.edit-comment:hover {
+  cursor: pointer;
+  filter: brightness(70%);
+  transition: filter 0.1s ease;
 }

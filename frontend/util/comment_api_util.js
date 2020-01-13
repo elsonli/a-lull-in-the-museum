@@ -19,3 +19,10 @@ export const destroyComment = commentId => {
     url: `api/comments/${commentId}`
   });
 };
+
+export const patchComment = commentId => {
+  return $.ajax({
+    method: "PATCH",
+    url: `api/comments/${commentId}`
+  });
+};

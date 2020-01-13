@@ -13,7 +13,7 @@ class CommentIndex extends React.Component {
   };
 
   render() {
-    const { comments, artwork, currentUserId, destroyComment } = this.props;
+    const { comments, artwork, currentUserId, destroyComment, patchComment } = this.props;
 
     const fetched = comments.length !== 0;
 
@@ -37,7 +37,8 @@ class CommentIndex extends React.Component {
                     key={ comment.id }
                     comment={ comment }
                     currentUserId={ currentUserId }
-                    destroyComment={ destroyComment } />
+                    destroyComment={ destroyComment }
+                    patchComment={ patchComment } />
                 );
               })
             }

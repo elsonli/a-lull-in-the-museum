@@ -42,3 +42,8 @@ export const destroyComment = commentId => dispatch => {
   return CommentAPIUtil.destroyComment(commentId)
     .then(() => dispatch(removeComment(commentId)));
 };
+
+export const patchComment = commentId => dispatch => {
+  return CommentAPIUtil.patchComment(commentId)
+    .then(() => dispatch(receiveComment(commentId)));
+};
