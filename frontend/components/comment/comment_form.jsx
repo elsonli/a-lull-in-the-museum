@@ -24,13 +24,17 @@ class CommentForm extends React.Component {
     }).then(this.setState({ body: "" }));
   };
 
-  // renderErrors() {
-  //   return (
-  //     <ul>
-
-  //     </ul>
-  //   );
-  // };
+  renderErrors() {
+    return (
+      <ul className="comment-errors">
+        {
+          this.props.errors.map((error, idx) => {
+            return <li key={ `comment-error-${ idx }` }>{ error }</li>
+          })
+        }
+      </ul>
+    );
+  };
 
   render() {
     return (
@@ -45,6 +49,7 @@ class CommentForm extends React.Component {
           <br/>
           <input type="submit" value="Add Boppin Comment"/>
         </form>
+        { this.renderErrors() }
       </div>
     );
   };

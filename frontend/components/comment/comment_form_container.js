@@ -9,7 +9,8 @@ const mapStateToProps = (state, ownProps) => {
       body: ""
     },
     artwork: ownProps.artwork,
-    currentUserId: state.session.currentUserId
+    currentUserId: state.session.currentUserId,
+    errors: state.errors.comment
   };
 };
 

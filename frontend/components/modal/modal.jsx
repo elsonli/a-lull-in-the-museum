@@ -1,8 +1,9 @@
 import React from "react";
-import VideoModalContainer from "../modal/video_modal_container";
+import VideoModalContainer from "./video_modal_container";
+import EditCommentContainer from "./edit_comment_container";
+import ArtworkModalContainer from "./artwork_modal_container";
 import LoginFormContainer from "../session/login_form_container";
 import SignupFormContainer from "../session/signup_form_container";
-import ArtworkModalContainer from "../modal/artwork_modal_container";
 import DemoLoginFormContainer from "../session/demo_login_form_container";
 
 const Modal = ({ modal, closeModal }) => {
@@ -23,6 +24,9 @@ const Modal = ({ modal, closeModal }) => {
       break;
     case "zoomVideo":
       modalComponent = <VideoModalContainer />;
+      break;
+    case "editComment":
+      modalComponent = <EditCommentContainer />;
       break;
     default:
       return null;

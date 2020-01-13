@@ -1,6 +1,7 @@
 import { connect } from "react-redux";
 import { withRouter } from "react-router";
 import CommentIndex from "./comment_index";
+import * as ModalActions from "../../actions/modal_actions";
 import * as CommentActions from "../../actions/comment_actions";
 
 const mapStateToProps = (state, ownProps) => {
@@ -15,7 +16,8 @@ const mapDispatchToProps = dispatch => {
   return {
     fetchComments: () => dispatch(CommentActions.fetchComments()),
     destroyComment: commentId => dispatch(CommentActions.destroyComment(commentId)),
-    patchComment: commentId => dispatch(CommentActions.patchComment(commentId))
+    patchComment: commentId => dispatch(CommentActions.patchComment(commentId)),
+    openModal: modal => dispatch(ModalActions.openModal(modal))
   };
 };
 
