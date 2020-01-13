@@ -29,7 +29,7 @@ artwork_1 = Artwork.create!(
 )
 
 # artwork_1.photos.attach(io: File.open("/Users/elsonli/Documents/tlb_seeds/01/Image_01.jpeg"), filename: "Image_01.jpeg")
-artwork_1.photos.attach(io: open("https://a-lull-in-the-museum-dev.s3-us-west-1.amazonaws.com/nJWoRobkpwJwkTNam8beJVVe"))
+artwork_1.photos.attach(io: open("https://borderless.teamlab.art/images/pc-m/19809"), filename: "Image_01.jpeg")
 # artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_01.jpeg")), filename: "Image_01.jpeg")
 # artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_02.jpeg")), filename: "Image_02.jpeg")
 # artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_03.jpeg")), filename: "Image_03.jpeg")
