@@ -14,6 +14,12 @@ class Api::CommentsController < ApplicationController
     end
   end
 
+  def destroy
+    @comment = Comment.includes(:user).find_by(id: params[:id])
+    @comment.destroy
+    render :destroy
+  end
+
   private
   
   def comment_params

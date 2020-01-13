@@ -13,7 +13,7 @@ class CommentIndex extends React.Component {
   };
 
   render() {
-    const { comments, artwork, currentUserId } = this.props;
+    const { comments, artwork, currentUserId, destroyComment } = this.props;
 
     const fetched = comments.length !== 0;
 
@@ -28,9 +28,6 @@ class CommentIndex extends React.Component {
       fetched ? (
         <div className="comments-container">
           <h1>Comments <strong>{ selectedComments.length }</strong> </h1>
-          {/* CommentFormComponent here, only logged in users can see */}
-          {/* <CommentFormContainer
-            artwork={ artwork } /> */}
           { renderForm }
           <ul className="comments-ul">
             {
@@ -38,7 +35,9 @@ class CommentIndex extends React.Component {
                 return (
                   <CommentIndexItem
                     key={ comment.id }
-                    comment={ comment } />
+                    comment={ comment }
+                    currentUserId={ currentUserId }
+                    destroyComment={ destroyComment } />
                 );
               })
             }

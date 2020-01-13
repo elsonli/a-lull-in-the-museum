@@ -4,7 +4,6 @@ import { withRouter } from "react-router";
 import * as CommentActions from "../../actions/comment_actions";
 
 const mapStateToProps = (state, ownProps) => {
-  console.log(ownProps);
   return {
     commentState: {
       body: ""
