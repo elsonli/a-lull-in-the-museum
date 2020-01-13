@@ -28,8 +28,8 @@ artwork_1 = Artwork.create!(
   description: "Crossing the boundaries of other works, sometimes influencing other works, water flows from the Athletics Forest, Graffiti Nature - High Mountains and Deep Valleys, and accumulates into the waterfall of the Universe of Water Particles on a Rock where People Gather.\n\nThe Rock where People Gather is reproduced in a virtual three-dimensional space. Water is simulated to fall onto the rock, and the flow of the water draws the shape of the waterfall. The water is represented by a continuum of numerous water particles and the interaction between the particles is then calculated. Lines are drawn in relation to the behavior of the water particles. The lines are then 'flattened' using what teamLab considers to be ultrasubjective space.\n\nWhen a person stands on the rock or touches the waterfall, they too become like a rock that changes the flow of water. The flow of water continues to transform in real time due to the interaction of people. Previous visual states can never be replicated, and will never reoccur."
 )
 
-artwork_1.photos.attach(io: File.open("/Users/elsonli/Documents/tlb_seeds/01/Image_01.jpeg"), filename: "Image_01.jpeg")
-# artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_01.jpeg")), filename: "Image_01.jpeg")
+# artwork_1.photos.attach(io: File.open("/Users/elsonli/Documents/tlb_seeds/01/Image_01.jpeg"), filename: "Image_01.jpeg")
+artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_01.jpeg")), filename: "Image_01.jpeg")
 # artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_02.jpeg")), filename: "Image_02.jpeg")
 # artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_03.jpeg")), filename: "Image_03.jpeg")
 # artwork_1.photos.attach(io: File.open(File.join(Rails.root, "app/assets/images/01/Image_04.jpeg")), filename: "Image_04.jpeg")
