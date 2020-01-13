@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Greeting = props => {
 
@@ -21,7 +22,9 @@ const Greeting = props => {
       <hgroup className="header-group">
         { // REPLACE PUSH LINK TO USER SHOW PAGE
         }
-        <button className="session-button" onClick={ () => props.history.push("/") }>DASHBOARD</button>
+        <Link to={ `/users/${props.currentUser.id}` }>
+          <button className="session-button">DASHBOARD</button>
+        </Link>
         <button className="session-button" onClick={ props.userLogout }>LOG OUT</button>
       </hgroup>
     );

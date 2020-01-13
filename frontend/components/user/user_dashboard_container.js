@@ -8,6 +8,7 @@ import * as SessionActions from "../../actions/session_actions";
 const mapStateToProps = (state, ownProps) => {
   return {
     user: state.entities.users[ownProps.match.params.id],
+    sessionUserId: state.session.currentUserId,
     likes: state.entities.likes
   };
 };

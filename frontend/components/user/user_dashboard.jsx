@@ -1,4 +1,5 @@
 import React from "react";
+import { Redirect } from "react-router-dom";
 import ArtworkDashItem from "../artwork/artwork_dash_item";
 
 class UserDashboard extends React.Component {
@@ -22,25 +23,24 @@ class UserDashboard extends React.Component {
   };
 
   render() {
-    const { user, likes, openModal, createLike, destroyLike } = this.props;
+    const { user, openModal, sessionUserId } = this.props;
     return (
       (user && user.likedArtworks) ? (
-        <ul className="artworks-dash">
-          {
-            this.props.user.likedArtworks.map(artwork => {
-              return (
-                <ArtworkDashItem
-                  key={ artwork.id }
-                  artwork={ artwork }
-                  likes={ likes }
-                  openModal={ openModal }
-                  createLike={ createLike }
-                  destroyLike={ destroyLike }
-                  currentUserId={ user.id } />
-              )
-            })
-          }
-        </ul>
+        user.id === sessionUserId ? (
+          <ul className="artworks-dash">
+            {
+              this.props.user.likedArtworks.map(artwork => {
+                return (
+                  <ArtworkDashItem
+                    key={artwork.id}
+                    artwork={artwork}
+                    openModal={openModal}
+                    currentUserId={user.id} />
+                )
+              })
+            }
+          </ul>
+        ) : <Redirect to="/" />
       ) : null
     );
   };
