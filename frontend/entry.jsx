@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.userLogin = SessionActions.userLogin;
   window.userLogout = SessionActions.userLogout;
   window.fetchComments = CommentActions.fetchComments;
+  window.fetchUser = SessionActions.fetchUser;
   window.getState = store.getState;
   window.dispatch = store.dispatch;
   // Window Testing End

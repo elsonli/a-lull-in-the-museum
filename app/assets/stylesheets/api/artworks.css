@@ -68,6 +68,40 @@
   transition: color 0.15s ease;
 }
 
+.artworks-dash {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 5%;
+}
+
+.artworks-dash .dash-item {
+  overflow: hidden;
+  height: auto;
+  width: 49%;
+}
+
+.artworks-dash .artworks-img {
+  margin-top: 2%;
+}
+
+.contain-zoom-dash {
+  overflow: hidden;
+  position: relative;
+}
+
+.contain-zoom-dash:hover .play {
+  display: block;
+}
+
+.contain-zoom-dash:hover .artworks-img {
+  cursor: pointer;
+  filter: brightness(75%);
+  filter: blur(1px), brightness(50%);
+  transition: filter 0.25s ease;
+}
+
 /* Row 1 */
 .artworks-fig-1 {
   margin-right: 2px;

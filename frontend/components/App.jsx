@@ -6,6 +6,7 @@ import ArtworkIndexContainer from "./artwork/artwork_index_container";
 import ArtworkContainer from "./artwork/artwork_container";
 import IntroContainer from "./intro/intro_container";
 import ModalContainer from "./modal/modal_container";
+import UserDashboardContainer from "./user/user_dashboard_container";
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
       {/* Contains logic for what will be rendered in the body */}
       <main>
         <Switch>
+          <Route path="/users/:id" component={ UserDashboardContainer } />
           <Route path="/artworks/:id" component={ ArtworkContainer } />
           <Route exact path="/" component={ ArtworkIndexContainer } />
           <Route path="*" render={ () => <Redirect to="/" /> } />
