@@ -43,6 +43,8 @@
   border: 1px solid #1a1a1a;
   background-color: #1a1a1a;
   border-radius: 5px;
+  white-space: pre-line;
+  line-height: 1.25;
 }
 
 .comments-li > h1 {
@@ -90,6 +92,7 @@
 .comment-form input:hover {
   cursor: pointer;
   filter: brightness(80%);
+  transition: filter 0.1s ease;
 }
 
 .delete-comment {
@@ -116,6 +119,42 @@
 }
 
 .edit-comment:hover {
+  cursor: pointer;
+  filter: brightness(70%);
+  transition: filter 0.1s ease;
+}
+
+.edit-comment-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-comment-form > textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 24px;
+  background-color: rgb(92, 92, 92);
+  color: #fff;
+}
+
+.edit-comment-form > input {
+  background-color: #444;
+  color: #fff;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.edit-comment-form > textarea:hover {
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.edit-comment-form > input:hover {
   cursor: pointer;
   filter: brightness(70%);
   transition: filter 0.1s ease;

@@ -5,6 +5,13 @@ export const fetchComments = () => {
   });
 };
 
+export const fetchComment = commentId => {
+  return $.ajax({
+    method: "GET",
+    url: `/api/comments/${commentId}`
+  });
+};
+
 export const createComment = comment => {
   return $.ajax({
     method: "POST",
@@ -20,9 +27,10 @@ export const destroyComment = commentId => {
   });
 };
 
-export const patchComment = commentId => {
+export const patchComment = comment => {
   return $.ajax({
     method: "PATCH",
-    url: `api/comments/${commentId}`
+    url: `api/comments/${comment.id}`,
+    data: { comment }
   });
 };

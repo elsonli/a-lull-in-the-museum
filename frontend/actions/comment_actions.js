@@ -50,6 +50,13 @@ export const fetchComments = () => dispatch => {
   );
 };
 
+export const fetchComment = commentId => dispatch => {
+  return CommentAPIUtil.fetchComment(commentId).then(
+    comment => dispatch(receiveComment(comment)),
+    errors => dispatch(receiveCommentErrors(errors.responseJSON))
+  );
+};
+
 export const createComment = comment => dispatch => {
   return CommentAPIUtil.createComment(comment).then(
     comment => dispatch(receiveComment(comment)),
@@ -64,9 +71,9 @@ export const destroyComment = commentId => dispatch => {
   );
 };
 
-export const patchComment = commentId => dispatch => {
-  return CommentAPIUtil.patchComment(commentId).then(
-    () => dispatch(receiveComment(commentId)),
+export const patchComment = comment => dispatch => {
+  return CommentAPIUtil.patchComment(comment).then(
+    () => dispatch(receiveComment(comment)),
     errors => dispatch(receiveCommentErrors(errors.responseJSON))
   );
 };

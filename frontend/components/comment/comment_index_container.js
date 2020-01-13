@@ -16,7 +16,6 @@ const mapDispatchToProps = dispatch => {
   return {
     fetchComments: () => dispatch(CommentActions.fetchComments()),
     destroyComment: commentId => dispatch(CommentActions.destroyComment(commentId)),
-    patchComment: commentId => dispatch(CommentActions.patchComment(commentId)),
     openModal: modal => dispatch(ModalActions.openModal(modal))
   };
 };

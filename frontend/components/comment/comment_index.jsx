@@ -1,6 +1,7 @@
 import React from "react";
 import CommentIndexItem from "./comment_index_item";
 import * as Selectors from "../../reducers/selector";
+import ModalContainer from "../modal/modal_container";
 import CommentFormContainer from "./comment_form_container";
 
 class CommentIndex extends React.Component {
@@ -13,7 +14,7 @@ class CommentIndex extends React.Component {
   };
 
   render() {
-    const { comments, artwork, currentUserId, destroyComment, patchComment, openModal } = this.props;
+    const { comments, artwork, currentUserId, destroyComment, openModal } = this.props;
 
     const fetched = comments.length !== 0;
 
@@ -27,6 +28,7 @@ class CommentIndex extends React.Component {
     return (
       fetched ? (
         <div className="comments-container">
+          {/* <ModalContainer /> */}
           <h1>Comments <strong>{ selectedComments.length }</strong> </h1>
           { renderForm }
           <ul className="comments-ul">
@@ -38,7 +40,6 @@ class CommentIndex extends React.Component {
                     comment={ comment }
                     currentUserId={ currentUserId }
                     destroyComment={ destroyComment }
-                    patchComment={ patchComment }
                     openModal={ openModal } />
                 );
               })

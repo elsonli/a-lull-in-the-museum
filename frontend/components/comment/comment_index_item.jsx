@@ -1,7 +1,7 @@
 import React from "react";
 
 const CommentIndexItem = props => {
-  const { comment, currentUserId, destroyComment, patchComment, openModal } = props;
+  const { comment, currentUserId, destroyComment, openModal } = props;
   
   const deleteButton = (currentUserId === comment.user.id) ? (
     <strong className="delete-comment" onClick={ () => destroyComment(comment.id) }>
@@ -12,7 +12,7 @@ const CommentIndexItem = props => {
   ) : null;
 
   const editButton = (currentUserId === comment.user.id) ? (
-    <strong className="edit-comment" onClick={ () => openModal({ type: "editComment" }) }>
+    <strong className="edit-comment" onClick={ () => openModal({ type: "editComment", comment: comment }) }>
       <div className="fa">
         <i className="fas fa-edit"></i>
       </div>
