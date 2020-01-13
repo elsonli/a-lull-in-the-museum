@@ -48,3 +48,37 @@
   margin-left: 20px;
   margin-right: 20px;
 }
+
+.comment-form {
+  position: relative;
+  margin: 25px auto 20px auto;
+}
+
+.comment-form > textarea {
+  width: 66.66%;
+  height: auto;
+  padding: 10px;
+  color: #fff;
+  border: 1px solid #1a1a1a;
+  background-color: #444;
+}
+
+.comment-form textarea:hover {
+  cursor: pointer;
+  border: 1px solid rgb(92, 92, 92);
+}
+
+.comment-form > input {
+  background-color: #444;
+  color: #fff;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.comment-form input:hover {
+  cursor: pointer;
+  filter: brightness(80%);
+}

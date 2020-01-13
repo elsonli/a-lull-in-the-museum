@@ -8,6 +8,10 @@ const commentsReducer = (oldState = _defaultComments, action) => {
   switch (action.type) {
     case CommentActions.RECEIVE_COMMENTS:
       return action.comments;
+    case CommentActions.RECEIVE_COMMENT:
+      nextState = Object.assign({}, oldState);
+      nextState[action.comment.id] = action.comment;
+      return nextState;
     default:
       return oldState;
   };
