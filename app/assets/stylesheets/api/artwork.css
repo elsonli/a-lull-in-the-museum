@@ -33,7 +33,10 @@
 }
 
 .artwork-photos li:hover {
-  cursor: pointer;
+  /* cursor: pointer; */
+  cursor: -moz-zoom-in; 
+  cursor: -webkit-zoom-in; 
+  cursor: zoom-in;
 }
 
 .artwork-img {
@@ -47,6 +50,10 @@
   display: block;
   border: 1px solid #444;
   margin: 0;
+}
+
+.artwork-videos video:hover {
+  cursor: pointer;
 }
 
 .artwork-section {

@@ -5,7 +5,7 @@ class Api::ArtworksController < ApplicationController
   end
 
   def show
-    @artwork = Artwork.with_attached_photos.includes(:comments).find_by(id: params[:id])
+    @artwork = Artwork.with_attached_photos.with_attached_videos.includes(:comments).find_by(id: params[:id])
     if @artwork
       render :show
     else
