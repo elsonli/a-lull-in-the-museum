@@ -40,7 +40,7 @@ artwork_1.photos.attach(io: open("https://borderless.teamlab.art/images/pc-m/143
 artwork_1.photos.attach(io: open("https://borderless.teamlab.art/images/pc-m/14896")), filename: "Image_10.jpeg")
 artwork_1.photos.attach(io: open("https://borderless.teamlab.art/images/pc-m/14897")), filename: "Image_11.jpeg")
 artwork_1.photos.attach(io: open("https://borderless.teamlab.art/images/pc-m/17422")), filename: "Image_12.jpeg")
-# artwork_1.videos.attach(io: open("app/assets/images/01/Video_01.mp4")), filename: "Video_01.mp4")
+artwork_1.videos.attach(io: open("https://www.youtube.com/watch?v=iUSXVxOb4Hk")), filename: "Video_01.mp4")
 
 # artwork_2 = Artwork.create!(
 #   title: "Walk, Walk, Walk: Free Infinity",
