@@ -92,8 +92,7 @@ class Artwork extends React.Component {
           </section>
 
           {/* Section of the artwork's comments */}
-          <CommentIndexContainer
-            artwork={ artwork } />
+          <CommentIndexContainer artwork={ artwork } />
           
         </div>
       ) : null
