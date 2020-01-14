@@ -25,7 +25,8 @@ const mapDispatchToProps = dispatch => {
     otherForm: null,
     closeModal: () => dispatch(ModalActions.closeModal()),
     openModal: modal => dispatch(ModalActions.openModal(modal)),
-    processForm: () => dispatch(SessionActions.userLogin(demoUser))
+    processForm: () => dispatch(SessionActions.userLogin(demoUser)),
+    clearSessionErrors: () => dispatch(SessionActions.clearSessionErrors())
   };
 };
 

@@ -8,8 +8,9 @@
 
 require "open-uri"
 
-User.destroy_all
-Artwork.destroy_all
+# Comment in only if you want to reset ALL seeds
+# User.destroy_all
+# Artwork.destroy_all
 
 # User Seeds
 user_1 = User.create!(

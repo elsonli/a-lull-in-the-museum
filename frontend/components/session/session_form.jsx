@@ -6,7 +6,7 @@ class SessionForm extends React.Component {
     super(props);
     this.state = this.props.userState;
     this.handleSubmit = this.handleSubmit.bind(this);
-    dispatch(SessionActions.clearSessionErrors());
+    this.props.clearSessionErrors();
   };
 
   update(field) {
