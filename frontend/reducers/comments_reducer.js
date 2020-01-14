@@ -1,8 +1,8 @@
 import * as CommentActions from "../actions/comment_actions";
 
-const _defaultComments = {};
+const _defaultState = {};
 
-const commentsReducer = (oldState = _defaultComments, action) => {
+const commentsReducer = (oldState = _defaultState, action) => {
   Object.freeze(oldState);
   let nextState;
   switch (action.type) {

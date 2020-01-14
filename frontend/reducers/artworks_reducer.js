@@ -1,8 +1,8 @@
 import * as ArtworkActions from "../actions/artwork_actions";
 
-const _defaultArtworks = {};
+const _defaultState = {};
 
-const artworksReducer = (oldState = _defaultArtworks, action) => {
+const artworksReducer = (oldState = _defaultState, action) => {
   Object.freeze(oldState);
   let newState;
   switch (action.type) {
@@ -13,7 +13,7 @@ const artworksReducer = (oldState = _defaultArtworks, action) => {
       newState[action.artwork.id] = action.artwork;
       return newState;
     default:
-      return oldState;;
+      return oldState;
   };
 };
 

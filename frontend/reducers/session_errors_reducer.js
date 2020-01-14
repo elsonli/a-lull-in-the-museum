@@ -1,19 +1,19 @@
 import * as ModalActions from "../actions/modal_actions";
 import * as SessionActions from "../actions/session_actions";
 
-const _defaultErrors = [];
+const _defaultState = [];
 
-const sessionErrorsReducer = (oldState = _defaultErrors, action) => {
+const sessionErrorsReducer = (oldState = _defaultState, action) => {
   Object.freeze(oldState);
   switch (action.type) {
     case SessionActions.RECEIVE_SESSION_ERRORS:
       return action.errors;
     case SessionActions.RECEIVE_CURRENT_USER:
-      return _defaultErrors;
+      return _defaultState;
     case SessionActions.CLEAR_SESSION_ERRORS:
-      return _defaultErrors;
+      return _defaultState;
     case ModalActions.CLOSE_MODAL:
-      return [];
+      return _defaultState;
     default:
       return oldState;
   };

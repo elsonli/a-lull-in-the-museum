@@ -6,8 +6,8 @@ import commentsReducer from "./comments_reducer";
 
 const entitiesReducer = combineReducers({
   users: usersReducer,
-  artworks: artworksReducer,
   likes: likesReducer,
+  artworks: artworksReducer,
   comments: commentsReducer
 });
 

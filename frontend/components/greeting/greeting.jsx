@@ -39,7 +39,7 @@ const Greeting = props => {
             DASHBOARD
           </button>
         </Link>
-        <button className="session-button" onClick={ userLoWgout }>
+        <button className="session-button" onClick={ userLogout }>
           LOG OUT
         </button>
       </hgroup>

@@ -1,8 +1,8 @@
 import * as LikeActions from "../actions/like_actions";
 
-const _defaultLikes = {};
+const _defaultState = {};
 
-const likesReducer = (oldState = _defaultLikes, action) => {
+const likesReducer = (oldState = _defaultState, action) => {
   Object.freeze(oldState);
   let nextState;
   switch (action.type) {
