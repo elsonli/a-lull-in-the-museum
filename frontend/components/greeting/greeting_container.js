@@ -1,6 +1,6 @@
 import Greeting from "./greeting";
 import { connect } from "react-redux";
-import { withRouter } from 'react-router'
+import { withRouter } from 'react-router';
 import * as ModalActions from "../../actions/modal_actions";
 import * as SessionActions from "../../actions/session_actions";
 

@@ -3,15 +3,29 @@ import { Link } from "react-router-dom";
 
 const Greeting = props => {
 
+  const {
+    location,
+    openModal,
+    userLogout,
+    currentUser
+  } = props;
+
   const sessionLinks = () => {
-    const demoButton = props.location.pathname === "/" ? (
-      <button className="session-button" onClick={ () => props.openModal({ type: "demologin" }) }>DEMO LOG IN</button>
+
+    const demoButton = location.pathname === "/" ? (
+      <button className="session-button" onClick={ () => openModal({ type: "demologin" }) }>
+        DEMO LOG IN
+      </button>
     ) : null;
 
     return (
       <nav className="login-signup">
-        <button className="session-button" onClick={ () => props.openModal({ type: "login" }) }>LOG IN</button>
-        <button className="session-button" onClick={ () => props.openModal({ type: "signup" }) }>SIGN UP</button>
+        <button className="session-button" onClick={ () => openModal({ type: "login" }) }>
+          LOG IN
+        </button>
+        <button className="session-button" onClick={ () => openModal({ type: "signup" }) }>
+          SIGN UP
+        </button>
         { demoButton }
       </nav>
     );
@@ -20,15 +34,19 @@ const Greeting = props => {
   const personalGreeting = () => {
     return (
       <hgroup className="header-group">
-        <Link to={ `/users/${props.currentUser.id}` }>
-          <button className="session-button">DASHBOARD</button>
+        <Link to={ `/users/${ currentUser.id }` }>
+          <button className="session-button">
+            DASHBOARD
+          </button>
         </Link>
-        <button className="session-button" onClick={ props.userLogout }>LOG OUT</button>
+        <button className="session-button" onClick={ userLoWgout }>
+          LOG OUT
+        </button>
       </hgroup>
     );
   };
 
-  return props.currentUser ? personalGreeting() : sessionLinks();
+  return currentUser ? personalGreeting() : sessionLinks();
 };
 
 export default Greeting;
