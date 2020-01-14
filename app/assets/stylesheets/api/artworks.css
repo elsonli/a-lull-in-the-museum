@@ -102,6 +102,32 @@
   transition: filter 0.25s ease;
 }
 
+.no-like-dash {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-like-dash button {
+  margin-top: 10px;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-weight: 700;
+}
+
+.no-like-dash button:hover {
+  filter: brightness(70%);
+  transition: filter 0.1s ease;
+  cursor: pointer;
+}
+
 /* Row 1 */
 .artworks-fig-1 {
   margin-right: 2px;

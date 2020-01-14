@@ -28,7 +28,7 @@ class Artwork extends React.Component {
     const artworkId = this.props.match.params.id;
     const regexMatchId = /^[0-9]*$/g
     const matches = regexMatchId.exec(artworkId);
-    if (!matches || matches < 1 || matches > 47) return <Redirect to="/" />
+    if (!matches || matches < 1 || matches > 47) return <Redirect to="/" />;
     
     return (
       artwork ? (
