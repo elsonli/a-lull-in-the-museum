@@ -1,17 +1,17 @@
 import * as CommentAPIUtil from "../util/comment_api_util";
 
 // Action Constants
-export const RECEIVE_COMMENTS = "RECEIVE_COMMENTS";
-export const RECEIVE_COMMENT = "RECEIVE_COMMENT";
 export const REMOVE_COMMENT = "REMOVE_COMMENT";
-export const RECEIVE_COMMENT_ERRORS = "RECEIVE_COMMENT_ERRORS";
+export const RECEIVE_COMMENT = "RECEIVE_COMMENT";
+export const RECEIVE_COMMENTS = "RECEIVE_COMMENTS";
 export const CLEAR_COMMENT_ERRORS = "CLEAR_COMMENT_ERRORS";
+export const RECEIVE_COMMENT_ERRORS = "RECEIVE_COMMENT_ERRORS";
 
 // Synchronous Action Creators
-const receiveComments = comments => {
+const removeComment = commentId => {
   return {
-    type: RECEIVE_COMMENTS,
-    comments
+    type: REMOVE_COMMENT,
+    commentId
   };
 };
 
@@ -22,10 +22,10 @@ const receiveComment = comment => {
   };
 };
 
-const removeComment = commentId => {
+const receiveComments = comments => {
   return {
-    type: REMOVE_COMMENT,
-    commentId
+    type: RECEIVE_COMMENTS,
+    comments
   };
 };
 
