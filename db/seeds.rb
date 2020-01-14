@@ -474,7 +474,7 @@ artwork_30 = Artwork.create!(
 )
 
 artwork_30.photos.attach(io: open("https://a-lull-in-the-museum-seeds.s3-us-west-1.amazonaws.com/30/Image_01.jpeg"), filename: "Image_01.jpeg")
-artwork_30.photos.attach(io: open("https://a-lull-in-the-museum-seeds.s3-us-west-1.amazonaws.com/30/Image_02.jpeg")), filename: "Image_02.jpeg")
+artwork_30.photos.attach(io: open("https://a-lull-in-the-museum-seeds.s3-us-west-1.amazonaws.com/30/Image_02.jpeg"), filename: "Image_02.jpeg")
 artwork_30.videos.attach(io: open("https://a-lull-in-the-museum-seeds.s3-us-west-1.amazonaws.com/30/Video_01.mp4"), filename: "Video_01.mp4")
 
 artwork_31 = Artwork.create!(
@@ -610,7 +610,7 @@ artwork_43 = Artwork.create!(
   description: "In the background, cherry blossoms bloom and scatter, the cycle of life and death repeats itself.\n\nFrom the countless background points, at a certain rhythm and interval, a circle is born that grows and spreads out radially. The circle born transforms only the light and darkness of the background world."
 )
 
-artwork_43.photos.attach(io: open("https://a-lull-in-the-museum-seeds.s3-us-west-1.amazonaws.com/43/Image_01.jpeg")), filename: "Image_01.jpeg")
+artwork_43.photos.attach(io: open("https://a-lull-in-the-museum-seeds.s3-us-west-1.amazonaws.com/43/Image_01.jpeg"), filename: "Image_01.jpeg")
 artwork_43.photos.attach(io: open("https://a-lull-in-the-museum-seeds.s3-us-west-1.amazonaws.com/43/Image_02.jpeg"), filename: "Image_02.jpeg")
 artwork_43.photos.attach(io: open("https://a-lull-in-the-museum-seeds.s3-us-west-1.amazonaws.com/43/Image_03.jpeg"), filename: "Image_03.jpeg")
 artwork_43.photos.attach(io: open("https://a-lull-in-the-museum-seeds.s3-us-west-1.amazonaws.com/43/Image_04.jpeg"), filename: "Image_04.jpeg")
