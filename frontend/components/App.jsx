@@ -26,6 +26,9 @@ const App = () => {
               </a>
             );
           }} />
+        <a className="fa github" target="_blank" href="https://github.com/elsonli">
+          <i className="fab fa-github"></i>
+        </a>
         <Route path="/" component={ GreetingContainer } />
       </header>
 

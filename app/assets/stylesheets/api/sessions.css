@@ -30,6 +30,19 @@ header {
   cursor: pointer;
 }
 
+.github {
+  text-decoration: none;
+}
+
+.github:hover {
+  cursor: pointer;
+}
+
+.fa-github {
+  font-size: 30px;
+  color: #fff;
+}
+
 /* Login, Signup, Signout, Dashboard Buttons */
 .login-signup {
   margin-right: 10px;
