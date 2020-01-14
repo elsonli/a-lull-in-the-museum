@@ -18,7 +18,9 @@ class UserDashboard extends React.Component {
   componentDidUpdate() {
     if (this.state.currentId !== this.props.match.params.id) {
       this.props.fetchUser(this.props.match.params.id);
-      this.setState({ currentId: this.props.match.params.id });
+      this.setState({
+        currentId: this.props.match.params.id
+      });
     };
   };
 
@@ -36,14 +38,14 @@ class UserDashboard extends React.Component {
           (user.likedArtworks && user.likedArtworks.length !== 0) ? (
             <ul className="artworks-dash">
               {
-                this.props.user.likedArtworks.map(artwork => {
+                user.likedArtworks.map(artwork => {
                   return (
                     <ArtworkDashItem
-                      key={artwork.id}
-                      artwork={artwork}
-                      openModal={openModal}
-                      currentUserId={user.id} />
-                  )
+                      key={ artwork.id }
+                      artwork={ artwork }
+                      openModal={ openModal }
+                      currentUserId={ user.id } />
+                  );
                 })
               }
             </ul>

@@ -11,7 +11,6 @@ class Like extends React.Component {
   };
 
   render() {
-    // const { likes, currentUserId, createLike, destroyLike } = this.props;
     const { artwork, currentUserId, likes, createLike, destroyLike } = this.props;
 
     // Selects all of the likes by the current user

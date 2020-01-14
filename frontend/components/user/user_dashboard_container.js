@@ -7,18 +7,16 @@ import * as SessionActions from "../../actions/session_actions";
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    user: state.entities.users[ownProps.match.params.id],
+    likes: state.entities.likes,
     sessionUserId: state.session.currentUserId,
-    likes: state.entities.likes
+    user: state.entities.users[ownProps.match.params.id]
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
-    fetchUser: userId => dispatch(SessionActions.fetchUser(userId)),
     fetchLikes: () => dispatch(LikeActions.fetchLikes()),
-    createLike: like => dispatch(LikeActions.createLike(like)),
-    destroyLike: likeId => dispatch(LikeActions.destroyLike(likeId)),
+    fetchUser: userId => dispatch(SessionActions.fetchUser(userId)),
     openModal: modal => dispatch(ModalActions.openModal(modal))
   };
 };
