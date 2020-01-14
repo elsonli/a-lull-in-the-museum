@@ -1,6 +1,5 @@
 import React from "react";
 import ArtworkIndexItem from "./artwork_index_item";
-import ModalContainer from "../modal/modal_container";
 
 class ArtworkIndex extends React.Component {
   constructor(props) {

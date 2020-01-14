@@ -22,7 +22,15 @@ class Artwork extends React.Component {
   };
 
   render() {
-    const { artwork, openModal, currentUserId, likes, fetchLikes, createLike, destroyLike } = this.props;
+    const {
+      likes,
+      artwork,
+      openModal,
+      fetchLikes,
+      createLike,
+      destroyLike,
+      currentUserId
+    } = this.props;
 
     // Ensure that the artworkId is valid, otherwise Redirect to home page
     const artworkId = this.props.match.params.id;
@@ -67,7 +75,7 @@ class Artwork extends React.Component {
                       <source src={ url } type="video/mp4"></source>
                     </video>
                   </li>
-                )
+                );
               })
             }
           </ul>

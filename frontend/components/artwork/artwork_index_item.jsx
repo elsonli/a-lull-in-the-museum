@@ -3,14 +3,24 @@ import { Link } from "react-router-dom";
 import * as Selectors from "../../reducers/selector";
 
 const ArtworkIndexItem = props => {
-  const { artwork, openModal, likes, createLike, destroyLike, currentUserId } = props;
+  const {
+    likes,
+    artwork,
+    openModal,
+    createLike,
+    destroyLike,
+    currentUserId
+  } = props;
 
   // Retrieves the preview video if there is one
-  const firstVidUrl = artwork.videoUrls.length > 0 ? artwork.videoUrls[0] : null;
+  const firstVidUrl = (artwork.videoUrls.length > 0) ? artwork.videoUrls[0] : null;
 
   // Only show the play button on the preview if a video exists
   const firstVidPlay = firstVidUrl ? (
-    <img className="play" src="https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png" onClick={() => openModal({ type: "zoomVideo", url: firstVidUrl })} />
+    <img
+      className="play"
+      src="https://www.freepnglogos.com/uploads/play-button-png/index-media-cover-art-play-button-overlay-5.png"
+      onClick={ () => openModal({ type: "zoomVideo", url: firstVidUrl }) } />
   ) : null;
 
   // Constructs a new like to be created, can be moved inline
