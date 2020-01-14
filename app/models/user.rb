@@ -10,9 +10,7 @@ class User < ApplicationRecord
 
   has_many :likes
   has_many :comments
-  has_many :liked_artworks,
-    through: :likes,
-    source: :artwork
+  has_many :liked_artworks, through: :likes, source: :artwork
 
   def self.find_by_credentials(username, password)
     user = User.find_by(username: username)

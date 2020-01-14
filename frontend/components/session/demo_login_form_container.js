@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 import SessionForm from "./session_form";
-import * as SessionActions from "../../actions/session_actions";
 import * as ModalActions from "../../actions/modal_actions";
+import * as SessionActions from "../../actions/session_actions";
 
 const mapStateToProps = state => {
   dispatch(SessionActions.clearSessionErrors());
@@ -17,16 +17,16 @@ const mapStateToProps = state => {
   };
 };
 
-// Seed Demo User
 const mapDispatchToProps = dispatch => {
   const demoUser = {
     username: "TestUser",
     password: "DemoLogin"
   };
   return {
-    processForm: () => dispatch(SessionActions.userLogin(demoUser)),
     otherForm: null,
-    closeModal: () => dispatch(ModalActions.closeModal())
+    closeModal: () => dispatch(ModalActions.closeModal()),
+    openModal: modal => dispatch(ModalActions.openModal(modal)),
+    processForm: () => dispatch(SessionActions.userLogin(demoUser))
   };
 };
 

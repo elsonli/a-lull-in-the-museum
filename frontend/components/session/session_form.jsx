@@ -35,39 +35,45 @@ class SessionForm extends React.Component {
   };
 
   render() {
-    const demoButton = this.props.formType !== "DEMO LOG IN" ? (
-      <button type="button" className="session-button" onClick={ () => dispatch(ModalActions.openModal({ type: "demologin" })) }>DEMO LOG IN</button>
+    const { formType, formText, otherForm, closeModal, openModal } = this.props;
+
+    const demoButton = (formType !== "DEMO LOG IN") ? (
+      <button
+        type="button"
+        className="session-button"
+        onClick={ () => openModal({ type: "demologin" }) }>
+          DEMO LOG IN
+      </button>
     ) : null;
+
     return (
       <div className="session-form-container">
         <form className="session-form" onSubmit={ this.handleSubmit }>
-          <div onClick={ this.props.closeModal } className="close-modal">X</div>
-          <h1>{ this.props.formType }</h1>
-          <br />
-          <p>{ this.props.formText }<strong>{ this.props.otherForm }</strong></p>
-          
+          <div onClick={ closeModal } className="close-modal">X</div>
+          <h1>{ formType }</h1>
+          <br/>
+          <p>{ formText }<strong>{ otherForm }</strong></p>
           <div className="session-form-fields">
             <input
-              placeholder="Username"
               type="text"
-              id="session-form-username"
+              placeholder="Username"
               value={ this.state.username }
               onChange={ this.update("username") }
-              disabled={ this.props.formType === "DEMO LOG IN" } />
+              disabled={ formType === "DEMO LOG IN" } />
             <input
-              placeholder="Password"
               type="password"
-              id="session-form-input"
+              placeholder="Password"
               value={ this.state.password }
               onChange={ this.update("password") }
-              disabled={this.props.formType === "DEMO LOG IN"} />
+              disabled={ formType === "DEMO LOG IN" } />
           </div>
-
           <div className="session-buttons">
-            <input className="session-button" type="submit" value={ this.props.formType } />
+            <input
+              type="submit"
+              value={ formType }
+              className="session-button" />
             { demoButton }
           </div>
-
         </form>
         { this.renderErrors() }
       </div>
