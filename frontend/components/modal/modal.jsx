@@ -31,6 +31,7 @@ const Modal = ({ modal, closeModal }) => {
     default:
       return null;
   };
+  
   return (
     <div className="session-modal-background" onClick={ closeModal }>
       <div className="session-modal-child" onClick={ event => event.stopPropagation() }>

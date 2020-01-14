@@ -13,10 +13,11 @@ class VideoModal extends React.Component {
   };
 
   render() {
+    const { modal } = this.props;
     return (
       <div>
         <video className="video-modal-child" controls>
-          <source src={ this.props.modal.url } type="video/mp4"/>
+          <source src={ modal.url } type="video/mp4"/>
         </video>
       </div>
     )

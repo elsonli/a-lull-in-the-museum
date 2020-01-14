@@ -1,6 +1,5 @@
 import { connect } from "react-redux";
 import ArtworkModal from "./artwork_modal";
-import { withRouter } from "react-router-dom";
 
 const mapStateToProps = state => {
   return {
@@ -8,4 +7,4 @@ const mapStateToProps = state => {
   };
 };
 
-export default withRouter(connect(mapStateToProps)(ArtworkModal));
+export default connect(mapStateToProps)(ArtworkModal);

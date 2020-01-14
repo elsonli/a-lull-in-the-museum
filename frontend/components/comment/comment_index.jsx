@@ -14,16 +14,19 @@ class CommentIndex extends React.Component {
   };
 
   render() {
-    const { comments, artwork, currentUserId, destroyComment, openModal } = this.props;
+    const {
+      artwork,
+      comments,
+      openModal,
+      currentUserId,
+      destroyComment
+    } = this.props;
 
     const fetched = comments.length !== 0;
 
     const selectedComments = Selectors.commentsForArtwork(comments, artwork.id);
 
-    const renderForm = currentUserId ? (
-      <CommentFormContainer
-        artwork={artwork} />
-    ) : null;
+    const renderForm = currentUserId ? <CommentFormContainer artwork={ artwork } /> : null;
 
     return (
       fetched ? (
@@ -37,9 +40,9 @@ class CommentIndex extends React.Component {
                   <CommentIndexItem
                     key={ comment.id }
                     comment={ comment }
+                    openModal={ openModal }
                     currentUserId={ currentUserId }
-                    destroyComment={ destroyComment }
-                    openModal={ openModal } />
+                    destroyComment={ destroyComment } />
                 );
               })
             }

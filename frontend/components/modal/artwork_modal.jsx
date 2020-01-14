@@ -13,9 +13,10 @@ class ArtworkModal extends React.Component {
   };
 
   render() {
+    const { modal } = this.props;
     return (
       <div>
-        <img className="artwork-modal-child" src={ this.props.modal.url } />
+        <img className="artwork-modal-child" src={ modal.url } />
       </div>
     );
   };
