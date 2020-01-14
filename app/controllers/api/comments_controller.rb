@@ -2,13 +2,13 @@ class Api::CommentsController < ApplicationController
   
   def index
     @comments = Comment.all.includes(:user)
-    render :index
+    render "api/comments/index"
   end
 
   def create
     @comment = Comment.new(comment_params)
     if @comment.save
-      render :create
+      render "api/comments/create"
     else
       render json: @comment.errors.full_messages, status: 422
     end
@@ -17,7 +17,7 @@ class Api::CommentsController < ApplicationController
   def update
     @comment = Comment.includes(:user).find_by(id: params[:id])
     if @comment.update(comment_params)
-      render :update
+      render "api/comments/update"
     else
       render json: @comment.errors.full_messages, status: 422
     end
@@ -26,7 +26,7 @@ class Api::CommentsController < ApplicationController
   def destroy
     @comment = Comment.includes(:user).find_by(id: params[:id])
     @comment.destroy
-    render :destroy
+    render "api/comments/destroy"
   end
 
   private

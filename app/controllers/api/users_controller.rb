@@ -1,21 +1,19 @@
 class Api::UsersController < ApplicationController
 
-  # Show a user's dashboard
   def show
     @user = User.includes(:liked_artworks).find_by(id: params[:id])
     if @user
-      render :show
+      render "api/users/show"
     else
       render json: ["User does not exist"], status: 422
     end
   end
 
-  # User signup
   def create
     @user = User.new(user_params)
     if @user.save
       login!(@user)
-      render :create
+      render "api/users/create"
     else
       render json: @user.errors.full_messages, status: 422
     end
