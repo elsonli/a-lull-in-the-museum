@@ -13,7 +13,6 @@ class Api::UsersController < ApplicationController
   # User signup
   def create
     @user = User.new(user_params)
-    debugger
     if @user.save
       login!(@user)
       render :create

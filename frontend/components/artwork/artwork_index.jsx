@@ -18,7 +18,6 @@ class ArtworkIndex extends React.Component {
       fetched ? (
         // ArtworkIndexItems renders previews of artworks
         <ul className="artworks-div">
-          <ModalContainer />
           {
             this.props.artworks.map(artwork => {
               return (

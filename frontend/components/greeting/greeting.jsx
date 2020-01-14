@@ -20,8 +20,6 @@ const Greeting = props => {
   const personalGreeting = () => {
     return (
       <hgroup className="header-group">
-        { // REPLACE PUSH LINK TO USER SHOW PAGE
-        }
         <Link to={ `/users/${props.currentUser.id}` }>
           <button className="session-button">DASHBOARD</button>
         </Link>
