@@ -5,7 +5,6 @@ import * as ModalActions from "../../actions/modal_actions";
 import * as SessionActions from "../../actions/session_actions";
 
 const mapStateToProps = state => {
-  dispatch(SessionActions.clearSessionErrors());
   return {
     userState: {
       username: "TestUser",

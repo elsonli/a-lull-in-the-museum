@@ -1,11 +1,12 @@
 import React from "react";
-import * as ModalActions from "../../actions/modal_actions";
+import * as SessionActions from "../../actions/session_actions";
 
 class SessionForm extends React.Component {  
   constructor(props) {
     super(props);
     this.state = this.props.userState;
     this.handleSubmit = this.handleSubmit.bind(this);
+    dispatch(SessionActions.clearSessionErrors());
   };
 
   update(field) {
