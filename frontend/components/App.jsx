@@ -45,7 +45,7 @@ const App = () => {
         </Switch>
       </main>
 
-      <footer>
+      <footer className="footer">
         <Route
           path="/"
           render={ () => {
