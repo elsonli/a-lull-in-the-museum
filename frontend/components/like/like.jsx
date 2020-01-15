@@ -11,7 +11,14 @@ class Like extends React.Component {
   };
 
   render() {
-    const { artwork, currentUserId, likes, createLike, destroyLike } = this.props;
+    const {
+      artwork,
+      currentUserId,
+      likes,
+      createLike,
+      destroyLike,
+      openModal
+    } = this.props;
 
     // Selects all of the likes by the current user
     const selectedLikes = Selectors.likesByUser(likes, currentUserId);
@@ -36,6 +43,11 @@ class Like extends React.Component {
               <i className="fas fa-star"></i>
               <strong>IN FAVORITES</strong>
             </div>
+            <input
+              type="button"
+              className="session-button"
+              value="ADD COMMENT"
+              onClick={ () => document.getElementById("comments-container-id").scrollIntoView() } />
           </h1>
         ) : (
           <h1 className="artworks-like">
@@ -43,9 +55,20 @@ class Like extends React.Component {
               <i className="far fa-star"></i>
               <strong>ADD TO FAVORITES</strong>
             </div>
+            <input
+              type="button"
+              className="session-button"
+              value="ADD COMMENT"
+              onClick={ () => document.getElementById("comments-container-id").scrollIntoView() } />
           </h1>
         )
-      ) : null
+      ) : (
+        <div>
+          <button className="session-button" onClick={ () => openModal({ type: "signup" }) }>
+            ADD COMMENT
+          </button>
+        </div>
+      )
     )
   };
 };

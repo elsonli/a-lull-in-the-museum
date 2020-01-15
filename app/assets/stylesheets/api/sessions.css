@@ -88,8 +88,7 @@ header {
 
 .session-modal-child {
   position: absolute;
-  height: auto;
-  width: 700px;
+  overflow: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -107,13 +106,20 @@ header {
 
 .artwork-modal-child {
   position: absolute;
-  height: 90%;
-  width: 90%;
-  min-width: 896px;
-  min-height: 504px;
+  height: 80%;
+  width: 80%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.artwork-modal-img {
+  height: 100%;
+  width: 100%;
+}
+
+.artwork-modal-img {
+  object-fit: cover;
 }
 
 .video-modal-background {
@@ -131,7 +137,7 @@ header {
   height: 90%;
   width: 90%;
   min-width: 896px;
-  min-width: 504px;
+  min-height: 504px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -168,9 +174,8 @@ header {
 
 /* Login and Signup Form */
 .session-form-container {
-  height: auto;
-  width: 40%;
-  margin: 25px auto;
+  width: 300px;
+  overflow: auto;
   color: #fff;
   background-color: #333;
   border-radius: 5px;
@@ -181,7 +186,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif; 
 }
 
 .session-form > h1 {

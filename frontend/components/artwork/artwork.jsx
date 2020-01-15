@@ -63,7 +63,8 @@ class Artwork extends React.Component {
             fetchLikes={ fetchLikes }
             createLike={ createLike }
             destroyLike={ destroyLike }
-            currentUserId={ currentUserId } />
+            currentUserId={ currentUserId }
+            openModal={ openModal } />
 
           {/* Section of videos attached to the current artwork */}
           <ul className="artwork-videos">

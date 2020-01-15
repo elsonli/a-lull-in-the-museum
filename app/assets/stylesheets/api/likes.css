@@ -35,13 +35,13 @@
 
 .artworks-like {
   display: flex;
-  width: 150px;
+  justify-content: space-between;
+  width: 25%;
   color: #fff;
   font-size: 24px;
   font-weight: 400;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
-  margin-bottom: 40px;
 }
 
 .artworks-like strong {
@@ -53,7 +53,6 @@
 }
 
 .artworks-like .fa {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

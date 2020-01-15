@@ -30,7 +30,7 @@ class CommentIndex extends React.Component {
 
     return (
       fetched ? (
-        <div className="comments-container">
+        <div className="comments-container" id="comments-container-id">
           <h1>Comments <strong>{ selectedComments.length }</strong> </h1>
           { renderForm }
           <ul className="comments-ul">
