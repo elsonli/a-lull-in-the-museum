@@ -30,22 +30,12 @@ header {
   cursor: pointer;
 }
 
-.app-container {
-  position: relative;
-}
-
-.footer {
-  margin: 0px auto 25px auto;
-  width: 15%;
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.footer > div {
+.links {
+  width: 7%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-right: 75px;
 }
 
 .github {
