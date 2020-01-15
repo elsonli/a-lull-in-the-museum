@@ -30,6 +30,24 @@ header {
   cursor: pointer;
 }
 
+.app-container {
+  position: relative;
+}
+
+.footer {
+  margin: 0px auto 25px auto;
+  width: 15%;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer > div {
+  display: flex;
+  justify-content: space-between;
+}
+
 .github {
   text-decoration: none;
 }
@@ -39,6 +57,19 @@ header {
 }
 
 .fa-github {
+  font-size: 30px;
+  color: #fff;
+}
+
+.linkedin {
+  text-decoration: none;
+}
+
+.linkedin:hover {
+  cursor: pointer;
+}
+
+.fa-linkedin {
   font-size: 30px;
   color: #fff;
 }

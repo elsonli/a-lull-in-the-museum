@@ -10,7 +10,7 @@ import UserDashboardContainer from "./user/user_dashboard_container";
 
 const App = () => {
   return (
-    <div>
+    <div className="app-container">
 
       {/* Contains the logic for the Session and Artwork Zoom modals */}
       <ModalContainer />
@@ -44,6 +44,23 @@ const App = () => {
           <Route path="*" render={ () => <Redirect to="/" /> } />
         </Switch>
       </main>
+
+      <footer>
+        <Route
+          path="/"
+          render={ () => {
+            return (
+              <div>
+                <a className="fa linkedin" target="_blank" href="https://www.linkedin.com/in/elsonli/">
+                  <i className="fab fa-linkedin"></i>
+                </a>
+                <a className="fa github" target="_blank" href="https://github.com/elsonli">
+                  <i className="fab fa-github"></i>
+                </a>
+              </div>
+            );
+          }} />
+      </footer>
 
     </div>
   )

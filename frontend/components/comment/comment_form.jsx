@@ -47,7 +47,7 @@ class CommentForm extends React.Component {
             onChange={ this.update("body") }>
           </textarea>
           <br/>
-          <input type="submit" value="Add Boppin Comment"/>
+          <input type="submit" value="ADD BOPPIN COMMENT"/>
         </form>
         { this.renderErrors() }
       </div>
