@@ -34,7 +34,7 @@ class Artwork extends React.Component {
 
     // Ensure that the artworkId is valid, otherwise Redirect to home page
     const artworkId = this.props.match.params.id;
-    const regexMatchId = /^[0-9]*$/g
+    const regexMatchId = /^[0-9]*$/g;
     const matches = regexMatchId.exec(artworkId);
     if (!matches || matches < 1 || matches > 47) return <Redirect to="/" />;
     
