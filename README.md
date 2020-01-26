@@ -13,6 +13,7 @@ A Lull in the Museum is a gallery of digital artworks that can be viewed anywher
 * Edit or delete comments (for comment authors)
 * User dashboard (for registered users)
 * Other Planned Features Not Yet Implemented
+  * Media queries
   * Demo login ghost typing
   * Autoplay background intro video
   
