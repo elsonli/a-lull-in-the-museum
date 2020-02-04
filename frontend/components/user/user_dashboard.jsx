@@ -25,7 +25,7 @@ class UserDashboard extends React.Component {
   };
 
   render() {
-    const { user, openModal, sessionUserId } = this.props;
+    const { user, openModal, sessionUserId, likes, destroyLike } = this.props;
 
     const userId = this.props.match.params.id;
     const regexMatchId = /^[0-9]*$/g
@@ -41,9 +41,11 @@ class UserDashboard extends React.Component {
                 user.likedArtworks.map(artwork => {
                   return (
                     <ArtworkDashItem
+                      likes={ likes }
                       key={ artwork.id }
                       artwork={ artwork }
                       openModal={ openModal }
+                      destroyLike={ destroyLike }
                       currentUserId={ user.id } />
                   );
                 })

@@ -17,7 +17,8 @@ const mapDispatchToProps = dispatch => {
   return {
     fetchLikes: () => dispatch(LikeActions.fetchLikes()),
     fetchUser: userId => dispatch(SessionActions.fetchUser(userId)),
-    openModal: modal => dispatch(ModalActions.openModal(modal))
+    openModal: modal => dispatch(ModalActions.openModal(modal)),
+    destroyLike: likeId => dispatch(LikeActions.destroyLike(likeId))
   };
 };
 
