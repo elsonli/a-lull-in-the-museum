@@ -84,15 +84,17 @@ header {
 .session-button {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
-  border-radius: 5px;
-  padding: 5px 10px;
+  border-radius: 2px;
+  padding: 7px 12px;
   margin: 0px 10px;
   border: 0;
 }
 
 .session-button:hover {
   cursor: pointer;
-  filter: brightness(80%);
+  color: #ffffff;
+  background-color: #0e0f0e;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 /* Modal */
