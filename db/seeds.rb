@@ -1107,17 +1107,17 @@ artwork_43 = Artwork.create!(
 )
 
 # Artwork 43 Local Seed
-artwork_43.photos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/Image_01.jpeg"), filename: "Image_01.jpeg")
-artwork_43.photos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/Image_02.jpeg"), filename: "Image_02.jpeg")
-artwork_43.photos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/Image_03.jpeg"), filename: "Image_03.jpeg")
-artwork_43.photos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/Image_04.jpeg"), filename: "Image_04.jpeg")
-artwork_43.photos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/Image_05.jpeg"), filename: "Image_05.jpeg")
-artwork_43.photos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/Image_06.jpeg"), filename: "Image_06.jpeg")
-artwork_43.photos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/Image_07.jpeg"), filename: "Image_07.jpeg")
-artwork_43.photos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/Image_08.jpeg"), filename: "Image_08.jpeg")
-artwork_43.photos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/Image_09.jpeg"), filename: "Image_09.jpeg")
-artwork_43.photos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/Image_10.jpeg"), filename: "Image_10.jpeg")
-artwork_43.videos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/Video_01.mp4"), filename: "Video_01.mp4")
+artwork_43.photos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/43/Image_01.jpeg"), filename: "Image_01.jpeg")
+artwork_43.photos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/43/Image_02.jpeg"), filename: "Image_02.jpeg")
+artwork_43.photos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/43/Image_03.jpeg"), filename: "Image_03.jpeg")
+artwork_43.photos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/43/Image_04.jpeg"), filename: "Image_04.jpeg")
+artwork_43.photos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/43/Image_05.jpeg"), filename: "Image_05.jpeg")
+artwork_43.photos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/43/Image_06.jpeg"), filename: "Image_06.jpeg")
+artwork_43.photos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/43/Image_07.jpeg"), filename: "Image_07.jpeg")
+artwork_43.photos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/43/Image_08.jpeg"), filename: "Image_08.jpeg")
+artwork_43.photos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/43/Image_09.jpeg"), filename: "Image_09.jpeg")
+artwork_43.photos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/43/Image_10.jpeg"), filename: "Image_10.jpeg")
+artwork_43.videos.attach(io: File.open("/Users/elsonli/Downloads/teamlab_seeds/43/Video_01.mp4"), filename: "Video_01.mp4")
 
 # Artwork 43 Heroku Seed
 # artwork_43.photos.attach(io: open("https://a-lull-in-the-museum-seeds.s3-us-west-1.amazonaws.com/43/Image_01.jpeg"), filename: "Image_01.jpeg")
