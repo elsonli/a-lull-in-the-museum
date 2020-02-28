@@ -1,22 +1,23 @@
-/* Splash Page Background */
+/* *************************** */
+/* Start App Component Styling */
+/* *************************** */
+
 body {
   background-color: #0e0f0e;
   min-width: 600px;
 }
 
-/* Header */
 header {
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #fff;
+  color: #ffffff;
   background-color: transparent;
-  padding: 15px 0px;
+  padding-top: 2%;
   z-index: 3;
-  position: absolute;
   width: 100%;
   min-width: 600px;
-  top: 0px;
 }
 
 .header-title {
@@ -25,52 +26,76 @@ header {
   font-size: 24px;
   text-shadow: 1px 1px 3px #00f;
   margin-left: 20px;
+  transition: opacity 0.25s ease;
 }
 
 .header-title:hover {
   cursor: pointer;
+  opacity: 0.75;
+  transition: opacity 0.25s ease;
 }
 
 .links {
-  width: 7%;
+  width: 15%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.github {
+.github, .linkedin, .angellist {
   text-decoration: none;
 }
 
-.github:hover {
+.github:hover, .linkedin:hover, .angellist:hover {
   cursor: pointer;
 }
 
-.fa-github {
+.fa-github, .fa-linkedin, .fa-angellist {
   font-size: 30px;
   color: #fff;
 }
 
-.linkedin {
-  text-decoration: none;
-}
-
-.linkedin:hover {
-  cursor: pointer;
-}
-
-.fa-linkedin {
-  font-size: 30px;
-  color: #fff;
-}
+/* *************************** */
+/*  End App Component Styling  */
+/* *************************** */
 
 /* ******************************** */
 /* Start Greeting Component Styling */
 /* ******************************** */
 
-/* Sign Up, Log In, & Log Out Dashboard Buttons */
 .login-signup {
   margin-right: 10px;
+}
+
+.header-group {
+  display: flex;
+  justify-content: center;
+}
+
+.session-buttons {
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  margin: 15% 5%;
+  padding-left: 5%;
+}
+
+.session-button {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  border-radius: 2px;
+  padding: 7px 12px;
+  margin: 0px 10px;
+  border: 0;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.session-button:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #101010;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 /* ******************************** */
@@ -175,42 +200,7 @@ header {
 /*   End Session Form Component Styling   */
 /* ************************************** */
 
-
-
-
-.header-group {
-  display: flex;
-  justify-content: center;
-}
-
-.session-buttons {
-  margin: 15% 5%;
-  display: flex;
-  padding-left: 5px;
-  width: 85%;
-  justify-content: space-around;
-}
-
-.session-button {
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  border-radius: 2px;
-  padding: 7px 12px;
-  margin: 0px 10px;
-  border: 0;
-  transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-.session-button:hover {
-  cursor: pointer;
-  color: #ffffff;
-  background-color: #101010;
-  transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-/* Modal */
-
+/* Modal Sort */
 
 .artwork-modal-background {
   position: fixed;

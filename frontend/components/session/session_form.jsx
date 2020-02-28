@@ -110,7 +110,7 @@ class SessionForm extends React.Component {
           <div className="session-form-fields">
             <input
               type="text"
-              autoFocus="true"
+              autoFocus={ true }
               placeholder="Username"
               value={ this.state.username }
               onChange={ this.update("username") }
@@ -137,3 +137,5 @@ class SessionForm extends React.Component {
 };
 
 export default SessionForm;
+
+// Add field for users to see their own password
