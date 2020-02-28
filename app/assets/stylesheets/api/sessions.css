@@ -102,9 +102,9 @@ header {
 /*  End Greeting Component Styling  */
 /* ******************************** */
 
-/* ************************************** */
-/*  Start Session Form Component Styling  */
-/* ************************************** */
+/* ************************************ */
+/* Start Session Form Component Styling */
+/* ************************************ */
 
 .session-form-container {
   width: 40vh;
@@ -196,18 +196,20 @@ header {
   transform: translate(-50%, -50%);
 }
 
-/* ************************************** */
-/*   End Session Form Component Styling   */
-/* ************************************** */
+/* ************************************ */
+/*  End Session Form Component Styling  */
+/* ************************************ */
 
-/* Modal Sort */
+/* *************************** */
+/* Start Artwork Modal Styling */
+/* *************************** */
 
 .artwork-modal-background {
   position: fixed;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: rgba(1, 1, 1, 0.95);
   z-index: 10;
 }
@@ -230,12 +232,20 @@ header {
   object-fit: cover;
 }
 
+/* *************************** */
+/*  End Artwork Modal Styling  */
+/* *************************** */
+
+/* ************************* */
+/* Start Video Modal Styling */
+/* ************************* */
+
 .video-modal-background {
   position: fixed;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: rgba(1, 1, 1, 0.95);
   z-index: 10;
 }
@@ -244,19 +254,25 @@ header {
   position: absolute;
   height: 90%;
   width: 90%;
-  min-width: 896px;
-  min-height: 504px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+/* ************************* */
+/*  End Video Modal Styling  */
+/* ************************* */
+
+/* *************************** */
+/* Start Comment Modal Styling */
+/* *************************** */
+
 .comment-modal-background {
   position: fixed;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: rgba(1, 1, 1, 0.9);
   z-index: 10;
 }
@@ -270,6 +286,14 @@ header {
   transform: translate(-50%, -50%);
 }
 
+/* *************************** */
+/*  End Comment Modal Styling  */
+/* *************************** */
+
+/* ************************ */
+/* Start Misc Modal Styling */
+/* ************************ */
+
 .close-modal {
   position: absolute;
   color: #fff;
@@ -279,3 +303,7 @@ header {
   font-weight: 700;
   cursor: pointer;
 }
+
+/* ************************ */
+/*  End Misc Modal Styling  */
+/* ************************ */
