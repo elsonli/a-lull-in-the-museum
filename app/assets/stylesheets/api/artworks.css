@@ -1,4 +1,7 @@
-/* Container that encapsulates all of the artworks on the index page */
+/* ************************************ */
+/* Start ArtworkIndex Component Styling */
+/* ************************************ */
+
 .artworks-div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -46,6 +49,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform: scale(1);
+  filter: blur(0), brightness(100%);
+  transition: transform 1s ease, filter 1s ease;
   -webkit-mask-image: linear-gradient(to top, transparent 0.005%, black 25%);
 }
 
@@ -69,12 +75,20 @@
   transition: color 0.15s ease;
 }
 
+/* ************************************ */
+/*  End ArtworkIndex Component Styling  */
+/* ************************************ */
+
+/* **************************** */
+/* Start User Dashboard Styling */
+/* **************************** */
+
 .artworks-dash {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   position: relative;
-  margin-top: 5%;
+  margin-top: 7%;
 }
 
 .artworks-dash .dash-item {
@@ -109,25 +123,23 @@
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
   margin-top: 10%;
   justify-content: center;
   align-items: center;
 }
 
 .no-like-dash button {
-  margin-top: 10px;
-  padding: 7px;
-  border-radius: 5px;
-  background-color: #fff;
-  font-weight: 700;
+  margin-top: 10%;
 }
 
-.no-like-dash button:hover {
-  filter: brightness(70%);
-  transition: filter 0.1s ease;
-  cursor: pointer;
-}
+/* **************************** */
+/*  End User Dashboard Styling  */
+/* **************************** */
+
+/* ********************************* */
+/* Start Artwork Grid System Styling */
+/* ********************************* */
 
 /* Row 1 */
 .artworks-fig-1 {
@@ -551,3 +563,7 @@
   grid-row-start: 16;
   grid-row-end: 17;
 }
+
+/* ********************************* */
+/*  End Artwork Grid System Styling  */
+/* ********************************* */

@@ -39,6 +39,26 @@
   font-size: 20px;
 }
 
+.artworks-dash .fas {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  z-index: 3;
+  color: #ffd700;
+}
+
+.artworks-dash .far {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  z-index: 3;
+  color: #ffffff;
+}
+
+.artworks-dash .fas:hover {
+  cursor: pointer;
+}
+
 .artworks-like {
   margin-top: 10%;
   margin-left: 4%;

@@ -25,7 +25,13 @@ class UserDashboard extends React.Component {
   };
 
   render() {
-    const { user, openModal, sessionUserId, likes, destroyLike } = this.props;
+    const {
+      user,
+      openModal,
+      sessionUserId,
+      likes,
+      destroyLike
+    } = this.props;
 
     const userId = this.props.match.params.id;
     const regexMatchId = /^[0-9]*$/g
@@ -55,7 +61,9 @@ class UserDashboard extends React.Component {
             <div className="no-like-dash">
               <strong>No Liked Artworks!</strong>
               <Link to="/">
-                <button>Return to Gallery</button>
+                <button className="session-button">
+                  Return to Gallery
+                </button>
               </Link>
             </div>
           )
