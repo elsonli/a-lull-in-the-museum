@@ -4,27 +4,22 @@ import { Link } from "react-router-dom";
 const Greeting = props => {
 
   const {
-    location,
     openModal,
     userLogout,
     currentUser
   } = props;
 
+  // 1. Returns a JSX element that contains the session buttons
+  // 2. Each of these session buttons should open up the corresponding modal
+  //    by dispatching an asynchronous thunk action creator to the store
   const sessionLinks = () => {
-
-    // const demoButton = location.pathname === "/" ? (
-    //   <button className="session-button" onClick={ () => openModal({ type: "demologin" }) }>
-    //     DEMO LOG IN
-    //   </button>
-    // ) : null;
-
     return (
       <nav className="login-signup">
         <button className="session-button" onClick={ () => openModal({ type: "login" }) }>
-          LOG IN
+          Log In
         </button>
         <button className="session-button" onClick={ () => openModal({ type: "signup" }) }>
-          SIGN UP
+          Sign Up
         </button>
         {/* { demoButton } */}
       </nav>
@@ -36,11 +31,11 @@ const Greeting = props => {
       <hgroup className="header-group">
         <Link to={ `/users/${ currentUser.id }` }>
           <button className="session-button">
-            DASHBOARD
+            Dashboard
           </button>
         </Link>
         <button className="session-button" onClick={ userLogout }>
-          LOG OUT
+          Log Out
         </button>
       </hgroup>
     );

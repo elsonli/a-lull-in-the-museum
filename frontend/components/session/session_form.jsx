@@ -1,6 +1,7 @@
 import React from "react";
 
 class SessionForm extends React.Component {  
+
   constructor(props) {
     super(props);
     this.state = this.props.userState;
@@ -8,6 +9,7 @@ class SessionForm extends React.Component {
     this.props.clearSessionErrors();
   };
 
+  // 1. Returns a function that updates the state for this React Component
   update(field) {
     return event => {
       this.setState({
@@ -16,18 +18,25 @@ class SessionForm extends React.Component {
     };
   };
 
+  // 1. Process the form with the correct action and then close the modal
   handleSubmit(event) {
     event.preventDefault();
     const user = Object.assign({}, this.state);
     this.props.processForm(user).then(this.props.closeModal);
   };
 
+  // 1. Returns a JSX element that contains all of the errors available in
+  //    the store in an unordered list
   renderErrors() {
     return (
       <ul className="session-errors">
         {
           this.props.errors.map((error, idx) => {
-            return <li key={ `session-error-${ idx }` }>{ error }</li>
+            return (
+              <li key={ `session-error-${ idx }` }>
+                { error }
+              </li>
+            );
           })
         }
       </ul>
@@ -35,17 +44,29 @@ class SessionForm extends React.Component {
   };
 
   render() {
-    const { formType, formText, otherForm, closeModal, openModal } = this.props;
+    const {
+      formType,
+      formText,
+      otherForm,
+      closeModal,
+      openModal
+    } = this.props;
 
+    // 1. Conditionally renders a JSX element that contains a demo login button
+    // 2. The session button opens up the corresponding modal by dispatching
+    //    an asynchronous thunk action creator to the store
     const demoButton = (formType !== "DEMO LOG IN") ? (
       <button
         type="button"
         className="session-button"
         onClick={ () => openModal({ type: "demologin" }) }>
-          DEMO LOG IN
+          Demo Log In
       </button>
     ) : null;
 
+    // 1. Returns a JSX element that contains the session modal
+    // 2. Updates the state whenever information is inputted by the user
+    // 3. The session button processes the form or renders any errors
     return (
       <div className="session-form-container">
         <form className="session-form" onSubmit={ this.handleSubmit }>
@@ -59,13 +80,15 @@ class SessionForm extends React.Component {
               placeholder="Username"
               value={ this.state.username }
               onChange={ this.update("username") }
-              disabled={ formType === "DEMO LOG IN" } />
+              // disabled={ formType === "DEMO LOG IN" }
+              />
             <input
               type="password"
               placeholder="Password"
               value={ this.state.password }
               onChange={ this.update("password") }
-              disabled={ formType === "DEMO LOG IN" } />
+              // disabled={ formType === "DEMO LOG IN" }
+              />
           </div>
           <div className="session-buttons">
             <input
