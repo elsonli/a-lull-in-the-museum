@@ -1,3 +1,4 @@
+/* Container that encapsulates all of the artworks on the index page */
 .artworks-div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
