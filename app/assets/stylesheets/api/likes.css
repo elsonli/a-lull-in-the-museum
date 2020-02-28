@@ -35,9 +35,10 @@
 
 .artworks-like {
   margin-top: 10%;
+  margin-left: 1%;
   display: flex;
   justify-content: space-between;
-  width: 25%;
+  width: 30%;
   color: #fff;
   font-size: 24px;
   font-weight: 400;
