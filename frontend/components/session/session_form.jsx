@@ -1,4 +1,5 @@
 import React from "react";
+import "regenerator-runtime/runtime";
 
 class SessionForm extends React.Component {  
 
@@ -9,6 +10,30 @@ class SessionForm extends React.Component {
     this.props.clearSessionErrors();
   };
 
+  componentDidMount() {
+    if (this.props.formType === "DEMO LOG IN") {
+      let ghostTypeUser = str => {
+        if (!str.length) return setTimeout(ghostTypePass("DemoLogin"), 1200);
+        let currLetter = str[0];
+        this.updateWithLetter("username")(currLetter);
+        setTimeout(() => ghostTypeUser(str.slice(1)), 100);
+      }
+
+      let ghostTypePass = str => {
+        if (!str.length) {
+          let submitInput = document.getElementsByClassName("submit-session-form")[0];
+          submitInput.click();
+          return;
+        }
+        let currLetter = str[0];
+        this.updateWithLetter("password")(currLetter);
+        setTimeout(() => ghostTypePass(str.slice(1)), 100);
+      }
+
+      ghostTypeUser("TestUser");
+    }
+  }
+
   // 1. Returns a function that updates the state for this React Component
   update(field) {
     return event => {
@@ -17,6 +42,14 @@ class SessionForm extends React.Component {
       });
     };
   };
+
+  updateWithLetter(field) {
+    return letter => {
+      this.setState({
+        [field]: this.state[field] + letter
+      });
+    }
+  }
 
   // 1. Process the form with the correct action and then close the modal
   handleSubmit(event) {
@@ -77,24 +110,23 @@ class SessionForm extends React.Component {
           <div className="session-form-fields">
             <input
               type="text"
+              autoFocus="true"
               placeholder="Username"
               value={ this.state.username }
               onChange={ this.update("username") }
-              // disabled={ formType === "DEMO LOG IN" }
-              />
+              disabled={ formType === "DEMO LOG IN" } />
             <input
               type="password"
               placeholder="Password"
               value={ this.state.password }
               onChange={ this.update("password") }
-              // disabled={ formType === "DEMO LOG IN" }
-              />
+              disabled={ formType === "DEMO LOG IN" } />
           </div>
           <div className="session-buttons">
             <input
               type="submit"
               value={ formType }
-              className="session-button" />
+              className="session-button submit-session-form" />
             { demoButton }
           </div>
         </form>

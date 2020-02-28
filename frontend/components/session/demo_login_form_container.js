@@ -7,12 +7,11 @@ import * as SessionActions from "../../actions/session_actions";
 const mapStateToProps = state => {
   return {
     userState: {
-      username: "TestUser",
-      password: "DemoLogin"
+      username: "",
+      password: ""
     },
     errors: state.errors.session,
     formType: "DEMO LOG IN",
-    formText: null
   };
 };
 
@@ -22,7 +21,6 @@ const mapDispatchToProps = dispatch => {
     password: "DemoLogin"
   };
   return {
-    otherForm: null,
     closeModal: () => dispatch(ModalActions.closeModal()),
     openModal: modal => dispatch(ModalActions.openModal(modal)),
     processForm: () => dispatch(SessionActions.userLogin(demoUser)),
