@@ -63,7 +63,7 @@ class Like extends React.Component {
           </h1>
         )
       ) : (
-        <div>
+        <div className="artworks-like">
           <button className="session-button" onClick={ () => openModal({ type: "signup" }) }>
             ADD COMMENT
           </button>
