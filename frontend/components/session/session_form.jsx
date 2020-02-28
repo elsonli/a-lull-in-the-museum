@@ -1,5 +1,4 @@
 import React from "react";
-import "regenerator-runtime/runtime";
 
 class SessionForm extends React.Component {  
 
@@ -43,6 +42,8 @@ class SessionForm extends React.Component {
     };
   };
 
+  // 1. Returns a function that updates the state for this React Component
+  //    with a specific letter - used for ghost typing
   updateWithLetter(field) {
     return letter => {
       this.setState({
@@ -137,5 +138,3 @@ class SessionForm extends React.Component {
 };
 
 export default SessionForm;
-
-// Add field for users to see their own password

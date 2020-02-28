@@ -30,8 +30,8 @@ const App = () => {
           <a className="fa github" target="_blank" href="https://github.com/elsonli">
             <i className="fab fa-github"></i>
           </a>
-          <a class="fa angellist" target="_blank" href="https://angel.co/elson-li">
-            <i class="fab fa-angellist"></i>
+          <a className="fa angellist" target="_blank" href="https://angel.co/elson-li">
+            <i className="fab fa-angellist"></i>
           </a>
           <a className="fa linkedin" target="_blank" href="https://linkedin.com/in/elsonli">
             <i className="fab fa-linkedin"></i>

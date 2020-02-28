@@ -11,7 +11,7 @@ const Greeting = props => {
 
   // 1. Returns a JSX element that contains the session buttons
   // 2. Each of these session buttons should open up the corresponding modal
-  //    by dispatching an asynchronous thunk action creator to the store
+  //    by dispatching an asynchronous thunk action creator
   const sessionLinks = () => {
     return (
       <nav className="login-signup">
@@ -26,6 +26,9 @@ const Greeting = props => {
     );
   };
   
+  // 1. Returns a JSX element that contains the session buttons
+  // 2. The session buttons should link to the user's dashboard or log them out
+  //    by dispatching an asynchronous thunk action creator
   const personalGreeting = () => {
     return (
       <hgroup className="header-group">

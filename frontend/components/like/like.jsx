@@ -41,7 +41,7 @@ class Like extends React.Component {
           <h1 className="artworks-like">
             <div className="fa" onClick={ () => destroyLike(likeObj.id) }>
               <i className="fas fa-star"></i>
-              <strong>IN FAVORITES</strong>
+              <strong>In Favorites</strong>
             </div>
             <input
               type="button"
@@ -53,7 +53,7 @@ class Like extends React.Component {
           <h1 className="artworks-like">
             <div className="fa" onClick={ () => createLike(newLike) }>
               <i className="far fa-star"></i>
-              <strong>ADD TO FAVORITES</strong>
+              <strong>Add to Favorites</strong>
             </div>
             <input
               type="button"
@@ -65,7 +65,7 @@ class Like extends React.Component {
       ) : (
         <div className="artworks-like">
           <button className="session-button" onClick={ () => openModal({ type: "signup" }) }>
-            ADD COMMENT
+            Add Comment
           </button>
         </div>
       )
