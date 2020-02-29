@@ -7,7 +7,6 @@ const ArtworkDashItem = props => {
     likes,
     artwork,
     openModal,
-    fetchLikes,
     destroyLike,
     currentUserId
   } = props;

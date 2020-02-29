@@ -1,12 +1,14 @@
 import React from "react";
 import { Link, Redirect } from "react-router-dom";
+import * as Selectors from "../../reducers/selector";
 import ArtworkDashItem from "../artwork/artwork_dash_item";
 
 class UserDashboard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentId: this.props.match.params.id
+      currentId: this.props.match.params.id,
+      numLikes: Selectors.likesByUser(this.props.likes, this.props.match.params.id).length
     };
   };
 
@@ -16,10 +18,14 @@ class UserDashboard extends React.Component {
   };
 
   componentDidUpdate() {
-    if (this.state.currentId !== this.props.match.params.id) {
+    let allLikes = this.props.likes;
+    let currentUserId = this.props.user.id;
+    let currentUserLikes = Selectors.likesByUser(allLikes, currentUserId);
+    if (this.state.numLikes !== currentUserLikes.length) {
       this.props.fetchUser(this.props.match.params.id);
       this.setState({
-        currentId: this.props.match.params.id
+        currentId: this.props.match.params.id,
+        numLikes: currentUserLikes.length
       });
     };
   };
