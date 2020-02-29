@@ -3,8 +3,11 @@
 /* ************************************ */
 
 .artworks-div {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  min-width: 600px;
+  width: 100%;
+  grid-template-columns: repeat(4, minmax(175px, 1fr));
   grid-template-rows: repeat(16, 25vw);
 }
 

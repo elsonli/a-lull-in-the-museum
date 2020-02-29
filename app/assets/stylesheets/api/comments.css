@@ -1,3 +1,7 @@
+/* ******************************* */
+/* Start Comment Component Styling */
+/* ******************************* */
+
 .comment-errors {
   display: flex;
   flex-direction: column;
@@ -159,3 +163,7 @@
   filter: brightness(70%);
   transition: filter 0.1s ease;
 }
+
+/* ******************************* */
+/*  End Comment Component Styling  */
+/* ******************************* */

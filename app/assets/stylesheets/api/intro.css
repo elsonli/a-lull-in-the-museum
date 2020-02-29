@@ -1,8 +1,9 @@
 .intro {
   position: relative;
-  height: 700px;
+  height: 100vh;
+  min-width: 700px;
   width: 100%;
-  color: #fff;
+  color: #ffffff;
   background-image: linear-gradient(to bottom, transparent -100%, black), url("https://borderless.teamlab.art/images/pc-l/14781");
   background-repeat: no-repeat;
   background-size: cover;
