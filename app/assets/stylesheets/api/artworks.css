@@ -1,0 +1,572 @@
+/* ************************************ */
+/* Start ArtworkIndex Component Styling */
+/* ************************************ */
+
+.artworks-div {
+  position: relative;
+  display: grid;
+  min-width: 600px;
+  width: 100%;
+  grid-template-columns: repeat(4, minmax(175px, 1fr));
+  grid-template-rows: repeat(16, 25vw);
+}
+
+.contain-zoom {
+  overflow: hidden;
+  position: relative;
+}
+
+.contain-zoom:hover .play {
+  display: block;
+}
+
+.play {
+  display: none;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  filter: invert(0.25);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.play:hover {
+  height: 50px;
+  width: 50px;
+  transition: height 0.5s ease, width 0.5s ease;
+}
+
+.contain-zoom:hover .artworks-img {
+  cursor: pointer;
+  filter: brightness(75%);
+  transform: scale(1.05);
+  filter: blur(1px), brightness(50%);
+  transition: transform 0.75s ease, filter 0.25s ease;
+}
+
+.artworks-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  filter: blur(0), brightness(100%);
+  transition: transform 1s ease, filter 1s ease;
+  -webkit-mask-image: linear-gradient(to top, transparent 0.005%, black 25%);
+}
+
+.artworks-title {
+  position: absolute;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  z-index: 1;
+  bottom: 16px;
+  left: 16px;
+  width: 90%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.artworks-title:hover {
+  cursor: pointer;
+  color: #8c8c8c;
+  transition: color 0.15s ease;
+}
+
+/* ************************************ */
+/*  End ArtworkIndex Component Styling  */
+/* ************************************ */
+
+/* **************************** */
+/* Start User Dashboard Styling */
+/* **************************** */
+
+.artworks-dash {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 7%;
+}
+
+.artworks-dash .dash-item {
+  overflow: hidden;
+  height: auto;
+  width: 49%;
+}
+
+.artworks-dash .artworks-img {
+  margin-top: 2%;
+}
+
+.contain-zoom-dash {
+  overflow: hidden;
+  position: relative;
+}
+
+.contain-zoom-dash:hover .play {
+  display: block;
+}
+
+.contain-zoom-dash:hover .artworks-img {
+  cursor: pointer;
+  filter: brightness(75%);
+  filter: blur(1px), brightness(50%);
+  transition: filter 0.25s ease;
+}
+
+.no-like-dash {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-like-dash button {
+  margin-top: 10%;
+}
+
+/* **************************** */
+/*  End User Dashboard Styling  */
+/* **************************** */
+
+/* ********************************* */
+/* Start Artwork Grid System Styling */
+/* ********************************* */
+
+/* Row 1 */
+.artworks-fig-1 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.artworks-fig-2 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.artworks-fig-3 {
+  margin-bottom: 2px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+/* Row 2 */
+.artworks-fig-4 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.artworks-fig-5 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.artworks-fig-6 {
+  margin-bottom: 2px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+/* Row 3 */
+.artworks-fig-7 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.artworks-fig-8 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.artworks-fig-9 {
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+/* Row 4 */
+.artworks-fig-10 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.artworks-fig-11 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.artworks-fig-12 {
+  margin-bottom: 2px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+/* Row 5 */
+.artworks-fig-13 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.artworks-fig-14 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.artworks-fig-15 {
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+/* Row 6 */
+.artworks-fig-16 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.artworks-fig-17 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.artworks-fig-18 {
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+/* Row 7 */
+.artworks-fig-19 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+
+.artworks-fig-20 {
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+
+/* Row 8 */
+.artworks-fig-21 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+.artworks-fig-22 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+.artworks-fig-23 {
+  margin-bottom: 2px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+/* Row 9 */
+.artworks-fig-24 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 10;
+}
+
+.artworks-fig-25 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 9;
+  grid-row-end: 10;
+}
+
+.artworks-fig-26 {
+  margin-bottom: 2px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 9;
+  grid-row-end: 10;
+}
+
+/* Row 10 */
+.artworks-fig-27 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 10;
+  grid-row-end: 11;
+}
+
+.artworks-fig-28 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 10;
+  grid-row-end: 11;
+}
+
+.artworks-fig-29 {
+  margin-bottom: 2px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 10;
+  grid-row-end: 11;
+}
+
+/* Row 11 */
+.artworks-fig-30 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 11;
+  grid-row-end: 12;
+}
+
+.artworks-fig-31 {
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 11;
+  grid-row-end: 12;
+}
+
+/* Row 12 */
+.artworks-fig-32 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 12;
+  grid-row-end: 13;
+}
+
+.artworks-fig-33 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 12;
+  grid-row-end: 13;
+}
+
+.artworks-fig-34 {
+  margin-bottom: 2px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 12;
+  grid-row-end: 13;
+}
+
+/* Row 13 */
+.artworks-fig-35 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 13;
+  grid-row-end: 14;
+}
+
+.artworks-fig-36 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 13;
+  grid-row-end: 14;
+}
+
+.artworks-fig-37 {
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 13;
+  grid-row-end: 14;
+}
+
+/* Row 14 */
+.artworks-fig-38 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 14;
+  grid-row-end: 15;
+}
+
+.artworks-fig-39 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 14;
+  grid-row-end: 15;
+}
+
+.artworks-fig-40 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 14;
+  grid-row-end: 15;
+}
+
+.artworks-fig-41 {
+  margin-bottom: 2px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 14;
+  grid-row-end: 15;
+}
+
+/* Row 15 */
+.artworks-fig-42 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 15;
+  grid-row-end: 16;
+}
+
+.artworks-fig-43 {
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 15;
+  grid-row-end: 16;
+}
+
+/* Row 16 */
+.artworks-fig-44 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 16;
+  grid-row-end: 17;
+}
+
+.artworks-fig-45 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 16;
+  grid-row-end: 17;
+}
+
+.artworks-fig-46 {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 16;
+  grid-row-end: 17;
+}
+
+.artworks-fig-47 {
+  margin-bottom: 2px;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 16;
+  grid-row-end: 17;
+}
+
+/* ********************************* */
+/*  End Artwork Grid System Styling  */
+/* ********************************* */

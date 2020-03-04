@@ -1,0 +1,107 @@
+/* **************************** */
+/* Start Like Component Styling */
+/* **************************** */
+
+.artworks-div .fas {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 5px;
+  right: 5px;
+  z-index: 3;
+  color: #ffd700;
+  transition: color 0.3s ease;
+}
+
+.artworks-div .far {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 5px;
+  right: 5px;
+  z-index: 3;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.artworks-div .far:hover {
+  cursor: pointer;
+  color: #ffd700;
+  transition: color 0.3s ease;
+}
+
+.artworks-div .fas:hover {
+  cursor: pointer;
+}
+
+.artwork-div .fa-star {
+  position: absolute;
+  font-size: 20px;
+}
+
+.artworks-dash .fas {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  z-index: 3;
+  color: #ffd700;
+}
+
+.artworks-dash .far {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  z-index: 3;
+  color: #ffffff;
+}
+
+.artworks-dash .fas:hover {
+  cursor: pointer;
+}
+
+.artworks-like {
+  margin-top: 10%;
+  margin-left: 4%;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+.artworks-like strong {
+  color: #ffffff;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 6px 0px 6px 10px;
+  text-transform: uppercase;
+  transition: color 0.5s ease;
+}
+
+.artworks-like .fa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artworks-like .fa:hover i,
+.artworks-like .fa:hover strong {
+  cursor: pointer;
+  color: #ffd700;
+  transition: color 0.5s ease;
+}
+
+.artworks-like .far {
+  color: #ffffff;
+}
+
+.artworks-like .fas {
+  color: #ffd700;
+}
+
+/* **************************** */
+/*  End Like Component Styling  */
+/* **************************** */

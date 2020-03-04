@@ -1,0 +1,121 @@
+/* ******************************* */
+/* Start Artwork Component Styling */
+/* ******************************* */
+
+.artwork-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0% 5%;
+  min-width: 1000px;
+}
+
+.artwork-fav-nav {
+  margin-left: -1%;
+  width: 100%;
+  display: flex;
+}
+
+.nav-arrows {
+  margin-top: 10%;
+  width: 20%;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-arrows img {
+  height: 25px;
+  width: 25px;
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.nav-arrows strong {
+  font-size: 12px;
+  padding-right: 10px;
+  vertical-align: center;
+  text-transform: uppercase;
+}
+
+.artwork-header {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  color: #ffffff;
+  line-height: 1.5;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 2% 0%;
+}
+
+.artwork-videos {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5%;
+}
+
+.artwork-videos video {
+  display: block;
+  width: 100%;
+  margin: 1% 0%;
+}
+
+.artwork-videos video:hover {
+  cursor: pointer;
+}
+
+.artwork-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.artwork-photos li {
+  width: 30%;
+  height: 30vh;
+  overflow: hidden;
+  margin: 1% 1%;
+}
+
+.artwork-photos li:hover {
+  cursor: -moz-zoom-in; 
+  cursor: -webkit-zoom-in; 
+  cursor: zoom-in;
+}
+
+.artwork-img {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+.artwork-section {
+  margin-bottom: 5%;
+}
+
+.artwork-section > h1 {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% auto;
+}
+
+.artwork-section > p {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  width: 75%;
+  margin: auto;
+  line-height: 2;
+  white-space: pre-line;
+}
+
+/* ******************************* */
+/*  End Artwork Component Styling  */
+/* ******************************* */
